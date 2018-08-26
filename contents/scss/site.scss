@@ -1,0 +1,49 @@
+﻿@charset 'UTF-8'; 
+
+$device: 'web';
+
+//---------------------------------------------------
+// reset - normalize
+//---------------------------------------------------
+@import "../../vendor/css/normalize.min.css";
+
+//---------------------------------------------------
+// base
+//---------------------------------------------------
+@import "base/base";
+@import "base/font";
+
+//---------------------------------------------------
+// utils
+//---------------------------------------------------
+@import "utils/variables";
+@import "utils/mixin";
+@import "utils/prefix";
+@import "utils/a11y-hidden";
+
+//---------------------------------------------------
+// components
+//---------------------------------------------------
+@import "../../vendor/css/animate.min.css";
+@import "components/animate";
+@import "components/effect-shine";
+@import "components/effect-particle";
+//@import "components/effect";
+
+//---------------------------------------------------
+// components design
+//---------------------------------------------------
+@import "layout/form-group";
+
+//---------------------------------------------------
+// pages
+//---------------------------------------------------
+@import "pages/page-common";
+@import "pages/page";
+@import "pages/popup";
+
+
+//---------------------------------------------------
+// base (end)
+//---------------------------------------------------
+@import "base/loop-class";

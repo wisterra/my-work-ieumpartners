@@ -1,0 +1,59 @@
+/* loop class - extras margin padding */
+
+//---------------------------------------------------
+// setting
+//---------------------------------------------------
+$total: 12;
+
+// // margin, padding loop
+// @each $obj in margin,padding {
+//   @each $obj2 in top,right,bottom,left {
+//     @for $i from 1 to $total {
+//       .#{$obj}-#{$obj2}-#{$i}{
+//         #{$obj}-#{$obj2}: $i+px;
+//       }      
+//     }
+//   }
+// }
+
+@for $i from 1 to $total {
+  .mt#{$i} {
+    margin-top: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .mr#{$i} {
+    margin-right: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .mb#{$i} {
+    margin-bottom: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .ml#{$i} {
+    margin-left: $i+px;
+  }
+}
+
+@for $i from 1 to $total {
+  .pt#{$i} {
+    padding-top: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .pr#{$i} {
+    padding-right: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .pb#{$i} {
+    padding-bottom: $i+px;
+  }
+}
+@for $i from 1 to $total {
+  .pl#{$i} {
+    padding-left: $i+px;
+  }
+}
