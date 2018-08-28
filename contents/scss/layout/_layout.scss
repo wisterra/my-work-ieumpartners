@@ -1,0 +1,55 @@
+﻿/* site layout */
+ 
+//---------------------------------------------------
+// layout
+//---------------------------------------------------
+
+// .site-wrapper {
+//   width: 1200px;
+//   margin: 0 auto;
+//   border:1px solid #000;
+// }
+
+/* 컨텐츠 컨테이너의 사이즈 제한 */
+.content-zone{
+  position:relative;
+  width:1200px;
+  margin:0 auto;
+}
+
+/* main */
+.container-main{
+  width:1200px;
+  height:600px;
+  margin: 0 auto;
+  border:1px dotted silver;
+}
+
+/* sub 공통 */
+.container-sub{
+  position:relative;
+  width:1200px;
+  min-height:100%;
+  margin: 0 auto;
+  border:1px dotted silver;
+}
+
+/* sub LNB */
+#lnb{
+  position:absolute;
+  top:0;
+  left:0;
+  display:inline-block;
+  width:200px;
+  height:100%;
+  border:1px dotted gray;
+}
+
+/* LNB 우측 내용부 */
+.content{
+  display:block;
+  margin-left:200px;
+  //width: 100%;
+  padding:30px 30px;
+}
+

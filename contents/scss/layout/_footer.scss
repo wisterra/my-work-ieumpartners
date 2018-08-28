@@ -1,0 +1,31 @@
+﻿/* ---------------------------------------------------
+// footer
+--------------------------------------------------- */
+
+#footer {
+  position: relative;
+  background: #dfdfdf;
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-link {
+  li {
+    display: inline-block;
+  }
+}
+
+.footer-logo {
+   position:absolute;
+   top:30px;
+   left:10px;
+   img {width:50%;}
+}
+
+.footer-copy {
+  padding-left: 200px;
+}
