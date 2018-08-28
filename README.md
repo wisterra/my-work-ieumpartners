@@ -1,6 +1,6 @@
-## Welcome to OneTop Korea Test
+## Welcome to OneTop Korea Publishing
 
-[OneTop Korea Test](https://wisterra.github.io/onetopkorea/pages/index.html)
+[OneTop Korea publishing](https://wisterra.github.io/onetopkorea/pages/index.html#main)
 
 
 
