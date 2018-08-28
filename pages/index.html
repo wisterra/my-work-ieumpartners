@@ -18,7 +18,9 @@
 </head>
 
 <body>
-    <div id="skip"><a href="#container">본문바로가기</a></div>
+    <div id="skip">
+        <a href="#container">본문바로가기</a>
+    </div>
     <!-- Page Start -->
     <div class="site-wrapper">
         <!-- Header -->
@@ -44,13 +46,27 @@
 
     <!-- script -->
     <script type="text/javascript">
-        // for include Start
-        // 아래 부분은 local html에서 include를 위해 작성되었습니다. 개발시에는 삭제하고 사이트에 적합한 방법으로 처리 바랍니다.
         $(document).ready(function () {
-            $("#includeHeader").load("../include/header.html");
-            $("#includeFooter").load("../include/footer.html");
-            // content
-            $("#PageContent").load("sub.html");
+            
+            // [임시] 개발들어가기전 html파일 include 처리를 위해 작성
+            $('#includeHeader').load('../include/header.html');
+            $('#includeFooter').load('../include/footer.html');
+
+            // [임시] 페이지 이동(index를 공통레이아웃으로 쓰고 hash로 페이지 내용 가져오기)
+            var hashName = location.hash;
+            targetPageName = hashName.split('#')[1];
+            
+            $('body').addClass(targetPageName); // ***** body에 class 달아주기(개발 들어갈때 적용해주실 부분)
+
+            // [임시] a태그 클릭시 페이지 변경
+            $('#PageContent').load(targetPageName + '.html', function () {
+                $('a').click(function () {
+                    var src = String(this).split('#')[1];
+                    location.href = 'index.html#' + src;
+                    location.reload();
+                });
+            });
+
         });
         // for include END
     </script>
