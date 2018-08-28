@@ -3,15 +3,11 @@
 $device: 'web';
 
 //---------------------------------------------------
-// reset - normalize
-//---------------------------------------------------
-@import "../../vendor/css/normalize.min.css";
-
-//---------------------------------------------------
-// base
+// base setting
 //---------------------------------------------------
 @import "base/base";
 @import "base/font";
+//@import "_override.bootstrap";
 
 //---------------------------------------------------
 // utils
@@ -22,28 +18,35 @@ $device: 'web';
 @import "utils/a11y-hidden";
 
 //---------------------------------------------------
-// components
+// effect
 //---------------------------------------------------
-@import "../../vendor/css/animate.min.css";
-@import "components/animate";
-@import "components/effect-shine";
-@import "components/effect-particle";
-//@import "components/effect";
+//@import "effect/animate";
+//@import "effect/effect-shine";
+//@import "effect/effect-particle";
+//@import "effect/effect";
 
 //---------------------------------------------------
-// components design
+// components style
 //---------------------------------------------------
-@import "layout/form-group";
+//@import "layout/form-group";
+
+
+//---------------------------------------------------
+// site common layout
+//---------------------------------------------------
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
 
 //---------------------------------------------------
 // pages
 //---------------------------------------------------
-@import "pages/page-common";
-@import "pages/page";
-@import "pages/popup";
+//@import "pages/page-common";
+//@import "pages/page";
+//@import "pages/popup";
 
 
 //---------------------------------------------------
 // base (end)
 //---------------------------------------------------
-@import "base/loop-class";
+//@import "utils/loop-class";
