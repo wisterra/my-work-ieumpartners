@@ -32,9 +32,11 @@
         <!-- Footer -->
         <div id="includeFooter"></div>
         <!-- // Footer -->
+        <!-- Popup -->
+        <div id="includePopup"></div>
+        <!-- // Popup -->
     </div>
     <!-- Page End -->
-
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- base, Bootstrap JS -->
@@ -47,20 +49,21 @@
     <!-- script -->
     <script type="text/javascript">
         $(document).ready(function () {
-            
+
             // [임시] 개발들어가기전 html파일 include 처리를 위해 작성
             $('#includeHeader').load('../include/header.html');
             $('#includeFooter').load('../include/footer.html');
+            $('#includePopup').load('../include/popup.html');
 
             // [임시] 페이지 이동(index를 공통레이아웃으로 쓰고 hash로 페이지 내용 가져오기)
             var hashName = location.hash;
             targetPageName = hashName.split('#')[1];
-            
+
             $('body').addClass(targetPageName); // ***** body에 class 달아주기(개발 들어갈때 적용해주실 부분)
 
             // [임시] a태그 클릭시 페이지 변경
             $('#PageContent').load(targetPageName + '.html', function () {
-                $('a').click(function () {
+                $('a.alink').click(function () {
                     var src = String(this).split('#')[1];
                     location.href = 'index.html#' + src;
                     location.reload();

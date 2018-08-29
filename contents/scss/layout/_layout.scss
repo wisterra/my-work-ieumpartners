@@ -11,18 +11,19 @@
 //   margin: 0 auto;
 //   border:1px solid #000;
 // }
+$viewportSize: 1200px;
 
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone{
   position:relative;
-  width:1200px;
+  width:$viewportSize;
   margin:0 auto;
 }
 
 /* container 공통 */
 #container{
   position:relative;
-  width:1200px;
+  width:$viewportSize;
   min-height:100%;
   margin: 0 auto;
   border:1px dotted silver;
@@ -30,7 +31,7 @@
 
 /* container - main */
 .container-main{
-  width:1200px;
+  width:$viewportSize;
   height:600px;
   margin: 0 auto;
   border:1px dotted silver;
@@ -38,7 +39,7 @@
 
 /* container - wide */
 .container-wide{
-  width:1200px;
+  width:$viewportSize;
   height:600px;
   margin: 0 auto;
   border:1px dotted silver;
