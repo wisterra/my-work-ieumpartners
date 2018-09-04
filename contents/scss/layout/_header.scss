@@ -1,35 +1,40 @@
 ﻿/* ---------------------------------------------------
 // header
 --------------------------------------------------- */
-
+// .site-wrapper{
+//   position:relative;
+// }
 #header {
   position: relative;
-  ul,
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .site-logo {
-  // position:absolute;
-  // top:10px;
-  // left:10px;
-  padding:20px;
+  position:absolute;
+  top:20px;
+  left:20px;
+  //padding:20px;
 }
 
 /* 우상단 */
-
 .login-box {
   width:100%;
-  background: #f7f7f7;
-  border-bottom: 1px solid #dddddd;
+  //background: #f7f7f7;
+  //border-bottom: 1px solid #dddddd;
   text-align:right;
-
+  padding-top:35px;
+  padding-bottom:25px;
   li {
     display: inline-block;
+    &:first-child::after{
+      content: '';
+      @extend %sp-bar;
+      margin:0 10px;
+    }
+    &:nth-child(2){
+      padding-right:10px;
+    }
   }
+
 }
 
 /* 메뉴 */
@@ -62,7 +67,8 @@
   .menu-depth2 {
     display: none;
     position: absolute;
-    width: 100%;
+    padding-top:37px;
+    width:100%;
     background: #33a6ff;
     z-index:1;
   }
@@ -72,10 +78,22 @@
 // header - active
 --------------------------------------------------- */
 .site-menu {
+  // 한단씩 펼처질때
+  // .menu-depth1:hover>a {
+  //   background: #33a6ff;
+  // }
+  // .menu-depth1:hover>.menu-depth2 {
+  //   display: block;
+  // }
+  // 여러단 펼처질때
+  &:hover .menu-depth2 {
+    display: block;
+  }   
   .menu-depth1:hover>a {
     background: #33a6ff;
   }
   .menu-depth1:hover>.menu-depth2 {
-    display: block;
-  }
+    background:silver;
+  }  
+ 
 }

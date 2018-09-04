@@ -19,6 +19,13 @@ img {
       user-select: none;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
@@ -38,6 +45,41 @@ body, input, textarea {
   font-family: 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif;
 }
 
+/* bootstrap override */
+.site-wrapper .btn {
+  border-radius: 0;
+}
+
+.site-wrapper .btn-wide {
+  width: 100%;
+}
+
+.site-wrapper .btn-default {
+  background: inherit;
+}
+
+.site-wrapper .btn-primary {
+  background: #0065b3;
+  border: 1px solid #0065b3;
+}
+
+.site-wrapper .btn-success {
+  background: inherit;
+}
+
+.site-wrapper .btn-info {
+  background: #79838c;
+  border: 1px solid #79838c;
+}
+
+.site-wrapper .btn-warning {
+  background: inherit;
+}
+
+.site-wrapper .btn-danger {
+  background: inherit;
+}
+
 .a11y-hidden {
   position: absolute;
   top: auto;
@@ -46,6 +88,21 @@ body, input, textarea {
   margin: -1px;
   width: 1px;
   height: 1px;
+}
+
+/* glyphicon / deco */
+.login-box li:first-child::after {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #7b7b7b;
+}
+
+.sp-bar {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #7b7b7b;
 }
 
 /* site layout */
@@ -110,27 +167,31 @@ body, input, textarea {
   position: relative;
 }
 
-#header ul,
-#header li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .site-logo {
-  padding: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 /* 우상단 */
 .login-box {
   width: 100%;
-  background: #f7f7f7;
-  border-bottom: 1px solid #dddddd;
   text-align: right;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
 .login-box li {
   display: inline-block;
+}
+
+.login-box li:first-child::after {
+  content: '';
+  margin: 0 10px;
+}
+
+.login-box li:nth-child(2) {
+  padding-right: 10px;
 }
 
 /* 메뉴 */
@@ -168,6 +229,7 @@ body, input, textarea {
 .site-menu .menu-depth2 {
   display: none;
   position: absolute;
+  padding-top: 37px;
   width: 100%;
   background: #33a6ff;
   z-index: 1;
@@ -176,19 +238,26 @@ body, input, textarea {
 /* ---------------------------------------------------
 // header - active
 --------------------------------------------------- */
+.site-menu:hover .menu-depth2 {
+  display: block;
+}
+
 .site-menu .menu-depth1:hover > a {
   background: #33a6ff;
 }
 
 .site-menu .menu-depth1:hover > .menu-depth2 {
-  display: block;
+  background: silver;
 }
 
 #quick-menu {
-  border: 1px solid red;
   position: fixed;
   top: 270px;
   right: 0;
+}
+
+#quick-menu ul {
+  padding-left: 0;
 }
 
 #quick-menu li {
@@ -281,4 +350,12 @@ body, input, textarea {
 
 .footer-copy p {
   padding-top: 10px;
+}
+
+.box-container {
+  width: 500px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #c4c4c4;
 }

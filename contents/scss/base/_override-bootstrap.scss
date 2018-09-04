@@ -1,0 +1,42 @@
+﻿/* bootstrap override */
+ 
+//---------------------------------------------------
+// btn
+//---------------------------------------------------
+.site-wrapper{
+    .btn{
+        border-radius: 0;
+    }
+    // size
+    .btn-wide{
+        width:100%;
+    }
+    // color
+    .btn-default{
+        background:inherit;
+    }
+    .btn-primary{
+        background:#0065b3;
+        border:1px solid #0065b3;
+    }
+    .btn-success{
+        background:inherit;
+    }
+    .btn-info{
+        background:#79838c;
+        border:1px solid #79838c;
+    }
+    .btn-warning{
+        background:inherit;
+    }
+    .btn-danger{
+        background:inherit;
+    }
+
+                   
+}
+
+//---------------------------------------------------
+// 
+//---------------------------------------------------
+
