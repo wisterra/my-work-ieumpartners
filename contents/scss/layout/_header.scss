@@ -37,7 +37,7 @@
 .site-menu {
   position: relative;
   width: 100%;
-  background: #e51837;
+  background: #0065b3;
   &>div>ul {
     clear: both;
     margin: 0;
@@ -47,13 +47,14 @@
     position: relative;
     float: left;
     width: (100/6)+%;
-    line-height:45px;
+    line-height:55px;
     margin: 0;
     padding: 0;
   }
   a{
     color:#fff;
     display: block;
+    font-weight: 600;
   }
   .menu-depth1>a {
     text-align: center;
@@ -62,7 +63,7 @@
     display: none;
     position: absolute;
     width: 100%;
-    background: #ff6f00;
+    background: #33a6ff;
     z-index:1;
   }
 }
@@ -72,7 +73,7 @@
 --------------------------------------------------- */
 .site-menu {
   .menu-depth1:hover>a {
-    background: #ff6f00;
+    background: #33a6ff;
   }
   .menu-depth1:hover>.menu-depth2 {
     display: block;
