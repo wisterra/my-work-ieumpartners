@@ -137,7 +137,7 @@ body, input, textarea {
 .site-menu {
   position: relative;
   width: 100%;
-  background: #e51837;
+  background: #0065b3;
 }
 
 .site-menu > div > ul {
@@ -150,7 +150,7 @@ body, input, textarea {
   position: relative;
   float: left;
   width: 16.66667%;
-  line-height: 45px;
+  line-height: 55px;
   margin: 0;
   padding: 0;
 }
@@ -158,6 +158,7 @@ body, input, textarea {
 .site-menu a {
   color: #fff;
   display: block;
+  font-weight: 600;
 }
 
 .site-menu .menu-depth1 > a {
@@ -168,7 +169,7 @@ body, input, textarea {
   display: none;
   position: absolute;
   width: 100%;
-  background: #ff6f00;
+  background: #33a6ff;
   z-index: 1;
 }
 
@@ -176,11 +177,40 @@ body, input, textarea {
 // header - active
 --------------------------------------------------- */
 .site-menu .menu-depth1:hover > a {
-  background: #ff6f00;
+  background: #33a6ff;
 }
 
 .site-menu .menu-depth1:hover > .menu-depth2 {
   display: block;
+}
+
+#quick-menu {
+  border: 1px solid red;
+  position: fixed;
+  top: 270px;
+  right: 0;
+}
+
+#quick-menu li {
+  list-style: none;
+  display: table;
+}
+
+#quick-menu li:last-child a {
+  border: 0;
+  height: auto;
+  padding: 5px 0;
+}
+
+#quick-menu a {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  background: #b1b2b6;
+  width: 61px;
+  height: 61px;
+  border-bottom: 1px solid #d8d9db;
 }
 
 /* ---------------------------------------------------
@@ -188,7 +218,8 @@ body, input, textarea {
 --------------------------------------------------- */
 #footer {
   position: relative;
-  background: #dfdfdf;
+  background: #34353a;
+  color: #55565a;
 }
 
 #footer ul,
@@ -198,14 +229,39 @@ body, input, textarea {
   padding: 0;
 }
 
-.footer-link li {
+#footer a,
+#footer address {
+  color: #ebecee;
+}
+
+#footer button {
+  color: #ebecee;
+  background: none;
+  border: 0;
+}
+
+#footer p {
+  color: #55565a;
+}
+
+.footer-link {
+  border-bottom: 1px solid #45464a;
+}
+
+.footer-link ul {
+  padding-left: 100px;
+}
+
+.footer-link ul li {
   display: inline-block;
+  line-height: 56px;
+  padding: 0 20px !important;
 }
 
 .footer-logo {
   position: absolute;
-  top: 30px;
-  left: 10px;
+  top: 101px;
+  left: 80px;
 }
 
 .footer-logo img {
@@ -213,5 +269,16 @@ body, input, textarea {
 }
 
 .footer-copy {
+  padding-top: 45px;
   padding-left: 200px;
+  padding-bottom: 45px;
+}
+
+.footer-copy span,
+.footer-copy p {
+  line-height: 1.8;
+}
+
+.footer-copy p {
+  padding-top: 10px;
 }

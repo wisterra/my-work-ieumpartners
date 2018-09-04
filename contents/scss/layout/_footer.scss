@@ -1,31 +1,69 @@
 ﻿/* ---------------------------------------------------
 // footer
 --------------------------------------------------- */
-
 #footer {
   position: relative;
-  background: #dfdfdf;
+  background: #34353a;
+  color: #55565a;
+
   ul,
   li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
+  a,
+  address {
+    color: #ebecee;
+  }
+
+  button {
+    color: #ebecee;
+    background: none;
+    border: 0;
+  }
+
+  p {
+    color: #55565a;
+  }
 }
 
 .footer-link {
-  li {
-    display: inline-block;
+  border-bottom: 1px solid #45464a;
+
+  ul {
+    padding-left: 100px;
+
+    li {
+      display: inline-block;
+      line-height: 56px;
+      padding: 0 20px !important;
+    }
   }
 }
 
 .footer-logo {
-   position:absolute;
-   top:30px;
-   left:10px;
-   img {width:50%;}
+  position: absolute;
+  top: 101px;
+  left: 80px;
+
+  img {
+    width: 50%;
+  }
 }
 
 .footer-copy {
+  padding-top: 45px;
   padding-left: 200px;
+  padding-bottom: 45px;
+
+  span,
+  p {
+    line-height: 1.8;
+  }
+
+  p {
+    padding-top: 10px;
+  }
 }

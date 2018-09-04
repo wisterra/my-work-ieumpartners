@@ -19,7 +19,7 @@
 
 <body>
     <div id="skip">
-        <a href="#container">본문바로가기</a>
+        <a href="#PageContent">본문바로가기</a>
     </div>
     <!-- Page Start -->
     <div class="site-wrapper">
@@ -32,6 +32,9 @@
         <!-- Footer -->
         <div id="includeFooter"></div>
         <!-- // Footer -->
+        <!-- Quick Menu -->
+        <div id="quickMenu"></div>
+        <!-- // Quick Menu -->        
         <!-- Popup -->
         <div id="includePopup"></div>
         <!-- // Popup -->
@@ -49,17 +52,17 @@
     <!-- script -->
     <script type="text/javascript">
         $(document).ready(function () {
-
-            // [임시] 개발들어가기전 html파일 include 처리를 위해 작성
+            //----------------------------------------------------------------
+            // html파일이라 인클루드를 jquery load로 처리했습니다. 개발환경에 맞는 include 방식으로 변경하시면 됩니다.
             $('#includeHeader').load('../include/header.html');
             $('#includeFooter').load('../include/footer.html');
+            $('#quickMenu').load('../include/quickmenu.html');        
             $('#includePopup').load('../include/popup.html');
 
-            // [임시] 페이지 이동(index를 공통레이아웃으로 쓰고 hash로 페이지 내용 가져오기)
+             //이 부분은 임시 링크 세팅입니다. (index를 공통레이아웃으로 쓰고 hash로 페이지 내용 가져오기) 변경해서 사용해주시면 됩니다. 
             var hashName = location.hash;
             targetPageName = hashName.split('#')[1];
-
-            $('body').addClass(targetPageName); // ***** body에 class 달아주기(개발 들어갈때 적용해주실 부분)
+            $('body').addClass(targetPageName); // ***** body에 페이지명을 class 달아주기
 
             // [임시] a태그 클릭시 페이지 변경
             $('#PageContent').load(targetPageName + '.html', function () {
@@ -69,8 +72,8 @@
                     location.reload();
                 });
             });
-
         });
+        //----------------------------------------------------------------     
         // for include END
     </script>
     <!-- // script -->

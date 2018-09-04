@@ -1,0 +1,26 @@
+#quick-menu{
+    border:1px solid red;
+    position:fixed;
+    top:270px;
+    right:0;
+    li{
+        list-style:none;
+        display: table;
+        &:last-child a{
+            border:0;
+            height:auto;
+            padding:5px 0;
+            }        
+    }
+    a{
+        display: table-cell;
+        vertical-align: middle;
+        color:#fff;
+        text-align:center;
+        background:#b1b2b6;
+        width:61px;
+        height:61px;
+        border-bottom:1px solid #d8d9db;
+
+    }
+}
