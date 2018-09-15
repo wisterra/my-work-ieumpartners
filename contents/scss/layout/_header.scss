@@ -44,14 +44,19 @@
   width: 100%;
   background: #fff;
   border-top:1px solid #d7d7d7;
-  //border-bottom:1px solid #d7d7d7;
+  border-bottom:1px solid #eee;
   &>div>ul {
     clear: both;
     margin: 0;
     padding: 0;
     border-left:1px solid #d7d7d7;
   }
-  &>div>ul>li {
+  a{
+    color:#000;
+    display: block;
+    font-weight: 600;
+  }  
+  .menu-depth1 { // .site-menu>div>ul>li
     position: relative;
     float: left;
     width: (100/6)+%;
@@ -62,28 +67,26 @@
     &:first-child{
       border-left:1px solid #d7d7d7;
     }
+    a{
+      text-align: center;  
+    }
   }
-  a{
-    color:#000;
-    display: block;
-    font-weight: 600;
-  }
-  .menu-depth1>a {
-    text-align: center;
-  }
-  .menu-depth2 {
-    //display: none;
+  .menu-depth2 { // .site-menu>div>ul>li>ul
+    display: none;
     position: absolute;
     top:55px;
     left:0;
     //padding-top:55px;
     width:100%;
-    background: #33a6ff;
+    background: #eee;
     height:0;
-    @include prefix(transform, scaleY(0));
-    z-index:1;
+    overflow:hidden;    
+     z-index:1;
     a{
       color:#000;
+    }
+    li{
+      line-height:2.4;
     }
   }
 }
@@ -92,6 +95,15 @@
 // header - active
 --------------------------------------------------- */
 .site-menu {
+
+  .menu-depth1:hover>a {
+    background: #33a6ff;
+  }
+  .menu-depth1:hover>.menu-depth2 {
+    background:yellow;
+  }  
+ 
+
   // 한단씩 펼처질때
   // .menu-depth1:hover>a {
   //   background: #33a6ff;
@@ -102,15 +114,16 @@
   // 여러단 펼처질때
   &:hover .menu-depth2 {
     display: block;
-    height:auto;
-    @include prefix(transform, scaleY(1));
-    transition: all 300ms ease;
+    height:200px;
+    animation-name: menuDepth2;
+    animation-duration: .5s;
   }   
-  .menu-depth1:hover>a {
-    background: #33a6ff;
-  }
-  .menu-depth1:hover>.menu-depth2 {
-    background:silver;
-  }  
- 
+
+}
+/* ---------------------------------------------------
+// menu animate
+--------------------------------------------------- */
+@keyframes menuDepth2 {
+  from {height:0;}
+  to {height:200px;}
 }
