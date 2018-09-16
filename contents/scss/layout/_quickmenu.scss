@@ -1,8 +1,12 @@
 #quick-menu{
-    border:1px solid red;
     position:fixed;
     top:270px;
     right:0;
+
+    ul
+    {
+        padding-left:0;
+    }
     li{
         list-style:none;
         display: table;

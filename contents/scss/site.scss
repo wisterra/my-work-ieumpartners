@@ -7,7 +7,7 @@ $device: 'web';
 //---------------------------------------------------
 @import "base/base";
 @import "base/font";
-//@import "_override.bootstrap";
+@import "base/override-bootstrap";
 
 //---------------------------------------------------
 // utils
@@ -26,9 +26,9 @@ $device: 'web';
 //@import "effect/effect";
 
 //---------------------------------------------------
-// components style
+// component style
 //---------------------------------------------------
-//@import "layout/form-group";
+@import "component/glyphicon";
 
 
 //---------------------------------------------------
@@ -42,7 +42,8 @@ $device: 'web';
 //---------------------------------------------------
 // pages
 //---------------------------------------------------
-//@import "pages/page-common";
+@import "pages/main";
+@import "pages/member";
 //@import "pages/page";
 //@import "pages/popup";
 

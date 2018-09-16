@@ -23,18 +23,17 @@ $viewportSize: 1200px;
 /* container 공통 */
 #container{
   position:relative;
-  width:$viewportSize;
+  //width:$viewportSize;
   min-height:100%;
   margin: 0 auto;
-  border:1px dotted silver;
+  //border:1px dotted silver;
 }
 
 /* container - main */
 .container-main{
-  width:$viewportSize;
-  height:600px;
+  //width:$viewportSize;
   margin: 0 auto;
-  border:1px dotted silver;
+  //border:1px dotted silver;
 }
 
 /* container - wide */
@@ -42,7 +41,7 @@ $viewportSize: 1200px;
   width:$viewportSize;
   height:600px;
   margin: 0 auto;
-  border:1px dotted silver;
+  //border:1px dotted silver;
 }
 
 
