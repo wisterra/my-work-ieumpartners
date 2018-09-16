@@ -89,6 +89,18 @@
       line-height:2.4;
     }
   }
+  .menu-depth3 { // .site-menu>div>ul>li>ul
+
+    a{
+      color:#777;
+      font-size:90%;
+      text-indent: 10px;
+      text-align:left;
+    }
+    li{
+      line-height:2;
+    }
+  }  
 }
 
 /* ---------------------------------------------------

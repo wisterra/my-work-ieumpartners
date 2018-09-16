@@ -4,7 +4,22 @@
 // import
 //---------------------------------------------------
 // 'Noto Sans KR'
-//@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+//---------------------------------------------------
+// @font-face
+//---------------------------------------------------
+// Nanum Barun Gothic
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url('../../fonts/NanumBarunGothic.eot');
+    src: url('../../fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/NanumBarunGothic.woff') format('woff'),
+         url('../../fonts/NanumBarunGothic.ttf') format('truetype'),
+         url('../../fonts/NanumBarunGothic.svg#NanumBarunGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 //---------------------------------------------------
 // setting
