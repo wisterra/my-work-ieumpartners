@@ -7,20 +7,34 @@ $(function () {
     sliderActon();
 });
 
+
 function sliderActon() {
-    var $slider = $('.visual-con');
+    var $sliderMain = $('.visual-con');
     var $sliderBanner = $('.banner-con');
+    var $sliderNotice = $('#sliderNotice');
 
     // slider option
-    var slickOptions = {
+    var slickMainOptions = {
         //lazyLoad: 'ondemand',
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: $('.slider-prev'),
         nextArrow: $('.slider-next')
     }
-    $slider.slick(slickOptions);
+    $sliderMain.slick(slickMainOptions);
     $sliderBanner.slick({
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
+    $sliderNotice.slick({
+        vertical:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.notice-prev'),
+        nextArrow: $('.notice-next'),
+        swipe:false
+    });    
 }
 
