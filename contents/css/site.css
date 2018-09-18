@@ -124,7 +124,7 @@ body {
 }
 
 /* glyphicon / deco */
-.login-box li:first-child::after, .footer-link ul li::after, .container-main .main-container .notice strong:after {
+.login-box li:first-child::after, .footer-link ul li::after, .container-main .main-content .notice strong:after {
   display: inline-block;
   width: 1px;
   height: 10px;
@@ -147,7 +147,45 @@ body {
   font-weight: bold;
 }
 
-/* site layout */
+/* form */
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+  border: 1px solid #dcdcdc !important;
+  font-size: 16px !important;
+  height: 38px !important;
+  line-height: 32px !important;
+  padding: 3px 12px;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+}
+
+select {
+  border: 1px solid #dcdcdc !important;
+  font-size: 16px !important;
+  height: 38px !important;
+  line-height: 32px !important;
+  padding: 3px 12px;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+}
+
+textarea {
+  width: 100% !important;
+  border: 1px solid #dcdcdc !important;
+  font-size: 16px !important;
+  padding: 3px 12px;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 0 0 !important;
+          box-shadow: 0 0 0 !important;
+}
+
+/*---------------------------------------------------
+// layout
+--------------------------------------------------- */
 #skip {
   display: none;
 }
@@ -180,20 +218,65 @@ body {
 
 /* sub LNB */
 #lnb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 200px;
-  height: 100%;
-  border: 1px dotted gray;
+  width: 100%;
+  height: 55px;
+  background: darkblue;
 }
 
-/* LNB 우측 내용부 */
-.content {
-  display: block;
-  margin-left: 200px;
-  padding: 30px 30px;
+#lnb li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#lnb a {
+  color: #fff;
+}
+
+.sub-content .content-zone {
+  width: 1000px;
+}
+
+.sub-content .ctg-header h1 {
+  text-align: center;
+  font-family: 'bold';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.5;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.sub-content .page-header {
+  text-align: left;
+  border-bottom: 2px solid #0066b4;
+}
+
+.sub-content .page-header h1 {
+  display: inline-block;
+  font-family: 'bold';
+  font-weight: 600;
+  font-size: 36px;
+  vertical-align: bottom;
+}
+
+.sub-content .page-header p {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 15px;
+  color: #999999;
+  margin-left: 10px;
+}
+
+.box-container {
+  width: 500px;
+  padding: 40px 40px;
+  margin: 0 auto;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+.box-container p {
+  color: #626262;
 }
 
 /* ---------------------------------------------------
@@ -252,6 +335,7 @@ body {
   min-width: 1000px;
   background: #fff;
   border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   z-index: 100;
 }
 
@@ -556,14 +640,14 @@ body {
 // main
 --------------------------------------------------- */
 .container-main .main-visual {
-  height: 465px;
+  height: 472px;
   min-width: 1200px;
 }
 
 .container-main .main-visual .visual-item a {
   width: 100%;
   min-width: 1000px;
-  height: 465px;
+  height: 472px;
   background-position: center;
   background-size: cover;
   display: inline-block;
@@ -614,7 +698,7 @@ body {
   left: 90%;
 }
 
-.container-main .main-container {
+.container-main .main-content {
   position: relative;
   top: -84px;
   width: 1180px;
@@ -622,11 +706,11 @@ body {
   margin: 0 auto;
 }
 
-.container-main .main-container > div {
+.container-main .main-content > div {
   float: left;
 }
 
-.container-main .main-container .notice {
+.container-main .main-content .notice {
   position: relative;
   width: 786.66667px;
   padding-left: 34px;
@@ -636,7 +720,7 @@ body {
   background: #fff;
 }
 
-.container-main .main-container .notice strong {
+.container-main .main-content .notice strong {
   display: inline-block;
   vertical-align: top;
   line-height: 55px;
@@ -645,57 +729,57 @@ body {
   font-weight: bold;
 }
 
-.container-main .main-container .notice strong:after {
+.container-main .main-content .notice strong:after {
   content: '';
   margin-left: 15px;
   margin-right: 10px;
 }
 
-.container-main .main-container .notice ul {
+.container-main .main-content .notice ul {
   display: inline-block;
   width: 630px;
   z-index: 2;
 }
 
-.container-main .main-container .notice li {
+.container-main .main-content .notice li {
   width: 100%;
   position: relative;
 }
 
-.container-main .main-container .notice a {
+.container-main .main-content .notice a {
   color: #1a1a1a;
 }
 
-.container-main .main-container .notice i {
+.container-main .main-content .notice i {
   margin-left: 6px;
 }
 
-.container-main .main-container .notice span {
+.container-main .main-content .notice span {
   position: absolute;
   top: 0px;
   right: 13px;
 }
 
-.container-main .main-container .notice .notice-paging {
+.container-main .main-content .notice .notice-paging {
   position: absolute;
   top: 0;
   right: 0;
   height: 55px;
 }
 
-.container-main .main-container .notice .notice-paging .notice-prev {
+.container-main .main-content .notice .notice-paging .notice-prev {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.container-main .main-container .notice .notice-paging .notice-next {
+.container-main .main-content .notice .notice-paging .notice-next {
   position: absolute;
   top: 27px;
   right: 0;
 }
 
-.container-main .main-container .notice button {
+.container-main .main-content .notice button {
   background: none;
   border: 0;
   padding: 0;
@@ -704,11 +788,11 @@ body {
   overflow: hidden;
 }
 
-.container-main .main-container .notice button img {
+.container-main .main-content .notice button img {
   background: gray;
 }
 
-.container-main .main-container .service {
+.container-main .main-content .service {
   width: 393.33333px;
   padding-top: 4px;
   padding-left: 42px;
@@ -717,7 +801,7 @@ body {
   color: #fff;
 }
 
-.container-main .main-container .service strong {
+.container-main .main-content .service strong {
   padding-top: 4px;
   padding-right: 16px;
   float: left;
@@ -726,20 +810,20 @@ body {
   font-weight: bold;
 }
 
-.container-main .main-container .service p {
+.container-main .main-content .service p {
   float: left;
   letter-spacing: -1px;
   line-height: 1.2;
 }
 
-.container-main .main-container .service em {
+.container-main .main-content .service em {
   font-size: 22px;
   font-style: normal;
   letter-spacing: 0;
   font-family: 'bold';
 }
 
-.container-main .main-container .service span {
+.container-main .main-content .service span {
   font-size: 14px;
   letter-spacing: 0;
   padding-left: 2px;
@@ -747,29 +831,29 @@ body {
   font-family: 'bold';
 }
 
-.container-main .main-container .ctg {
+.container-main .main-content .ctg {
   padding-top: 24px;
   text-align: center;
 }
 
-.container-main .main-container .ctg strong {
+.container-main .main-content .ctg strong {
   font-size: 23px;
   line-height: 1.8;
   font-family: 'NanumGothicBold';
 }
 
-.container-main .main-container .ctg-mtn {
+.container-main .main-content .ctg-mtn {
   position: relative;
   width: 393.33333px;
   height: 254px;
   background: #0065b3 url("../images/main/ctg-maintenance-bg.png") center 80px no-repeat;
 }
 
-.container-main .main-container .ctg-mtn a {
+.container-main .main-content .ctg-mtn a {
   color: #fff;
 }
 
-.container-main .main-container .ctg-event {
+.container-main .main-content .ctg-event {
   position: relative;
   border-top: 1px solid #e2e2e2;
   width: 393.33333px;
@@ -777,51 +861,87 @@ body {
   background: #fff;
 }
 
-.container-main .main-container .ctg-event .event-banner {
+.container-main .main-content .ctg-event .event-banner {
   padding-top: 24px;
   margin-left: 15px;
   width: 364px;
   overflow: hidden;
 }
 
-.container-main .main-container .ctg-event .event-banner .slick-dots {
+.container-main .main-content .ctg-event .event-banner .slick-dots {
   position: relative;
   top: -168px;
   text-align: right;
 }
 
-.container-main .main-container .ctg-event .event-banner .slick-dots li {
+.container-main .main-content .ctg-event .event-banner .slick-dots li {
   padding: 0;
   margin: 0;
 }
 
-.container-main .main-container .ctg-event .event-banner .slick-dots li button:before {
+.container-main .main-content .ctg-event .event-banner .slick-dots li button:before {
   font-size: 40px;
 }
 
-.container-main .main-container .ctg-event .event-banner .slick-dots li.slick-active button:before {
+.container-main .main-content .ctg-event .event-banner .slick-dots li.slick-active button:before {
   color: #0066b4;
   opacity: 1;
 }
 
-.container-main .main-container .ctg-event .event-banner img {
+.container-main .main-content .ctg-event .event-banner img {
   width: 100%;
 }
 
-.container-main .main-container .ctg-shop {
+.container-main .main-content .ctg-shop {
   width: 393.33333px;
   height: 254px;
   background: #e5e8ef url("../images/main/ctg-shop-bg.png") center bottom no-repeat;
 }
 
-.container-main .main-container .ctg-shop a {
+.container-main .main-content .ctg-shop a {
   color: #1a1a1a;
 }
 
-.box-container {
-  width: 500px;
-  padding: 60px 40px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #c4c4c4;
+.box-container.login h2 {
+  font-family: 'lite';
+  font-weight: bold;
+}
+
+.join-container table {
+  border-bottom: 1px solid #ddd;
+}
+
+.join-container table th {
+  width: 168px;
+  background: #f3f3f3;
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.join-container table th label {
+  font-weight: normal;
+  vertical-align: middle;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.join-container table td {
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.join-container strong {
+  display: block;
+}
+
+.join-container strong span {
+  color: blue;
+}
+
+.join-container em {
+  font-style: normal;
 }

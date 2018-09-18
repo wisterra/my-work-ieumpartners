@@ -1,17 +1,11 @@
-﻿/* site layout */
- 
-//---------------------------------------------------
+﻿/*---------------------------------------------------
 // layout
-//---------------------------------------------------
+--------------------------------------------------- */
+$viewportSize: 1200px;
+
 #skip{
   display:none;
 }
-// .site-wrapper {
-//   width: 1200px;
-//   margin: 0 auto;
-//   border:1px solid #000;
-// }
-$viewportSize: 1200px;
 
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone{
@@ -23,17 +17,13 @@ $viewportSize: 1200px;
 /* container 공통 */
 #container{
   position:relative;
-  //width:$viewportSize;
   min-height:100%;
   margin: 0 auto;
-  //border:1px dotted silver;
 }
 
 /* container - main */
 .container-main{
-  //width:$viewportSize;
   margin: 0 auto;
-  //border:1px dotted silver;
 }
 
 /* container - wide */
@@ -41,26 +31,74 @@ $viewportSize: 1200px;
   width:$viewportSize;
   height:600px;
   margin: 0 auto;
-  //border:1px dotted silver;
 }
 
 
 /* sub LNB */
 #lnb{
-  position:absolute;
-  top:0;
-  left:0;
-  display:inline-block;
-  width:200px;
-  height:100%;
-  border:1px dotted gray;
+  width:100%;
+  height:55px;
+  background:darkblue;
+
+  li{
+    display:inline-block;
+    margin:0 20px;
+  }
+  a{
+    color:#fff;
+  }
+  
+}
+.sub-content{
+  .content-zone{
+    width:1000px;
+  }
+  // category header(위치 미분류)
+  .ctg-header{
+    h1{
+      text-align:center;
+      font-family: 'bold';
+      font-weight: 600;
+      font-size:36px;
+      line-height:1.5;
+      padding-top:60px;
+      padding-bottom:20px;
+    }
+  }
+  
+  // page in category header
+  .page-header{
+    text-align:left;
+    border-bottom:2px solid #0066b4;
+    h1{
+      display:inline-block;
+      font-family: 'bold';
+      font-weight: 600;
+      font-size:36px;
+      vertical-align: bottom;
+    }
+    p{
+      display:inline-block;
+      vertical-align: bottom;
+      font-size:15px;
+      color:#999999;
+      margin-left:10px;
+    }
+  }
+
+
 }
 
-/* LNB 우측 내용부 */
-.content{
-  display:block;
-  margin-left:200px;
-  //width: 100%;
-  padding:30px 30px;
-}
 
+
+.box-container{
+  width:500px;
+  padding:40px 40px;
+  margin:0 auto;
+  text-align:center;
+  background:#f3f3f3;
+  p{
+    color: #626262;
+  }
+  
+}
