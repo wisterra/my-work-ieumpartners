@@ -54,7 +54,7 @@ a:link, a:visited {
   font-family: 'bold';
   src: url("../../font/NanumGothicBold.eot");
   src: url("../../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicBold.woff") format("woff"), url("../../font/NanumGothicBold.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -62,7 +62,7 @@ a:link, a:visited {
   font-family: 'ebold';
   src: url("../../font/NanumGothicExtraBold.eot");
   src: url("../../font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicExtraBold.woff") format("woff"), url("../../font/NanumGothicExtraBold.ttf") format("truetype");
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -438,28 +438,33 @@ body {
   background: #b1b2b6;
   width: 61px;
   height: 61px;
+  font-size: 13px;
   border-bottom: 1px solid #d8d9db;
 }
 
 #quick-menu .svc-tel {
-  font-weight: bold;
-  font-size: 110%;
+  font-size: 16px;
+  font-family: 'ebold';
 }
 
 #quick-menu .svc-reg {
   color: #696969;
-  background: #fff url("../images/icon-car.png") center 10px no-repeat;
-  padding-top: 34px;
+  background: #fff url("../images/icon-car.png") center 16px no-repeat;
+  padding-top: 40px;
   border-bottom: 1px solid #fff;
-  font-size: 90%;
+  font-size: 12px;
+  font-family: 'ebold';
+  font-weight: bold;
 }
 
 #quick-menu .svc-list {
   height: 80px;
   color: #696969;
-  background: #fff url("../images/icon-paper.png") center 10px no-repeat;
-  padding-top: 34px;
-  font-size: 90%;
+  background: #fff url("../images/icon-paper.png") center 16px no-repeat;
+  padding-top: 40px;
+  font-size: 12px;
+  font-family: 'ebold';
+  font-weight: bold;
 }
 
 /* ---------------------------------------------------
