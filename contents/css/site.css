@@ -43,15 +43,39 @@ a:link, a:visited {
 
 /* font setting */
 @font-face {
-  font-family: 'NanumBarunGothic';
-  src: url("../../fonts/NanumBarunGothic.eot");
-  src: url("../../fonts/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("../../fonts/NanumBarunGothic.woff") format("woff"), url("../../fonts/NanumBarunGothic.ttf") format("truetype"), url("../../fonts/NanumBarunGothic.svg#NanumBarunGothic") format("svg");
+  font-family: 'ng';
+  src: url("../../font/NanumGothic.eot");
+  src: url("../../font/NanumGothic.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothic.woff") format("woff"), url("../../font/NanumGothic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-body, input, textarea {
-  font-family: 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif;
+@font-face {
+  font-family: 'bold';
+  src: url("../../font/NanumGothicBold.eot");
+  src: url("../../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicBold.woff") format("woff"), url("../../font/NanumGothicBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ebold';
+  src: url("../../font/NanumGothicExtraBold.eot");
+  src: url("../../font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicExtraBold.woff") format("woff"), url("../../font/NanumGothicExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'light';
+  src: url("../../font/NanumGothicLight.eot");
+  src: url("../../font/NanumGothicLight.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicLight.woff") format("woff"), url("../../font/NanumGothicLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ng', 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif !important;
 }
 
 /* bootstrap override */
@@ -100,7 +124,7 @@ body, input, textarea {
 }
 
 /* glyphicon / deco */
-.login-box li:first-child::after, .container-main .main-container .notice strong:after {
+.login-box li:first-child::after, .footer-link ul li::after, .container-main .main-container .notice strong:after {
   display: inline-block;
   width: 1px;
   height: 10px;
@@ -181,8 +205,8 @@ body, input, textarea {
 
 .site-logo {
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   z-index: 1;
 }
 
@@ -190,7 +214,7 @@ body, input, textarea {
 .login-box {
   width: 100%;
   text-align: right;
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 25px;
 }
 
@@ -204,11 +228,17 @@ body, input, textarea {
 }
 
 .login-box li:nth-child(2) {
-  padding-right: 20px;
+  padding-right: 22px;
 }
 
 .login-box li a {
   color: #000;
+  font-size: 13px;
+}
+
+.login-box li .btn {
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .login-box li .btn-primary {
@@ -219,10 +249,9 @@ body, input, textarea {
 .site-menu {
   position: relative;
   width: 100%;
-  min-width: 1200px;
+  min-width: 1000px;
   background: #fff;
   border-top: 1px solid #d7d7d7;
-  border-bottom: 1px solid #eee;
   z-index: 100;
 }
 
@@ -230,27 +259,23 @@ body, input, textarea {
   clear: both;
   margin: 0;
   padding: 0;
-  border-left: 1px solid #d7d7d7;
 }
 
 .site-menu a {
   color: #000;
   display: block;
-  font-weight: 600;
+  font-size: 16px;
+  font-family: 'bold';
+  font-weight: bold;
 }
 
 .site-menu .menu-depth1 {
   position: relative;
   float: left;
   width: 16.66667%;
-  line-height: 55px;
-  border-right: 1px solid #d7d7d7;
+  line-height: 52px;
   margin: 0;
   padding: 0;
-}
-
-.site-menu .menu-depth1:first-child {
-  border-left: 1px solid #d7d7d7;
 }
 
 .site-menu .menu-depth1 a {
@@ -259,26 +284,26 @@ body, input, textarea {
 
 .site-menu .menu-depth2 {
   position: absolute;
-  top: 55px;
+  top: 52px;
   left: 0;
-  border-top: 1px solid #eee;
-  width: 100.5%;
-  background: #fff;
+  width: 100%;
+  background: #0265b6;
   height: 0;
   overflow: hidden;
   z-index: 1;
 }
 
 .site-menu .menu-depth2 a {
-  color: #000;
+  color: #fff;
 }
 
 .site-menu .menu-depth2 li {
-  line-height: 2.4;
+  line-height: 50px;
+  border-top: 1px solid #3385c3;
 }
 
-.site-menu .menu-depth2.active {
-  display: block;
+.site-menu .menu-depth3 {
+  display: none;
 }
 
 .site-menu .menu-depth3 a {
@@ -295,21 +320,22 @@ body, input, textarea {
 /* ---------------------------------------------------
 // header - active
 --------------------------------------------------- */
+.site-menu .menu-depth1.active > a {
+  color: #0265b6;
+}
+
 .site-menu .menu-depth1:hover > a {
-  background: #33a6ff;
+  background: #0066b4;
+  color: #fff;
 }
 
 .site-menu .menu-depth1:hover > .menu-depth2 {
-  background: yellow;
+  display: block;
+  height: auto;
 }
 
-.site-menu:hover .menu-depth2 {
-  display: block;
-  height: 200px;
-  -webkit-animation-name: menuDepth2-on;
-          animation-name: menuDepth2-on;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
+.site-menu .menu-depth1:hover > .menu-depth2 a:hover {
+  color: #fff;
 }
 
 /* ---------------------------------------------------
@@ -466,7 +492,7 @@ body, input, textarea {
 }
 
 #footer p {
-  color: #55565a;
+  color: #636367;
 }
 
 .footer-link {
@@ -481,12 +507,27 @@ body, input, textarea {
 .footer-link ul li {
   display: inline-block;
   line-height: 56px;
-  padding: 0 20px !important;
+  padding: 0 10px !important;
+}
+
+.footer-link ul li a, .footer-link ul li button {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link ul li::after {
+  content: '';
+  margin-left: 20px;
+}
+
+.footer-link ul li:last-child::after {
+  content: '';
+  width: 0;
 }
 
 .footer-logo {
   position: absolute;
-  top: 101px;
+  top: 40px;
   left: 180px;
 }
 
@@ -498,11 +539,12 @@ body, input, textarea {
 
 .footer-copy span,
 .footer-copy p {
-  line-height: 1.8;
+  line-height: 1.5;
+  font-family: 'light';
 }
 
 .footer-copy p {
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 /* ---------------------------------------------------
@@ -654,7 +696,7 @@ body, input, textarea {
 
 .container-main .main-container .service {
   width: 393.33333px;
-  padding-top: 6px;
+  padding-top: 4px;
   padding-left: 42px;
   height: 54px;
   background: #11afde;
@@ -662,9 +704,10 @@ body, input, textarea {
 }
 
 .container-main .main-container .service strong {
-  padding-top: 2px;
+  padding-top: 4px;
   padding-right: 16px;
   float: left;
+  font-family: 'NanumGothicBold';
 }
 
 .container-main .main-container .service p {
@@ -674,33 +717,36 @@ body, input, textarea {
 }
 
 .container-main .main-container .service em {
-  font-size: 140%;
-  font-weight: bold;
+  font-size: 22px;
   font-style: normal;
   letter-spacing: 0;
+  font-family: 'NanumGothicBold';
 }
 
 .container-main .main-container .service span {
-  font-size: 110%;
-  font-weight: bold;
+  font-size: 14px;
   letter-spacing: 0;
   padding-left: 2px;
+  font-family: 'NanumGothicBold';
 }
 
 .container-main .main-container .ctg {
-  padding-top: 42px;
+  padding-top: 28px;
   text-align: center;
+  font-size: 106%;
 }
 
 .container-main .main-container .ctg strong {
-  font-size: 140%;
+  font-size: 23px;
+  line-height: 1.8;
+  font-family: 'NanumGothicBold';
 }
 
 .container-main .main-container .ctg-mtn {
   position: relative;
   width: 393.33333px;
   height: 254px;
-  background: #0065b3 url("../images/main/ctg-maintenance-bg.png") center bottom no-repeat;
+  background: #0065b3 url("../images/main/ctg-maintenance-bg.png") center 80px no-repeat;
 }
 
 .container-main .main-container .ctg-mtn a {
@@ -709,7 +755,7 @@ body, input, textarea {
 
 .container-main .main-container .ctg-event {
   position: relative;
-  border-top: 1px solid #dff0f7;
+  border-top: 1px solid #e2e2e2;
   width: 393.33333px;
   height: 254px;
   background: #fff;

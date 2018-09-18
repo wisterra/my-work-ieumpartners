@@ -6,157 +6,199 @@
 }
 
 .site-logo {
-  position:absolute;
-  top:25px;
-  left:10px;
-  z-index:1;
-  //padding:20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
 }
 
 /* 우상단 */
 .login-box {
-  width:100%;
-  text-align:right;
-  padding-top:35px;
-  padding-bottom:25px;
+  width: 100%;
+  text-align: right;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   li {
     display: inline-block;
-    &:first-child::after{
+
+    &:first-child::after {
       content: '';
       @extend %sp-bar;
-      margin:0 10px;
+      margin: 0 10px;
     }
-    &:nth-child(2){
-      padding-right:20px;
+
+    &:nth-child(2) {
+      padding-right: 22px;
     }
-    a{
-      color:#000;
+
+    a {
+      color: #000;
+      font-size: 13px;
+
     }
-    .btn-primary{
-color:#fff;
+
+    .btn {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      color: #fff;
     }
   }
-
 }
 
 /* 메뉴 */
 .site-menu {
   position: relative;
   width: 100%;
-  min-width:1200px;
+  min-width: 1000px;
   background: #fff;
-  border-top:1px solid #d7d7d7;
-  border-bottom:1px solid #eee;
-  z-index:100;
+  border-top: 1px solid #d7d7d7;
+  z-index: 100;
+
   &>div>ul {
     clear: both;
     margin: 0;
     padding: 0;
-    border-left:1px solid #d7d7d7;
   }
-  a{
-    color:#000;
+
+  a {
+    color: #000;
     display: block;
-    font-weight: 600;
-  }  
-  .menu-depth1 { // .site-menu>div>ul>li
+    font-size: 16px;
+    font-family: 'bold';
+    font-weight: bold;
+  }
+
+  .menu-depth1 {
+    // = .site-menu>div>ul>li    
     position: relative;
     float: left;
     width: (100/6)+%;
-    line-height:55px;
-    border-right:1px solid #d7d7d7;
+    line-height: 52px;
     margin: 0;
     padding: 0;
-    &:first-child{
-      border-left:1px solid #d7d7d7;
-    }
-    a{
+
+    a {
       text-align: center;
     }
   }
-  .menu-depth2 { // .site-menu>div>ul>li>ul
+
+  .menu-depth2 {
+    // = .site-menu>div>ul>li>ul
     //display: none;
     position: absolute;
-    top:55px;
-    left:0;
-    border-top:1px solid #eee;
-    //padding-top:55px;
-    width:100.5%;
-    background: #fff;
-    //border-right:1px solid #fff;
-    height:0;
-    overflow:hidden;    
-     z-index:1;
+    top: 52px;
+    left: 0;
+    //border-top: 1px solid #eee;
+    width: 100%;
+    background: #0265b6;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
     //  animation-name: menuDepth2-out;
     //  animation-duration: .5s;         
- 
 
-    a{
-      color:#000;
+    a {
+      color: #fff;
     }
-    li{
-      line-height:2.4;
-    }
-    &.active{
-      display: block;
+
+    li {
+      line-height: 50px;
+      border-top: 1px solid #3385c3;
     }
   }
-  .menu-depth3 { // .site-menu>div>ul>li>ul
 
-    a{
-      color:#777;
-      font-size:90%;
+  .menu-depth3 {
+    // = .site-menu>div>ul>li>ul
+    display: none;
+
+    a {
+      color: #777;
+      font-size: 90%;
       text-indent: 10px;
-      text-align:left;
+      text-align: left;
     }
-    li{
-      line-height:2;
+
+    li {
+      line-height: 2;
     }
-  }  
+  }
 }
 
 /* ---------------------------------------------------
 // header - active
 --------------------------------------------------- */
 .site-menu {
-
-  .menu-depth1:hover>a {
-    background: #33a6ff;
+  .menu-depth1.active>a {
+    color: #0265b6;
   }
-  .menu-depth1:hover>.menu-depth2 {
-    background:yellow;
-  }  
- 
 
   // case. 한단씩 펼처질때
-  // .menu-depth1:hover>a {
-  //   background: #33a6ff;
-  // }
-  // .menu-depth1:hover>.menu-depth2 {
-  //   display: block;
-  // }
+  .menu-depth1:hover>a {
+    background: #0066b4;
+    color: #fff;
+  }
+
+  .menu-depth1:hover>.menu-depth2 {
+    display: block;
+    height: auto;
+
+    // animation-name: menuDepth2-on;
+    // animation-duration: .5s;    
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  .menu-depth2 {
+    &.active {
+      //display: block;
+    }
+  }
 
   // case. 여러단 펼처질때
-  &:hover .menu-depth2 {
-    display: block;
-    height:200px;
-    animation-name: menuDepth2-on;
-    animation-duration: .5s;
-  }   
+  // &:hover .menu-depth2 {
+  //   display: block;
+  //   height:200px;
+  //   animation-name: menuDepth2-on;
+  //   animation-duration: .5s;
+  // }   
+  // case. 여러단 넓은판
+  //   &:hover {
+  //     position:absolute;
+  //     top:94px;
+  //     display: block;
+  //     height:240px;
+  //     animation-name: menuDepth2-wide;
+  //     animation-duration: .5s;
+  //   } 
 }
+
 /* ---------------------------------------------------
 // header animate
 --------------------------------------------------- */
 @keyframes menuDepth2-on {
-  from {height:0;}
-  to {height:200px;}
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 200px;
+  }
 }
+
 @keyframes menuDepth2-out {
-  from {height:200px;}
-  to {height:0;}
+  from {
+    height: 200px;
+  }
+
+  to {
+    height: 0;
+  }
 }
-
-
 
 /* ---------------------------------------------------
 // mobile
@@ -173,13 +215,14 @@ color:#fff;
   border: 1px solid #0065b3;
   z-index: 130;
   text-align: center;
-  padding: 0 0 0 5px; 
+  padding: 0 0 0 5px;
+
   .icon-bar {
     background-color: #fff;
     display: block;
     width: 18px;
     height: 1px;
     margin: 2.5px 0;
-    float: left; }
+    float: left;
+  }
 }
-

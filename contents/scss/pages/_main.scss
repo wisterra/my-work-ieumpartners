@@ -148,16 +148,18 @@
         .service {
             
             width: (1180/3)+px;
-            padding-top:6px;
+            padding-top:4px;
             padding-left: 42px;
             height: 54px;
             background: #11afde;
             color: #fff;
 
             strong {
-                padding-top:2px;
+                padding-top:4px;
                 padding-right: 16px;
                 float: left;
+                //font-weight: normal;
+                font-family: 'NanumGothicBold';
             }
             p {
                 float:left;
@@ -165,25 +167,30 @@
                 line-height:1.2;
             }
             em{
-                font-size: 140%;
-                font-weight: bold;
+                font-size: 22px;
+                //font-weight: bold;
                 font-style: normal;
                 letter-spacing: 0;
+                font-family: 'NanumGothicBold';
             }
             span{
-                font-size:110%;
-                font-weight: bold;
+                font-size:14px;
+                //font-weight: bold;
                 letter-spacing: 0;
                 padding-left:2px;
+                font-family: 'NanumGothicBold';
             }            
         }
 
         .ctg {
-            padding-top: 42px;
+            padding-top: 28px;
             text-align: center;
+            font-size:106%;
 
             strong {
-                font-size: 140%;
+                font-size: 23px;
+                line-height:1.8;
+                font-family: 'NanumGothicBold';
 
             }
         }
@@ -192,7 +199,7 @@
             position:relative;
             width: (1180/3)+px;
             height: 254px;
-            background: #0065b3 url('../images/main/ctg-maintenance-bg.png') center bottom no-repeat;
+            background: #0065b3 url('../images/main/ctg-maintenance-bg.png') center 80px no-repeat;
 
             a {
                 color: #fff;
@@ -201,7 +208,7 @@
 
         .ctg-event {
             position:relative;
-            border-top: 1px solid #dff0f7;
+            border-top: 1px solid #e2e2e2;
             width: (1180/3)+px;
             height: 254px;
             background: #fff;
