@@ -571,7 +571,7 @@ body {
 
 .container-main .main-visual .slick-dots {
   position: relative;
-  top: -130px;
+  top: -135px;
 }
 
 .container-main .main-visual .slick-dots li {
@@ -580,11 +580,17 @@ body {
 
 .container-main .main-visual .slick-dots li button:before {
   font-size: 40px;
+  color: #575757;
+}
+
+.container-main .main-visual .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
 }
 
 .container-main .main-visual .slider-paging {
   position: absolute;
-  top: 180px;
+  top: 140px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -634,6 +640,9 @@ body {
   display: inline-block;
   vertical-align: top;
   line-height: 55px;
+  font-size: 15px;
+  font-family: 'bold';
+  font-weight: bold;
 }
 
 .container-main .main-container .notice strong:after {
@@ -658,7 +667,7 @@ body {
 }
 
 .container-main .main-container .notice i {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .container-main .main-container .notice span {
@@ -682,7 +691,7 @@ body {
 
 .container-main .main-container .notice .notice-paging .notice-next {
   position: absolute;
-  top: 26px;
+  top: 27px;
   right: 0;
 }
 
@@ -712,7 +721,9 @@ body {
   padding-top: 4px;
   padding-right: 16px;
   float: left;
-  font-family: 'NanumGothicBold';
+  font-size: 15px;
+  font-family: 'bold';
+  font-weight: bold;
 }
 
 .container-main .main-container .service p {
@@ -725,20 +736,20 @@ body {
   font-size: 22px;
   font-style: normal;
   letter-spacing: 0;
-  font-family: 'NanumGothicBold';
+  font-family: 'bold';
 }
 
 .container-main .main-container .service span {
   font-size: 14px;
   letter-spacing: 0;
   padding-left: 2px;
-  font-family: 'NanumGothicBold';
+  font-weight: bold;
+  font-family: 'bold';
 }
 
 .container-main .main-container .ctg {
-  padding-top: 28px;
+  padding-top: 24px;
   text-align: center;
-  font-size: 106%;
 }
 
 .container-main .main-container .ctg strong {
@@ -767,15 +778,15 @@ body {
 }
 
 .container-main .main-container .ctg-event .event-banner {
-  padding-top: 35px;
-  margin-left: 14px;
+  padding-top: 24px;
+  margin-left: 15px;
   width: 364px;
   overflow: hidden;
 }
 
 .container-main .main-container .ctg-event .event-banner .slick-dots {
   position: relative;
-  top: -155px;
+  top: -168px;
   text-align: right;
 }
 
@@ -786,6 +797,11 @@ body {
 
 .container-main .main-container .ctg-event .event-banner .slick-dots li button:before {
   font-size: 40px;
+}
+
+.container-main .main-container .ctg-event .event-banner .slick-dots li.slick-active button:before {
+  color: #0066b4;
+  opacity: 1;
 }
 
 .container-main .main-container .ctg-event .event-banner img {
