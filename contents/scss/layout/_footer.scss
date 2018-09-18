@@ -5,6 +5,7 @@
   position: relative;
   background: #34353a;
   color: #55565a;
+  overflow:hidden;
 
   ul,
   li {
@@ -16,6 +17,7 @@
   a,
   address {
     color: #ebecee;
+    font-size:14px;
   }
 
   button {
@@ -25,7 +27,7 @@
   }
 
   p {
-    color: #55565a;
+    color: #636367;
   }
 }
 
@@ -39,32 +41,42 @@
     li {
       display: inline-block;
       line-height: 56px;
-      padding: 0 20px !important;
+      padding: 0 10px !important;
+      a, button{
+        margin:0;
+        padding:0;
+      }
+      &::after{
+        content: '';
+        @extend %sp-bar;
+        margin-left:20px;
+      }      
+      &:last-child::after{
+        content: '';
+        width:0;
+      }        
     }
   }
 }
 
 .footer-logo {
   position: absolute;
-  top: 101px;
-  left: 80px;
-
-  img {
-    width: 50%;
-  }
+  top: 40px;
+  left: 180px;
 }
 
 .footer-copy {
   padding-top: 45px;
-  padding-left: 200px;
-  padding-bottom: 45px;
+  padding-left: 400px;
+  padding-bottom: 25px;
 
   span,
   p {
-    line-height: 1.8;
+    line-height: 1.5;
+    font-family: 'light';
   }
 
   p {
-    padding-top: 10px;
+    padding-top: 8px;
   }
 }

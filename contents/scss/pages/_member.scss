@@ -1,7 +1,46 @@
-.box-container{
-    width:500px;
-    padding:60px 40px;
-    margin:0 auto;
-    text-align:center;
-    border:1px solid #c4c4c4;
+.box-container.login {
+    h2 {
+        font-family: 'lite';
+        font-weight: bold;
+    }
+
+    label {
+        //display:none;
+    }
+}
+
+.join-container {
+    table{
+        border-bottom:1px solid #ddd;
+        th{
+            width:168px;
+            background:#f3f3f3;
+            font-size:16px;
+            height:60px;
+            line-height:60px;
+            
+            label{
+                font-weight: normal;
+                vertical-align: middle;
+                margin:0;
+                margin-top:10px;
+                margin-left:20px;
+            }
+        }
+        td{
+            font-size:16px;
+            height:60px;
+            line-height:60px;
+            vertical-align: middle;
+        }
+    }
+    strong{
+        display:block;
+        span{
+            color:blue;
+        }
+    }
+    em{
+        font-style: normal;
+    }
 }

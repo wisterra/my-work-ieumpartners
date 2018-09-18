@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>ONETOP KOREA :: MAIN</title>
     <!-- Required meta tags -->
@@ -49,7 +48,6 @@
     <script src="../vendor/js/modernizr-2.8.3.js"></script>
     <script src="../vendor/js/bootstrap.min.js"></script>
     <script src="../vendor/js/slick.min.js"></script>
-
     <!-- script -->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -67,16 +65,18 @@
 
             // [임시] a태그 클릭시 페이지 변경
             $('#PageContent').load(targetPageName + '.html', function () {
-                $('a.alink').click(function () {
+                $('a.fakelink').click(function () {
                     var src = String(this).split('#')[1];
                     location.href = 'index.html#' + src;
                     location.reload();
                 });
             });
         });
-        //----------------------------------------------------------------     
+       //----------------------------------------------------------------     
         // for include END
     </script>
+    <script src="../contents/js/pub-deviceCheck.js"></script>
+    <script src="../contents/js/pub-common.js"></script>    
     <!-- // script -->
 </body>
 
