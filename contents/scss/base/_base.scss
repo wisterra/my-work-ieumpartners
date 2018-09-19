@@ -46,3 +46,28 @@ a:hover, a:active {
 a:link, a:visited {
 	text-decoration: none;
 }
+
+
+/* ie 용 스크롤 바 *********************************************/
+// html { scrollbar-arrow-color: #efefef;
+
+//   scrollbar-Track-Color: #efefef; 
+//   scrollbar-base-color: #dfdfdf;
+
+//   scrollbar-Face-Color: #dfdfdf;
+
+//   scrollbar-3dLight-Color: #dfdfdf;         
+//   scrollbar-DarkShadow-Color: #dfdfdf;
+
+//   scrollbar-Highlight-Color: #dfdfdf;
+
+//   scrollbar-Shadow-Color: #dfdfdf}
+// /* Chrome, Safari용 스크롤 바 */
+// ::-webkit-scrollbar {width: 12px; height: 12px;  }
+// ::-webkit-scrollbar-button:start:decrement, 
+// ::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px; background: url() rgba(0,0,0,.05);}
+// ::-webkit-scrollbar-track {     background: rgba(0,0,0,.05); }
+// ::-webkit-scrollbar-thumb {  background: rgba(0,0,0,.1);  }
+/* ------------------------------------------------------------ */
+
+

@@ -17,8 +17,10 @@ $viewportSize: 1200px;
 /* container 공통 */
 #container{
   position:relative;
+  min-width:1200px;
   min-height:100%;
   margin: 0 auto;
+  overflow:hidden;
 }
 
 /* container - main */

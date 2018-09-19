@@ -3,6 +3,7 @@
 --------------------------------------------------- */
 #header {
   position: relative;
+  min-width:1200px;
 }
 
 .site-logo {
@@ -70,7 +71,6 @@
     display: block;
     font-size: 16px;
     font-family: 'bold';
-    font-weight: bold;
   }
 
   .menu-depth1 {
