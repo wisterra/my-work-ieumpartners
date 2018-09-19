@@ -41,35 +41,37 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+/* ie 용 스크롤 바 *********************************************/
+/* ------------------------------------------------------------ */
 /* font setting */
 @font-face {
   font-family: 'ng';
-  src: url("../../font/NanumGothic.eot");
-  src: url("../../font/NanumGothic.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothic.woff") format("woff"), url("../../font/NanumGothic.ttf") format("truetype");
+  src: url("../font/NanumGothic.eot");
+  src: url("../font/NanumGothic.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothic.woff") format("woff"), url("../font/NanumGothic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bold';
-  src: url("../../font/NanumGothicBold.eot");
-  src: url("../../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicBold.woff") format("woff"), url("../../font/NanumGothicBold.ttf") format("truetype");
+  src: url("../font/NanumGothicBold.eot");
+  src: url("../font/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothicBold.woff") format("woff"), url("../font/NanumGothicBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ebold';
-  src: url("../../font/NanumGothicExtraBold.eot");
-  src: url("../../font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicExtraBold.woff") format("woff"), url("../../font/NanumGothicExtraBold.ttf") format("truetype");
+  src: url("../font/NanumGothicExtraBold.eot");
+  src: url("../font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothicExtraBold.woff") format("woff"), url("../font/NanumGothicExtraBold.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'light';
-  src: url("../../font/NanumGothicLight.eot");
-  src: url("../../font/NanumGothicLight.eot?#iefix") format("embedded-opentype"), url("../../font/NanumGothicLight.woff") format("woff"), url("../../font/NanumGothicLight.ttf") format("truetype");
+  src: url("../font/NanumGothicLight.eot");
+  src: url("../font/NanumGothicLight.eot?#iefix") format("embedded-opentype"), url("../font/NanumGothicLight.woff") format("woff"), url("../font/NanumGothicLight.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -200,8 +202,10 @@ textarea {
 /* container 공통 */
 #container {
   position: relative;
+  min-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* container - main */
@@ -284,6 +288,7 @@ textarea {
 --------------------------------------------------- */
 #header {
   position: relative;
+  min-width: 1200px;
 }
 
 .site-logo {
@@ -350,7 +355,6 @@ textarea {
   display: block;
   font-size: 16px;
   font-family: 'bold';
-  font-weight: bold;
 }
 
 .site-menu .menu-depth1 {
@@ -538,7 +542,6 @@ textarea {
   border-bottom: 1px solid #fff;
   font-size: 12px;
   font-family: 'ebold';
-  font-weight: bold;
 }
 
 #quick-menu .svc-list {
@@ -548,7 +551,6 @@ textarea {
   padding-top: 40px;
   font-size: 12px;
   font-family: 'ebold';
-  font-weight: bold;
 }
 
 /* ---------------------------------------------------
@@ -556,6 +558,7 @@ textarea {
 --------------------------------------------------- */
 #footer {
   position: relative;
+  min-width: 1200px;
   background: #34353a;
   color: #55565a;
   overflow: hidden;
@@ -726,7 +729,6 @@ textarea {
   line-height: 55px;
   font-size: 15px;
   font-family: 'bold';
-  font-weight: bold;
 }
 
 .container-main .main-content .notice strong:after {
@@ -807,7 +809,6 @@ textarea {
   float: left;
   font-size: 15px;
   font-family: 'bold';
-  font-weight: bold;
 }
 
 .container-main .main-content .service p {
@@ -828,7 +829,6 @@ textarea {
   letter-spacing: 0;
   padding-left: 2px;
   font-weight: bold;
-  font-family: 'bold';
 }
 
 .container-main .main-content .ctg {
@@ -839,7 +839,7 @@ textarea {
 .container-main .main-content .ctg strong {
   font-size: 23px;
   line-height: 1.8;
-  font-family: 'NanumGothicBold';
+  font-family: 'bold';
 }
 
 .container-main .main-content .ctg-mtn {
@@ -904,7 +904,6 @@ textarea {
 
 .box-container.login h2 {
   font-family: 'lite';
-  font-weight: bold;
 }
 
 .join-container table {

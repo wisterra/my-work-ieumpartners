@@ -86,7 +86,6 @@
                 line-height: 55px;
                 font-size: 15px;
                 font-family: 'bold';
-                font-weight: bold;
 
                 &:after {
                     content: '';
@@ -173,7 +172,6 @@
                 float: left;
                 font-size: 15px;
                 font-family: 'bold';
-                font-weight: bold;
             }
 
             p {
@@ -194,7 +192,6 @@
                 letter-spacing: 0;
                 padding-left: 2px;
                 font-weight: bold;
-                font-family: 'bold';
             }
         }
 
@@ -205,7 +202,7 @@
             strong {
                 font-size: 23px;
                 line-height: 1.8;
-                font-family: 'NanumGothicBold';
+                font-family: 'bold';
 
             }
         }
