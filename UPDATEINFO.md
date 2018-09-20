@@ -13,6 +13,5 @@ html로 전달드리는 파일은 index를 기준점으로하여 header, footer,
 \
 html class명은 추후에 조금씩 바뀔 수 있습니다. 참고부탁드립니다.
 
-
 ### slider
 slick slider 사용 (http://kenwheeler.github.io/slick/)
