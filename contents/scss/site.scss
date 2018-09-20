@@ -7,7 +7,6 @@ $device: 'web';
 //---------------------------------------------------
 @import "base/base";
 @import "base/font";
-@import "base/override-bootstrap";
 
 //---------------------------------------------------
 // utils
@@ -28,6 +27,7 @@ $device: 'web';
 //---------------------------------------------------
 // component style
 //---------------------------------------------------
+@import "component/btn";
 @import "component/glyphicon";
 @import "component/form-group";
 

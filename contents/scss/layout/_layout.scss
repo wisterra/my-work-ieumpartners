@@ -17,7 +17,7 @@ $viewportSize: 1200px;
 /* container 공통 */
 #container{
   position:relative;
-  min-width:1200px;
+  min-width:$viewportSize;
   min-height:100%;
   margin: 0 auto;
   overflow:hidden;
@@ -35,72 +35,46 @@ $viewportSize: 1200px;
   margin: 0 auto;
 }
 
-
-/* sub LNB */
+/*---------------------------------------------------
+// subpage LNB
+--------------------------------------------------- */
 #lnb{
   width:100%;
-  height:55px;
-  background:darkblue;
-
+  height:50px;
+  line-height:50px;
+  background:#0265b6;
+ul{
+text-align:center;
+}
   li{
     display:inline-block;
-    margin:0 20px;
+    margin:0 30px;
   }
   a{
     color:#fff;
   }
   
 }
+/*---------------------------------------------------
+// subpage common
+--------------------------------------------------- */
 .sub-content{
   .content-zone{
     width:1000px;
   }
-  // category header(위치 미분류)
-  .ctg-header{
-    h1{
-      text-align:center;
-      font-family: 'bold';
-      font-weight: 600;
-      font-size:36px;
-      line-height:1.5;
-      padding-top:60px;
-      padding-bottom:20px;
-    }
-  }
-  
-  // page in category header
-  .page-header{
-    text-align:left;
-    border-bottom:2px solid #0066b4;
-    h1{
-      display:inline-block;
-      font-family: 'bold';
-      font-weight: 600;
-      font-size:36px;
-      vertical-align: bottom;
-    }
-    p{
-      display:inline-block;
-      vertical-align: bottom;
-      font-size:15px;
-      color:#999999;
-      margin-left:10px;
-    }
-  }
-
-
 }
 
 
-
+/*---------------------------------------------------
+// etc container
+--------------------------------------------------- */
 .box-container{
   width:500px;
   padding:40px 40px;
   margin:0 auto;
-  text-align:center;
+  //text-align:center;
   background:#f3f3f3;
   p{
     color: #626262;
   }
-  
 }

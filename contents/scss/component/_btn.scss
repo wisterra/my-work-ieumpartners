@@ -1,6 +1,4 @@
-﻿/* bootstrap override */
- 
-//---------------------------------------------------
+﻿//---------------------------------------------------
 // btn
 //---------------------------------------------------
 .site-wrapper{
@@ -13,7 +11,9 @@
     }
     // color
     .btn-default{
-        background:inherit;
+        background:#b0b2b5;
+        border:1px solid #b0b2b5;
+        color:#fff;
     }
     .btn-primary{
         background:#0065b3;
@@ -23,7 +23,7 @@
         background:inherit;
     }
     .btn-info{
-        background:#79838c;
+        background:#79838c; 
         border:1px solid #79838c;
     }
     .btn-warning{
@@ -32,11 +32,19 @@
     .btn-danger{
         background:inherit;
     }
+    .btn-white{
+        background:#fff;
+        border:1px solid #cccccc;
+        color:#575757;
+    }
+    .btn-cancel{
+        background:#4c4c4c;
+        border:1px solid #4c4c4c;
+        color:#fff;
+    }    
 
-                   
 }
 
 //---------------------------------------------------
 // 
 //---------------------------------------------------
-

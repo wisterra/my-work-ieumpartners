@@ -25,26 +25,43 @@
             <div class="join-container">
                 <form action="" class="form-inline">
                     <strong>원탑코리아 이용약관<span>(필수)</span></strong>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="agree"> 전체동의
-                    </label>
-                    <textarea class="form-control" rows="3"></textarea>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="agree"> 동의
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="disagree">
-                        미동의
-                    </label>
+                    <div class="agree-right agree-all">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="policyAll" id="policyAll" value="agree">
+                            <i class="icon-checkbox"></i>
+                            전체동의
+                        </label>
+                    </div>
+                    <div class="policy-doc">
+                        <div id="policyEssential"></div>
+                    </div>
+                    <div class="agree-right">
+                        <label class="radio-inline">
+                            <input type="radio" name="policyE" id="policyE-Y" value="agree">
+                            <i class="icon-radio"></i>
+                            동의
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="policyE" id="policyE-N" value="disagree">
+                            <i class="icon-radio"></i>
+                            미동의
+                        </label>
+                    </div>
                     <strong>원탑코리아 이용약관(선택)</strong>
-                    <textarea class="form-control" rows="3"></textarea>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="agree"> 동의
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="disagree">
-                        미동의
-                    </label>
+                    <div class="policy-doc">
+                        <div id="policySelection"></div>
+                    </div>
+                    <div class="agree-right">
+                        <label class="radio-inline">
+                            <input type="radio" name="policyS" id="policyS-Y" value="agree">
+                            <i class="icon-radio"></i>
+                            동의
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="policyS" id="policyS-N" value="disagree"><i class="icon-radio"></i>
+                            미동의
+                        </label>
+                    </div>
                     <strong>아이디 입력<span>(필수)</span></strong>
                     <table class="table">
                         <tbody>
@@ -66,7 +83,7 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="userID">
                                     </div>
-                                    <button class="btn btn-defalut">중복확인 </button>
+                                    <button class="btn btn-default btn-overlapcheck">중복확인</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -88,11 +105,11 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <label for="userPW">비밀번호 확인</label>
+                                    <label for="passwordCheck">비밀번호 확인</label>
                                 </th>
                                 <td>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" id="userPW">
+                                        <input type="password" class="form-control" id="passwordCheck">
                                     </div>
                                 </td>
                             </tr>
@@ -100,7 +117,7 @@
                     </table>
 
                     <strong>기본정보 설정<span>(필수)</span></strong>
-                    <span>이메일은 비밀번호 분실 시 재발급을 위한 정보이므로 정확히 입력해주세요.</span>
+                    <em>이메일은 비밀번호 분실 시 재발급을 위한 정보이므로 정확히 입력해주세요.</em>
                     <table class="table">
                         <tbody>
                             <tr>
@@ -109,7 +126,6 @@
                                 </th>
                                 <td>
                                     <div class="form-group">
-
                                         <input type="email" class="form-control" id="userEmail"> @
                                         <select class="form-control">
                                             <option>선택</option>
@@ -120,7 +136,7 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <label for="userEmail">전화번호</label>
+                                    <label for="userPhone">전화번호</label>
                                 </th>
                                 <td>
                                     <div class="form-group">
@@ -129,8 +145,8 @@
                                             <option>선택</option>
                                             <option>010</option>
                                         </select> -
-                                        <input type="tel" class="form-control" style="width:100px" id=""> -
-                                        <input type="tel" class="form-control" style="width:100px" id="">
+                                        <input type="tel" class="form-control" style="width:100px" id="userPhone"> -
+                                        <input type="tel" class="form-control" style="width:100px" id="userPhone">
                                     </div>
                                 </td>
                             </tr>
@@ -142,42 +158,50 @@
                             <tr>
                                 <th><label for="userAddress">주소</label></th>
                                 <td>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="userPW">
+                                    <div class="form-group form-address">
+                                        <input type="text" class="form-control" id="userAddress">
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <th><label for="userAddress">이메일 수신여부</label></th>
+                                <th><label for="userEmail">이메일 수신여부</label></th>
                                 <td>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="agree">
-                                        동의
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="disagree">
-                                        미동의
-                                    </label>
+                                    <div class="agree-left">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="userEmail" id="userEmail-Y" value="agree">
+                                            <i class="icon-radio"></i>
+                                            동의
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="userEmail" id="userEmail-N" value="disagree">
+                                            <i class="icon-radio"></i>
+                                            미동의
+                                        </label>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <th><label for="userAddress">SMS 수신여부</label></th>
+                                <th><label for="userSMS">SMS 수신여부</label></th>
                                 <td>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="agree">
-                                        동의
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="disagree">
-                                        미동의
-                                    </label>
+                                    <div class="agree-left">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="userSMS" id="userSMS-Y" value="agree">
+                                            <i class="icon-radio"></i>
+                                            동의
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="userSMS" id="userSMS-N" value="disagree">
+                                            <i class="icon-radio"></i>
+                                            미동의
+                                        </label>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <div>
-                        <button type="submit" class="btn btn-default fakelink">확인</button>
-                        <button type="button"" class=" btn btn-default fakelink">취소</button>
+                    <div class="btn-join">
+                        <button type="submit" class="btn btn-primary btn-lg fakelink">확인</button>
+                        <button type="button" class=" btn btn-cancel btn-lg fakelink">취소</button>
                     </div>
                 </form>
             </div>
@@ -185,3 +209,33 @@
     </div>
     <!-- // Sub Content -->
 </div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // 약관 내용 load
+        $('#policyEssential').load('../include/policy-essential.html');
+        $('#policySelection').load('../include/policy-selection.html');
+
+        // 약관 전체동의 처리
+        $("#policyAll").click(function () {
+            if ($("#policyAll").prop("checked")) {
+                $("#policyE-Y, #policyS-Y").prop("checked", true);
+            }
+        });
+        $("#policyE-Y, #policyS-Y").click(function () {
+            if ($('#policyE-Y').prop("checked")&&$('#policyS-Y').prop("checked")) {
+                $("#policyAll").prop("checked", true);
+            }
+        });        
+        $("#policyE-N, #policyS-N").click(function () {
+            if ($(this).prop("checked")) {
+                $("#policyAll").prop("checked", false);
+            }
+        });     
+
+
+
+    });
+</script>
+<!-- //script -->

@@ -1,45 +1,189 @@
+/*---------------------------------------------------
+// login
+--------------------------------------------------- */
+// 공통 내용으로 추출 가능해질때 layout으로 이동시키기
+.ctg-header {
+    h1 {
+        text-align: center;
+        font-family: bold;
+        font-size: 36px;
+        line-height: 1.5;
+        margin: 0;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+}
+
 .box-container.login {
+    font-size: 16px;
+
     h2 {
-        font-family: 'lite';
+        font-family: bold;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 26px;
+        text-align: center;
     }
 
     label {
-        //display:none;
+        display: none;
+    }
+
+    label.checkbox-inline {
+        display: inline-block;
+    }
+
+    a,
+    button {
+        font-size: 16px;
+    }
+
+    .save-id {
+        padding-top: 20px;
+    }
+}
+
+.btns-login {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+
+    a,
+    button {
+        //margin:0 25px;
+        font-size: 16px;
+        color: #4b4b4b;
+    }
+
+    a:first-child::after {
+        content: '';
+        @extend %sp-bar;
+        margin: 0 50px;
+    }
+}
+
+/*---------------------------------------------------
+// join
+--------------------------------------------------- */
+// 공통 내용으로 추출 가능해질때 layout으로 이동시키기
+.page-header {
+    text-align: left;
+    border-bottom: 2px solid #0066b4;
+
+    h1 {
+        display: inline-block;
+        font-family: bold;
+        font-size: 36px;
+        vertical-align: bottom;
+    }
+
+    p {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 16px;
+        color: #999999;
+        margin-left: 10px;
     }
 }
 
 .join-container {
-    table{
-        border-bottom:1px solid #ddd;
-        th{
-            width:168px;
-            background:#f3f3f3;
-            font-size:16px;
-            height:60px;
-            line-height:60px;
-            
-            label{
+    padding-bottom: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    table {
+        min-width:1000px;
+        border-bottom: 1px solid #ddd;
+        
+
+        th {
+            width: 168px;
+            background: #f3f3f3;
+            font-size: 16px;
+            height: 60px;
+            line-height: 1.5 !important;
+
+            label {
                 font-weight: normal;
                 vertical-align: middle;
-                margin:0;
-                margin-top:10px;
-                margin-left:20px;
+                margin: 0;
+                margin-top: 10px;
+                margin-left: 20px;
             }
         }
-        td{
-            font-size:16px;
-            height:60px;
-            line-height:60px;
+
+        td {
+            font-size: 16px;
+            height: 60px;
+            padding-top:10px !important;
             vertical-align: middle;
         }
     }
-    strong{
-        display:block;
-        span{
-            color:blue;
+
+    strong {
+        display: inline-block;
+        font-size: 18px;
+        color: #2b2b2b;
+        font-family: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        span {
+            color: #0066b4;
         }
     }
-    em{
+
+    em {
         font-style: normal;
+        display: inline-block;
+        color: #999999;
+        margin-left: 30px;
+    }
+
+    .checkbox-inline,
+    .radio-inline {
+        font-family: bold;
+    }
+
+    .agree-left {
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .agree-right {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .agree-all {
+        position: relative;
+        top: -20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: -20px;
+    }
+
+    .btn-overlapcheck {
+        margin-left: 2px;
+        font-size: 16px;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .btn-join {
+        text-align: right;
+
+        button,
+        a {
+            padding: 10px 40px;
+            margin: 0 2px;
+        }
     }
 }
