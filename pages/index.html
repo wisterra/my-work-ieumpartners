@@ -61,7 +61,7 @@
              //이 부분은 임시 링크 세팅입니다. (index를 공통레이아웃으로 쓰고 hash로 페이지 내용 가져오기) 변경해서 사용해주시면 됩니다. 
             var hashName = location.hash;
             targetPageName = hashName.split('#')[1];
-            $('body').addClass(targetPageName); // ***** body에 페이지명을 class 달아주기
+            //$('body').addClass(targetPageName); // ***** body에 페이지명을 class 달아주기
 
             // [임시] a태그 클릭시 페이지 변경
             $('#PageContent').load(targetPageName + '.html', function () {
