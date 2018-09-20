@@ -1,35 +1,219 @@
 ﻿/* form */
- 
+
 //---------------------------------------------------
-// forms
+// forms reset (bootstrap)
 //---------------------------------------------------
+// ios 기본 스타일 초기화
+// input[type=text],
+// input[type=button],
+// input[type=checkbox],
+// input[type=radio],
+// textarea {
+//     -webkit-appearance: none;
+//     appearance: none;
+//     border-radius: 0;
+// }
+.form-group {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align:middle;
+}
+.form-control{
+    width:auto;
+    display:inline-block;
+    vertical-align:middle;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
-input[type=password]{
-    border:1px solid #dcdcdc !important;
-    font-size:16px !important;
-    height:38px !important;
-    line-height:32px !important;
-    padding:3px 12px;
+input[type=password] {
+    border: 1px solid #dcdcdc !important;
+    font-size: 16px !important;
+    height: 38px !important;
+    line-height: 32px !important;
+    padding: 3px 12px;
     border-radius: 0 !important;
     box-shadow: 0 0 0 !important;
 }
-select{
-    border:1px solid #dcdcdc !important;
-    font-size:16px !important;
-    height:38px !important;
-    line-height:32px !important;
-    padding:3px 12px;
+
+select {
+    border: 1px solid #dcdcdc !important;
+    font-size: 16px !important;
+    height: 38px !important;
+    line-height: 32px !important;
+    padding: 3px 12px;
+    //padding: 3px 3px 3px 12px !important;
+    margin: 0 !important;
     border-radius: 0 !important;
     box-shadow: 0 0 0 !important;
 }
-textarea{
-    width:100% !important;
-    border:1px solid #dcdcdc !important;
-    font-size:16px !important;
-    //line-height:32px !important;
-    padding:3px 12px;
+
+textarea {
+    width: 100% !important;
+    border: 1px solid #dcdcdc !important;
+    font-size: 16px !important;
+    padding: 3px 12px;
     border-radius: 0 !important;
     box-shadow: 0 0 0 !important;
 }
+
+//---------------------------------------------------
+// checkbox, radio img on & off
+//---------------------------------------------------
+// for label img check
+img {
+    pointer-events: none;
+}
+
+.checkbox,
+.checkbox-inline {
+    padding-left: 30px;
+}
+
+.radio,
+.radio-inline {
+    padding-left: 30px;
+}
+
+.icon-checkbox {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    background-size: 100%;
+}
+
+.icon-radio {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+input[type=checkbox] {
+    position: relative;
+    transform: scale(1.3);
+    line-height: 100%;
+    vertical-align: top;
+    opacity: 0.0001;
+
+    &+.icon-checkbox {
+        border: 1px solid #cdcdcd;
+    }
+
+    &:checked+.icon-checkbox {
+        background: #fff url("../images/form/icon-check.png") no-repeat center center;
+        background-size: 100%;
+        border: 1px solid #cdcdcd;
+    }
+}
+
+input[type=radio] {
+    transform: scale(1.3);
+    line-height: 100%;
+    vertical-align: top;
+    opacity: 0.0001;
+
+    &+.icon-radio {
+        border: 1px solid #cdcdcd;
+    }
+
+    &:checked+.icon-radio {
+        background: #fff url("../images/form/icon-radio.png") no-repeat center center;
+        background-size: 100%;
+        border: 1px solid #cdcdcd;
+    }
+}
+
+//---------------------------------------------------
+// selectbox
+//---------------------------------------------------
+// selectbox
+// select option {
+//     color: #000;
+//     background: #fff;
+
+//     &:first-child {
+//         color: #000;
+//     }
+// }
+
+
+//---------------------------------------------------
+// custom
+//---------------------------------------------------
+
+// policy box
+.policy-doc {
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 10px;
+    margin: 10px 0;
+    height: 120px;
+    overflow: auto;
+}
+
+// email @
+.form-email {
+    &:before {
+        position: absolute;
+        content: '@';
+        top: 50%;
+        right: -6px;
+        transform: translateY(-50%);
+        color: #000;
+        font-size: 1.6em;
+        font-style: normal;
+        letter-spacing: -.15em;
+    }
+}
+
+.form-address {
+    width: 600px;
+
+    input {
+        width: 100% !important;
+    }
+}
+
+//---------------------------------------------------
+// placeholder
+//---------------------------------------------------
+
+// Chrome/Opera/Safari
+::-webkit-input-placeholder {
+    color: #000 !important;
+}
+
+// Firefox 19+
+::-moz-placeholder {
+    color: #000 !important;
+}
+
+// IE 10+
+:-ms-input-placeholder {
+    color: #000 !important;
+    line-height: 1 !important;
+}
+
+// Firefox 18-
+:-moz-placeholder {
+    color: #000 !important;
+}
+
+//---------------------------------------------------
+// daum api등의 iframe요소에 스크롤이 들어갈때
+//---------------------------------------------------
+// .pop-post {
+//     .pop-con {
+//         -webkit-overflow-scrolling: touch;
+//     }
+// }

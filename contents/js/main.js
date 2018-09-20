@@ -22,12 +22,15 @@ function sliderActon() {
         prevArrow: $('.slider-prev'),
         nextArrow: $('.slider-next')
     }
+    // 메인비쥬얼
     $sliderMain.slick(slickMainOptions);
+    // 이벤트배너
     $sliderBanner.slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000
     });
+    // 공지사항
     $sliderNotice.slick({
         vertical:true,
         autoplay: true,
