@@ -163,14 +163,14 @@ body {
 }
 
 /* form */
-.form-group {
+.form-inline .form-group {
   position: relative;
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
 }
 
-.form-control {
+.form-inline .form-control {
   width: auto;
   display: inline-block;
   vertical-align: middle;
@@ -401,7 +401,7 @@ input[type=radio]:checked + .icon-radio {
 --------------------------------------------------- */
 .box-container {
   width: 500px;
-  padding: 40px 40px;
+  padding: 60px;
   margin: 0 auto;
   background: #f3f3f3;
 }
@@ -1048,7 +1048,7 @@ input[type=radio]:checked + .icon-radio {
   font-size: 36px;
   line-height: 1.5;
   margin: 0;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -1075,9 +1075,21 @@ input[type=radio]:checked + .icon-radio {
   display: inline-block;
 }
 
+.box-container.login .form-group {
+  margin-bottom: 10px;
+}
+
+.box-container.login input[type=text],
+.box-container.login input[type=password] {
+  height: 50px !important;
+  line-height: 50px !important;
+  border: 0 !important;
+}
+
 .box-container.login a,
 .box-container.login button {
   font-size: 16px;
+  line-height: 40px !important;
 }
 
 .box-container.login .save-id {
