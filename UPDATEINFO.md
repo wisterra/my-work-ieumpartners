@@ -2,10 +2,10 @@
 
 ## v20180920_1
 
-### 전달 페이지
+### update info
 메인페이지, 로그인페이지
 
-### MEMO
+### memo
 
 html로 전달드리는 파일은 index를 기준점으로하여 header, footer, quick, page를 jquery load로 include하는 방식으로 작업했습니다.\
 \
