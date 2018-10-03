@@ -1,0 +1,36 @@
+﻿/* typography */
+
+/*---------------------------------------------------
+// category header, page header
+--------------------------------------------------- */
+.ctg-header {
+    h1 {
+      text-align: center;
+      font-family: bold;
+      font-size: 36px;
+      line-height: 1.5;
+      margin: 0;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
+  
+  .page-header {
+    text-align: left;
+    border-bottom: 2px solid #0066b4;
+  
+    h1 {
+      display: inline-block;
+      font-family: bold;
+      font-size: 36px;
+      vertical-align: bottom;
+    }
+  
+    p {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 16px;
+      color: #999999;
+      margin-left: 10px;
+    }
+  }

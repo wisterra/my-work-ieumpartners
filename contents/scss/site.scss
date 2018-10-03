@@ -30,6 +30,9 @@ $device: 'web';
 @import "component/btn";
 @import "component/glyphicon";
 @import "component/form-group";
+@import "component/table";
+@import "component/typography";
+@import "component/paragraph";
 
 //---------------------------------------------------
 // site common layout
@@ -38,6 +41,7 @@ $device: 'web';
 @import "layout/header";
 @import "layout/quickmenu";
 @import "layout/footer";
+@import "layout/popup";
 
 //---------------------------------------------------
 // pages

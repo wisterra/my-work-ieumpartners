@@ -1,71 +1,39 @@
 <div id="container" class="container-sub">
     <!-- LNB -->
-    <!--
     <div id="lnb">
         <ul>
             <li>
-                <a href="#member/login" class="fakelink">로그인</a>
+                <a href="#member/mypage" class="fakelink">기본 정보</a>
             </li>
             <li>
-                <a href="#member/login" class="fakelink">아이디/비밀번호 찾기</a>
+                <a href="#member/mycar" class="fakelink">내 차 정보</a>
             </li>
             <li>
-                <a href="#member/join" class="fakelink">회원가입</a>
+                <a href="#member/maintenance-rsv-list" class="fakelink">정비예약내역</a>
+            </li>
+            <li>
+                <a href="#member/maintenance-list" class="fakelink">정비내역</a>
+            </li>
+            <li>
+                <a href="#member/cunsulting-list" class="fakelink">상담내역</a>
+            </li>
+            <li>
+                <a href="#member/mycoupon" class="fakelink">나의 쿠폰</a>
             </li>
         </ul>
     </div>
-    -->
     <!-- // LNB -->
 
     <!-- Sub Content -->
     <div class="sub-content">
         <div class="content-zone">
             <div class="page-header">
-                <h1>회원가입</h1>
-                <p>원탑코리아에 오신것을 환영합니다.</p>
+                <h1>개인정보</h1>
+                <p>원탑코리아 회원만의 특권을 누려보세요.</p>
             </div>
-            <!-- 수정 : div.join-container에서 class삭제 -->
             <div>
                 <form action="" class="form-inline">
-                    <strong>원탑코리아 이용약관<span>(필수)</span></strong>
-                    <div class="agree-right agree-all">
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="policyAll" id="policyAll" value="agree">
-                            <i class="icon-checkbox"></i>
-                            전체동의
-                        </label>
-                    </div>
-                    <div class="policy-doc">
-                        <div id="policyEssential"></div>
-                    </div>
-                    <div class="agree-right">
-                        <label class="radio-inline">
-                            <input type="radio" name="policyE" id="policyE-Y" value="agree">
-                            <i class="icon-radio"></i>
-                            동의
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="policyE" id="policyE-N" value="disagree">
-                            <i class="icon-radio"></i>
-                            미동의
-                        </label>
-                    </div>
-                    <strong>원탑코리아 이용약관(선택)</strong>
-                    <div class="policy-doc">
-                        <div id="policySelection"></div>
-                    </div>
-                    <div class="agree-right">
-                        <label class="radio-inline">
-                            <input type="radio" name="policyS" id="policyS-Y" value="agree">
-                            <i class="icon-radio"></i>
-                            동의
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="policyS" id="policyS-N" value="disagree"><i class="icon-radio"></i>
-                            미동의
-                        </label>
-                    </div>
-                    <strong>아이디 입력<span>(필수)</span></strong>
+                    <strong>아이디</strong>
                     <table class="table">
                         <tbody>
                             <tr>
@@ -74,7 +42,7 @@
                                 </th>
                                 <td>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="userName">
+                                        <span>홍길동</span>
                                     </div>
                                 </td>
                             </tr>
@@ -84,9 +52,8 @@
                                 </th>
                                 <td>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="userID">
+                                        <span>ABSCSDCDS</span>
                                     </div>
-                                    <button class="btn btn-default btn-overlapcheck">중복확인</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -202,9 +169,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-- 수정 : btn-join -> btns-group -->
                     <div class="btns-group">
-                        <button type="submit" class="btn btn-primary btn-lg">확인</button>
+                        <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myPageModify">확인</button>
                         <button type="button" class=" btn btn-cancel btn-lg">취소</button>
                     </div>
                 </form>
@@ -214,29 +180,32 @@
     <!-- // Sub Content -->
 </div>
 
+<!-- Popup Start -->
+<!-- popup : 정보수정 -->
+<div class="modal fade" id="myPageModify" tabindex="-1" role="dialog" aria-labelledby="myPageModifyLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                정보수정이 완료되었습니다.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg ">확인</button>
+                <button type="button" class="btn btn-cancel btn-lg" data-dismiss="modal" aria-label="Close">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Popup End -->
+
 <!-- script -->
 <script>
     $(document).ready(function () {
-        // 약관 내용 load
-        $('#policyEssential').load('../include/policy-essential.html');
-        $('#policySelection').load('../include/policy-selection.html');
 
-        // 약관 전체동의 처리
-        $("#policyAll").click(function () {
-            if ($("#policyAll").prop("checked")) {
-                $("#policyE-Y, #policyS-Y").prop("checked", true);
-            }
-        });
-        $("#policyE-Y, #policyS-Y").click(function () {
-            if ($('#policyE-Y').prop("checked")&&$('#policyS-Y').prop("checked")) {
-                $("#policyAll").prop("checked", true);
-            }
-        });        
-        $("#policyE-N, #policyS-N").click(function () {
-            if ($(this).prop("checked")) {
-                $("#policyAll").prop("checked", false);
-            }
-        });
     });
 </script>
 <!-- //script -->
