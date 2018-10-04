@@ -1,27 +1,6 @@
 <div id="container" class="container-sub">
     <!-- LNB -->
-    <div id="lnb">
-        <ul>
-            <li>
-                <a href="#member/mypage" class="fakelink">기본 정보</a>
-            </li>
-            <li>
-                <a href="#member/mycar" class="fakelink">내 차 정보</a>
-            </li>
-            <li>
-                <a href="#member/maintenance-rsv-list" class="fakelink">정비예약내역</a>
-            </li>
-            <li>
-                <a href="#member/maintenance-list" class="fakelink">정비내역</a>
-            </li>
-            <li>
-                <a href="#member/cunsulting-list" class="fakelink">상담내역</a>
-            </li>
-            <li>
-                <a href="#member/mycoupon" class="fakelink">나의 쿠폰</a>
-            </li>
-        </ul>
-    </div>
+    <div id="includeLNB"></div>
     <!-- // LNB -->
 
     <!-- Sub Content -->
@@ -61,7 +40,7 @@
             </form>
             <div class="btns-group">
                 <button type="submit" class="btn btn-primary btn-lg" >확인</button>
-                <button type="button" class=" btn btn-cancel btn-lg">취소</button>
+                <button type="button" class=" btn btn-black btn-lg">취소</button>
             </div>
         </div>
     </div>
@@ -71,7 +50,8 @@
 <!-- script -->
 <script>
     $(document).ready(function () {
-
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-member.html');
     });
 </script>
 <!-- //script -->

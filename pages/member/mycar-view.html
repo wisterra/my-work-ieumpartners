@@ -1,0 +1,127 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>내차정보</h1>
+                <p>원탑코리아 회원만의 특권을 누려보세요.</p>
+            </div>
+            <!-- 수정 : div.join-container에서 class삭제 -->
+            <div>
+                <ul class="notes">
+                    <li>- 원탑코리아 매장에서 등록하시거나 원탑코리아 정비내역이 존재하는 차량의 정보는 삭제하실 수 없습니다.</li>
+                    <li>- 수정 및 삭제를 원하시는 경우 원탑코리아 고객센터(1600-1600)로 문의하시기 바랍니다.</li>
+                </ul>
+                <form action="" class="form-inline">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label for="VINnumber">차량번호</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <span>12가1234</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="production">제조사/모델</label>
+                                </th>
+                                <td>
+                                    <select class="form-control">
+                                        <option>제조사</option>
+                                        <option>제조사1</option>
+                                    </select>
+                                    <select class="form-control">
+                                        <option>모델명</option>
+                                        <option>모델명A</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="modelYear">연식</label>
+                                </th>
+                                <td>
+                                    <select class="form-control">
+                                        <option>연도</option>
+                                        <option>2018</option>
+                                    </select>
+                                    <select class="form-control">
+                                        <option>월</option>
+                                        <option>1</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="mileage">주행거리(km)</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="mileage" style="width:400px">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="DailyAverageMileage">일평균 주행거리(km)</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="DailyAverageMileage" style="width:400px">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="transmission">변속기</label>
+                                </th>
+                                <td>
+                                    <select class="form-control">
+                                        <option>변속기</option>
+                                        <option>변속기</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="fuel">연료</label>
+                                </th>
+                                <td>
+                                    <select class="form-control">
+                                        <option>연료</option>
+                                        <option>연료</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr>
+                    <div class="btns-group">
+                        <button type="submit" class="btn btn-primary btn-lg">등록</button>
+                        <button type="button" class=" btn btn-black btn-lg">취소</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-member.html');
+       
+    });
+</script>
+<!-- //script -->
