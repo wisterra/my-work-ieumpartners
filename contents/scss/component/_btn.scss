@@ -36,6 +36,11 @@
         background:#fff;
         border:1px solid #cccccc;
         color:#575757;
+        &.active{
+            background:#0065b3;
+            border:1px solid #0065b3;
+            color:#fff;
+        }
     }
     .btn-black{
         background:#4c4c4c;

@@ -25,8 +25,9 @@
                                 </th>
                                 <td>
                                     <div class="form-group">
-                                        <span>12가1234</span>
+                                        <input type="text" class="form-control" id="VINnumber" style="width:400px">
                                     </div>
+                                    <button class="btn btn-default btn-overlapcheck">중복확인</button>
                                 </td>
                             </tr>
                             <tr>
@@ -104,6 +105,21 @@
                         </tbody>
                     </table>
 
+                    <strong>개인정보 수집 및 이용안내(선택)</strong>
+                    <div class="policy-doc">
+                        <div id="policySelection"></div>
+                    </div>
+                    <div class="agree-right">
+                        <label class="radio-inline">
+                            <input type="radio" name="policyS" id="policyS-Y" value="agree">
+                            <i class="icon-radio"></i>
+                            동의
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="policyS" id="policyS-N" value="disagree"><i class="icon-radio"></i>
+                            미동의
+                        </label>
+                    </div>
                     <hr>
                     <div class="btns-group">
                         <button type="submit" class="btn btn-primary btn-lg">등록</button>
@@ -118,10 +134,13 @@
 
 <!-- script -->
 <script>
+  
     $(document).ready(function () {
         // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
-        $('#includeLNB').load('../include/lnb-member.html');
-       
+        $('#includeLNB').load('../include/lnb-mypage.html');
+
+        // 약관 내용 load
+        $('#policySelection').load('../include/policy-selection.html');
     });
 </script>
 <!-- //script -->

@@ -1,5 +1,4 @@
 ﻿/* table */
-
 table {
   min-width: 1000px;
   border-bottom: 1px solid #ddd;
@@ -80,11 +79,14 @@ table {
     border-bottom: 1px solid #e5e5e5;
     padding-left:20px;
     padding-right:20px;
-    font-size:18px;
+    font-size:15px;
     span{
       padding-left:20px;
       padding-right:20px;
+    }
+    a{
       font-size:15px;
+      color:#000;      
     }
     .date{
       position:absolute;

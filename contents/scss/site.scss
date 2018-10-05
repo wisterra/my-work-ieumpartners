@@ -7,6 +7,7 @@ $device: 'web';
 //---------------------------------------------------
 @import "base/base";
 @import "base/font";
+@import "base/vendor";
 
 //---------------------------------------------------
 // utils
@@ -29,6 +30,7 @@ $device: 'web';
 //---------------------------------------------------
 @import "component/btn";
 @import "component/glyphicon";
+@import "component/pagination";
 @import "component/form-group";
 @import "component/table&list";
 @import "component/typography";

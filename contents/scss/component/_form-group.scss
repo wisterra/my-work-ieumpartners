@@ -262,3 +262,21 @@ input[type=radio] {
 //         -webkit-overflow-scrolling: touch;
 //     }
 // }
+
+//---------------------------------------------------
+// search-box
+//---------------------------------------------------
+.search-box{
+    padding-bottom:20px;
+    text-align:right;
+    input,select{
+        height:34px !important;
+        line-height:34px !important;
+    }
+    input{
+        width:120px !important;
+    }
+    input,select, button,a{
+        margin-right:3px !important;
+    }
+}

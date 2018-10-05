@@ -1,0 +1,157 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>정비내역</h1>
+                <p>원탑코리아 회원만의 특권을 누려보세요.</p>
+            </div>
+            <div>
+                <ul class="notes">
+                    <li>- 원탑코리아 매장에서 정비받으신 내역만 확인하실 수 있습니다.</li>
+                </ul>
+                <!-- 검색SET -->
+                <div class="search-box form-inline">
+                    <select class="form-control">
+                        <option>차량번호</option>
+                    </select>
+                    <input type="text" class="form-control" id="dateStart" value="시작날짜"> ~
+                    <input type="text" class="form-control" id="dateEnd" value="종료날짜">
+                    <!-- 선택된 개월수 버튼에는 active class를 추가해주세요 -->
+                    <button type="submit" class="btn btn-white active">1개월</button>
+                    <button type="submit" class="btn btn-white">3개월</button>
+                    <button type="submit" class="btn btn-white">6개월</button>
+                    <button type="submit" class="btn btn-white">12개월</button>
+                    <button type="button" class=" btn btn-default">조회</button>
+                </div>
+                <!-- // 검색SET -->
+                <table class="table-list">
+                    <thead>
+                        <tr>
+                            <th>정비일자</th>
+                            <th>차량번호</th>
+                            <th>정비내역</th>
+                            <th>정비금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                        <tr>
+                            <td>2018.06.25</td>
+                            <td>00가1234</td>
+                            <td>기어</td>
+                            <td>2만원</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="First" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Previous" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li>
+                            <a href="#" aria-label="Next" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Last" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-mypage.html');
+
+        // 날짜선택
+        $("#dateStart, #dateEnd").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+    });
+</script>
+<!-- //script -->
