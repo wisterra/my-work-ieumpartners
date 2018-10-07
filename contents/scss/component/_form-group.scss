@@ -13,17 +13,47 @@
 //     appearance: none;
 //     border-radius: 0;
 // }
-.form-inline{
+
+form {
+    strong {
+        display: inline-block;
+        font-size: 18px;
+        color: #2b2b2b;
+        font-family: 'ng';
+        font-weight:500;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        span {
+            color: #0066b4;
+        }
+    }
+
+    em {
+        font-style: normal;
+        display: inline-block;
+        color: #999999;
+        margin-left: 30px;
+    }
+
+    .checkbox-inline,
+    .radio-inline {
+        font-family: bold;
+    }
+}
+
+.form-inline {
     .form-group {
         position: relative;
         display: inline-block;
         margin-bottom: 0;
-        vertical-align:middle;
+        vertical-align: middle;
     }
-    .form-control{
-        width:auto;
-        display:inline-block;
-        vertical-align:middle;
+
+    .form-control {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
@@ -38,6 +68,17 @@ input[type=password] {
     padding: 3px 12px;
     border-radius: 0 !important;
     box-shadow: 0 0 0 !important;
+}
+
+.form-group span {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    //border: 1px solid #fff;
+    font-size: 16px;
+    height: 38px;
+    line-height: 32px;
+    padding: 3px;
 }
 
 select {
@@ -72,11 +113,13 @@ img {
 .checkbox,
 .checkbox-inline {
     padding-left: 30px;
+    height:24px;
 }
 
 .radio,
 .radio-inline {
     padding-left: 30px;
+    height:24px;
 }
 
 .icon-checkbox {
@@ -219,3 +262,21 @@ input[type=radio] {
 //         -webkit-overflow-scrolling: touch;
 //     }
 // }
+
+//---------------------------------------------------
+// search-box
+//---------------------------------------------------
+.search-box{
+    padding-bottom:20px;
+    text-align:right;
+    input,select{
+        height:34px !important;
+        line-height:34px !important;
+    }
+    input{
+        width:120px !important;
+    }
+    input,select, button,a{
+        margin-right:3px !important;
+    }
+}

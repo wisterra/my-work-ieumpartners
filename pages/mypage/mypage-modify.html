@@ -1,0 +1,57 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>개인정보</h1>
+                <p>원탑코리아 회원만의 특권을 누려보세요.</p>
+            </div>
+
+            <form action="" class="form-inline">
+                <strong>* 개인정보 보호를 위해 비밀번호를 다시 한번 입력 해주세요.</strong>
+                <div class="box-container">
+                    <table style="border-bottom:0;">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label for="userID">아이디</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <span>ABSCSDCDS</span>
+                                    </div>
+                                </td>
+                                <th>
+                                    <label for="userPW">비밀번호</label>
+                                </th>
+                                <td>
+                                    <div class="form-group"  style="width:85%;">
+                                        <input type="password" class="form-control" id="userPW" style="width:85%;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <div class="btns-group">
+                <button type="submit" class="btn btn-primary btn-lg" >확인</button>
+                <button type="button" class=" btn btn-black btn-lg">취소</button>
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-mypage.html');
+    });
+</script>
+<!-- //script -->

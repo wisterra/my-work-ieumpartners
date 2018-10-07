@@ -14,7 +14,7 @@ html로 전달드리는 파일은 index를 기준점으로하여 header, footer,
 vscode의 live server 등으로 로컬서버를 돌려 확인해주세요.\
 [http://127.0.0.1:5500/pages/#main](http://127.0.0.1:5500/pages/#main) \
 \
-또는 서버에 올리지 않고 보고자 할 경우 chrome의 별도의 바로가기를 생성하여 확인할 수 있습니다.\
+바로가기를 실행시킨후 index.html을 끌어다 넣고 로고버튼을 한번 클릭하시면 url뒤에 #main로 새로고침되어 메인페이지를 확인할 수 있습니다. \
 \
 [생성방법 >>](http://goni9071.tistory.com/entry/크롬-로컬에서-ajax-테스트하기)\
 열려있는 모든 크롬창을 닫은 후 바로가기를 생성합니다.\

@@ -36,15 +36,29 @@
         background:#fff;
         border:1px solid #cccccc;
         color:#575757;
+        &.active{
+            background:#0065b3;
+            border:1px solid #0065b3;
+            color:#fff;
+        }
     }
-    .btn-cancel{
+    .btn-black{
         background:#4c4c4c;
         border:1px solid #4c4c4c;
         color:#fff;
-    }    
+    } 
 
 }
 
 //---------------------------------------------------
-// 
+// group
 //---------------------------------------------------
+.btns-group {
+    text-align: right !important;
+
+    button,
+    a {
+        padding: 10px 40px;
+        margin: 0 2px;
+    }
+}

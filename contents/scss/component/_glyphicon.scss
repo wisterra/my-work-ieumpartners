@@ -1,31 +1,42 @@
 ﻿/* glyphicon / deco */
- 
+
 //---------------------------------------------------
 // 우측 세로바
 //---------------------------------------------------
 %sp-bar {
     display: inline-block;
-    width:1px;
-    height:10px;
+    width: 1px;
+    height: 10px;
     //margin:0 6px 0 12px;
-    background:#7b7b7b;
+    background: #7b7b7b;
 }
-.sp-bar{
+
+.sp-bar {
     display: inline-block;
-    width:1px;
-    height:10px;
+    width: 1px;
+    height: 10px;
     //margin:0 6px 0 12px;
-    background:#7b7b7b;
+    background: #7b7b7b;
 }
+
 //---------------------------------------------------
 // icons
 //---------------------------------------------------
-.icon-new{
-    border:1px solid #89d6f0;
-    font-size:10px;
+.icon-new {
+    border: 1px solid #89d6f0;
+    font-size: 10px;
     font-style: normal;
-    color:#4cb9e2;
-    padding:2px 4px;
+    color: #4cb9e2;
+    padding: 2px 4px;
     font-weight: bold;
 }
-
+.glyphicon-triangle-top {
+    position:relative;
+    top:2px;
+    transform: scale(.5, .8);
+}
+.glyphicon-triangle-bottom {
+    position:relative;
+    top:2px;    
+    transform: scale(.5, .8);
+}

@@ -1,0 +1,13 @@
+﻿/* for datepicker */
+#ui-datepicker-div{
+  z-index: 100 !important;
+  table{
+    min-width: initial !important;
+    border-bottom:0 !important;
+    td{
+      padding:0 !important;
+      height:auto;
+      font-size:14px;
+    }
+  }  
+}

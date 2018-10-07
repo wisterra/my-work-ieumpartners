@@ -3,16 +3,17 @@
 --------------------------------------------------- */
 #header {
   position: relative;
-  min-width:1200px;
+  min-width: 1200px;
 }
 
 .site-logo {
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index:1;
-  a{
-    display:block;
+  z-index: 1;
+
+  a {
+    display: block;
   }
 }
 
@@ -22,18 +23,33 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  ul,
   li {
     display: inline-block;
 
-    &:first-child::after {
+  }
+
+  ul:first-child {
+
+    li {
+      &::before {
+        content: '';
+        @extend %sp-bar;
+        margin: 0 10px;
+      }
+    &:first-child::before {
       content: '';
-      @extend %sp-bar;
-      margin: 0 10px;
+      width:0;
+    }
+    &:last-child {
+      padding-right: 22px;
+    }    
+
     }
 
-    &:nth-child(2) {
-      padding-right: 22px;
-    }
+  }
+
+  li {
 
     a {
       color: #000;
