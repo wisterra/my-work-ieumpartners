@@ -44,6 +44,24 @@ table {
     vertical-align: middle;
     padding-top: 0 !important;
   }
+
+  a {
+    color:inherit;
+  }
+}
+
+.table-list.type2 {
+
+  td:nth-child(2) {
+    text-align:left;
+  }
+}
+
+.table-list.type3 {
+
+  td:nth-child(3) {
+    text-align:left;
+  }
 }
 
 /* dl.list-view */

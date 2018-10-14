@@ -1,0 +1,29 @@
+<div id="lnb">
+    <ul>
+        <li>
+            <a href="#event/event" class="on fakelink">진행중인 이벤트</a>
+        </li>
+        <li>
+            <a href="#event/eventEnd" class="fakelink">지난 이벤트</a>
+        </li>
+        <li>
+            <a href="#event/eventWinner" class="fakelink">당첨자 발표</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+        $(document).ready(function () {
+            //이 부분은 임시 링크 세팅입니다.
+            var hashName = location.hash;
+            targetPageName = hashName.split('#')[1];
+
+            // [임시] a태그 클릭시 페이지 변경
+            $('a.fakelink').click(function () {
+                var src = String(this).split('#')[1];
+                location.href = 'index.html#' + src;
+                location.reload();
+            });
+            
+        });    
+</script>

@@ -1,0 +1,29 @@
+<div id="lnb">
+    <ul>
+        <li>
+            <a href="#customerService/notice" class="on fakelink">공지사항</a>
+        </li>
+        <li>
+            <a href="#customerService/ask" class="fakelink">1:1 고객상담</a>
+        </li>
+        <li>
+            <a href="#customerService/qna" class="fakelink">자주 찾는 질문</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+        $(document).ready(function () {
+            //이 부분은 임시 링크 세팅입니다.
+            var hashName = location.hash;
+            targetPageName = hashName.split('#')[1];
+
+            // [임시] a태그 클릭시 페이지 변경
+            $('a.fakelink').click(function () {
+                var src = String(this).split('#')[1];
+                location.href = 'index.html#' + src;
+                location.reload();
+            });
+            
+        });    
+</script>

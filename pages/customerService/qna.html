@@ -1,0 +1,132 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>자주 찾는 질문</h1>
+                <p>고객님께서 자주 찾으시는 질문입니다.</p>
+            </div>
+            <div>
+
+                <!-- 검색SET -->
+                <div class="search-box form-inline">
+                    <select class="form-control">
+                        <option>대분류</option>
+                    </select>
+                    <select class="form-control">
+                        <option>소분류</option>
+                    </select>
+                    <select class="form-control">
+                        <option>제목+내용</option>
+                    </select>
+                    <input type="text" class="form-control" value="">
+                    <button type="button" class=" btn btn-default">조회</button>
+                </div>
+                <!-- // 검색SET -->
+                
+                <table class="table-list type3">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>분류</th>
+                            <th>제목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8</td>
+                            <td>회원정보</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>가입 및 탈퇴</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>회원정보</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>가입 및 탈퇴</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>회원정보</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>가입 및 탈퇴</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>회원정보</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>회원정보</td>
+                            <td><a href="#customerService/qna-view">제목이 여기에 들어갑니다.</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="First" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Previous" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li>
+                            <a href="#" aria-label="Next" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Last" class="paging">
+                                <span aria-hidden="true">&nbsp;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-customerService.html');
+
+    });
+</script>
+<!-- //script -->
