@@ -7,15 +7,16 @@
     <div class="sub-content">
         <div class="content-zone">
             <div class="page-header">
-                <h1>상담내역</h1>
-                <p>원탑코리아에 요청하신 상담내역입니다.</p>
+                <h1>자주 찾는 질문</h1>
+                <p>고객님께서 자주 찾으시는 질문입니다.</p>
             </div>
             <div>
                 <dl class="list-view">
-                    <dt>제목이 여기에 들어갑니다. <span>2018.06.20</span></dt>
+                    <dt>
+                        제목이 여기에 들어갑니다.
+                        <span><i class="textgrayblack">아이디/패스워드</i><i class="dv-bar"></i>2018.06.20</span>
+                    </dt>
                     <dd>
-                        <br>
-                        <br>
                         서비스 이용에 불편을 끼쳐드려 대단히 죄송합니다.<br>
                         보다 안정적이고 편리한 서비스 제공을 위하여 더욱 노력하는 원탑코리아가 되겠습니다.<br>
                         <br>
@@ -23,10 +24,7 @@
                         감사합니다.<br>
                     </dd>
                 </dl>
-                <ul class="list-pager">
-                    <li><i class="glyphicon glyphicon-triangle-top"></i><span>이전글</span><a href="#member/cunsulting-view" class="fakelink">여기에 이전글</a><span class="date">2018.06.20</span></li>
-                    <li><i class="glyphicon glyphicon-triangle-bottom"></i><span>다음글</span><a href="#member/cunsulting-view" class="fakelink">여기에 다음글</a><span class="date">2018.06.20</span></li>
-                </ul>
+                <ul class="list-pager"></ul><!-- 지우지마세요. 레이아웃에 필요한 요소입니다. -->
 
                 <div class="btns-group">
                     <button type="button" class="btn btn-primary btn-lg">목록</button>
@@ -42,7 +40,7 @@
 <script>
     $(document).ready(function () {
         // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
-        $('#includeLNB').load('../include/lnb-mypage.html');
+        $('#includeLNB').load('../include/lnb-customerService.html');
 
     });
 </script>

@@ -1,0 +1,34 @@
+/*---------------------------------------------------
+// maintenance
+--------------------------------------------------- */
+
+.car-status{
+    position:relative;
+    top:-50px;
+    left:-50px;
+    width:1000px;
+    table{
+        text-align:center;
+    }
+}
+
+.answer-area{
+    position:relative;
+    left:-50px;
+    bottom:-40px;
+    width:1000px;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    background:#f2f2f2;
+    margin-top:50px;
+    padding:50px;    
+    strong{
+        color:#0066b4;
+        display:block;
+        margin-bottom:20px;
+    }
+}
+
+.btns-left{
+    float:left;
+}

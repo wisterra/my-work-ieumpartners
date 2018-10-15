@@ -1,0 +1,29 @@
+<div id="lnb">
+    <ul>
+        <li>
+            <a href="#maintenance/maintenance" class="on fakelink">정비서비스</a>
+        </li>
+        <li>
+            <a href="#maintenance/diagnosis" class="fakelink">내차 이상진단</a>
+        </li>
+        <li>
+            <a href="#maintenance/specialCunsulting" class="fakelink">장비전문가 상담</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function () {
+        //이 부분은 임시 링크 세팅입니다.
+        var hashName = location.hash;
+        targetPageName = hashName.split('#')[1];
+
+        // [임시] a태그 클릭시 페이지 변경
+        $('a.fakelink').click(function () {
+            var src = String(this).split('#')[1];
+            location.href = 'index.html#' + src;
+            location.reload();
+        });
+
+    });
+</script>

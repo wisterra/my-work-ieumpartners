@@ -1,4 +1,35 @@
+---------------------------------------------------------
+ONETOP KOREA SITE PUBLISHING
+writer :  Kim Jihye
+phone : 01055871099
+---------------------------------------------------------
 # UPDATE INFORMATION
+
+## v20181015_1
+
+### update info
+고객센터, 자동차 정비, 이벤트 카테고리 페이지 작업
+
+
+
+## v20181008_1
+
+### update info
+카테고리 정리 : https://docs.google.com/spreadsheets/d/1EAxE-B__xZePKddlKWH5H7LZQI_-jDi5SHJp4XF-MBs/edit#gid=1334092343
+
+include파일 내용 조금씩 변경, member, mypage 카테고리 페이지 제작
+datepicker사용을 위해 jquery-ui.css 파일이 추가되고 jquery파일 버전업으로 변경했습니다!
+
+이미지파일, vendor폴더에 변경사항 있습니다.
+contents폴더는 기존폴더는 삭제후 다시 덮어씌우시면 깔끔해집니다.
+
+* 이전버전과의 변경내역은 git페이지의 file changed 내용을 확인부탁드립니다.
+파일변경 내용 : https://github.com/wisterra/onetopkorea/pull/17/files
+(scss쪽 변경내역은 확인하지않으셔도 됩니다. site.min.css파일만 덧씌어주세요~)
+
+html안에서 변경된 부분은 '수정'이라는 키워드로 검색하여 주석부분 코멘트 확인해주세요~
+
+
 
 ## v20180920_1
 

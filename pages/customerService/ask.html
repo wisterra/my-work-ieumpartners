@@ -1,0 +1,97 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>1:1 고객상담</h1>
+                <p>원탑코리아 이용시 불편했던 점이나 궁금한 사항등 문의해주시면 신속하게 답변드리겠습니다.</p>
+            </div>
+            <div>
+                <form action="" class="form-inline">
+                    <br>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label for="askTitile">제목</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="askTitile" style="width:800px">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="userName">작성자</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="userName" style="width:310px">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="userPhone">휴대혼 번호</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+
+                                        <select class="form-control">
+                                            <option>선택</option>
+                                            <option>010</option>
+                                        </select> -
+                                        <input type="tel" class="form-control" style="width:100px" id="userPhone"> -
+                                        <input type="tel" class="form-control" style="width:100px" id="userPhone">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="userEmail">이메일</label>
+                                </th>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="userEmail"> @
+                                        <select class="form-control">
+                                            <option>선택</option>
+                                            <option>naver.com</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="askContent">내용</label>
+                                </th>
+                                <td>
+                                    <textarea name="" id="" cols="100%" rows="10"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="btns-group">
+                        <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myPageModify">확인</button>
+                        <button type="button" class=" btn btn-black btn-lg">취소</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-customerService.html');
+    });
+</script>
+<!-- //script -->
