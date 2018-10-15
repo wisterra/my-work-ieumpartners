@@ -5,7 +5,14 @@ phone : 01055871099
 ---------------------------------------------------------
 # UPDATE INFORMATION
 
-## v20180920_1
+## v20181015_1
+
+### update info
+고객센터, 자동차 정비, 이벤트 카테고리 페이지 작업
+
+
+
+## v20181008_1
 
 ### update info
 카테고리 정리 : https://docs.google.com/spreadsheets/d/1EAxE-B__xZePKddlKWH5H7LZQI_-jDi5SHJp4XF-MBs/edit#gid=1334092343
