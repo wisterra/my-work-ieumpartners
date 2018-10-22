@@ -1,0 +1,83 @@
+<div id="container" class="container-sub">
+    <!-- LNB -->
+    <div id="includeLNB"></div>
+    <!-- // LNB -->
+
+    <!-- Sub Content -->
+    <div class="sub-content">
+        <div class="content-zone">
+            <div class="page-header">
+                <h1>매장안내</h1>
+                <p>원탑코리아 매장을 편리하게 검색하세요</p>
+            </div>
+
+            <div>
+                <div class="tabs">
+                    <div class="select-info">
+                        <button type="button" class="shop-info1 active">
+                            <span>주유소</span>
+                        </button>
+                        <button type="button" class="shop-info2">
+                            <span>정비소</span>
+                        </button>
+                        <button type="button" class="shop-info3">
+                            <span>검사소</span>
+                        </button>
+                        <button type="button" class="shop-info4">
+                            <span>세차장</span>
+                        </button>
+                        <button type="button" class="shop-info5">
+                            <span>이디아</span>
+                        </button>
+                        <button type="button" class="shop-info6">
+                            <span>맥드라이브</span>
+                        </button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="info-view-area">
+                        <div class="info-view-shop1">
+                            주요소 내용
+                        </div>
+                        <div class="info-view-shop2">
+                            정비소 내용
+                        </div>
+                        <div class="info-view-shop3">
+                            검사소 내용
+                        </div>
+                        <div class="info-view-shop4">
+                            세차장 내용
+                        </div>
+                        <div class="info-view-shop5">
+                            이디아 내용
+                        </div>
+                        <div class="info-view-shop6">
+                            맥드라이브 내용
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- // Sub Content -->
+</div>
+
+<!-- script -->
+<script>
+    $(document).ready(function () {
+        // lnb load(개발환경에 load 방법을 변경해서 사용해주시면 됩니다.)
+        $('#includeLNB').load('../include/lnb-shop.html');
+
+        // 탭 처리
+        $('.info-view-area>div').eq(0).show();
+        $('.select-info button').click(function () {
+            var i = $(this).index();
+            $('.select-info button').removeClass('active');
+            $(this).addClass('active');
+            $('.info-view-area>div').hide();
+            $('.info-view-area>div').eq(i).show();
+        });
+        
+    });
+</script>
+<!-- //script -->

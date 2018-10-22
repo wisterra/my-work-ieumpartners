@@ -1,0 +1,54 @@
+/*---------------------------------------------------
+// shop
+--------------------------------------------------- */
+
+.select-info{
+
+    button{
+        border:0;
+        margin:0;
+        padding:0;
+        float:left;
+        background:none;
+        width:166.5px;
+        height:129px;
+        border:1px solid #e3e3e3;
+        border-right:0;
+        span{
+            @extend %a11y-hidden;
+        }
+        &:last-child{
+            border-right:1px solid #e3e3e3;
+        }
+
+        &.shop-info1{
+            background-image: url('../images/shop/tab-shop1.jpg');
+        }
+        &.shop-info2{
+            background-image: url('../images/shop/tab-shop2.jpg');
+        }
+        &.shop-info3{
+            background-image: url('../images/shop/tab-shop3.jpg');
+        }
+        &.shop-info4{
+            background-image: url('../images/shop/tab-shop4.jpg');
+        }
+        &.shop-info5{
+            background-image: url('../images/shop/tab-shop5.jpg');
+        }
+        &.shop-info6{
+            background-image: url('../images/shop/tab-shop6.jpg');
+        }                                        
+        &.active{
+            background-position-y: -129px;
+        }
+    }
+}
+.info-view-area{
+    min-height:600px;
+    margin-top:30px;
+
+    &>div{
+        display:none;
+    }
+}
