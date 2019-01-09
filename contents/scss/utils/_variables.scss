@@ -3,13 +3,13 @@
 //---------------------------------------------------
 
 //location
-$location: '../../../Images/KittyJusticeLeague/';
+// $location: '../../../Images/KittyJusticeLeague/';
 
-@if $device == web { 
-    $location: '../../../Images/KittyJusticeLeague/w/';
-    $width: 1000px;
+// @if $device == web { 
+//     $location: '../../../Images/KittyJusticeLeague/w/';
+//     $width: 1000px;
 
-} @else {
-    $location: '../../../Images/KittyJusticeLeague/m/';
-    $width: 640px;
-}
+// } @else {
+//     $location: '../../../Images/KittyJusticeLeague/m/';
+//     $width: 640px;
+// }

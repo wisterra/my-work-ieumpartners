@@ -1,0 +1,53 @@
+/*---------------------------------------------------
+// company
+--------------------------------------------------- */
+.company-section {
+    padding-top:50px;
+    padding-bottom:50px;
+    border:1px solid red;
+
+    p{
+        font-size:18px;
+        line-height:1.5;
+    }
+
+    h2{
+        text-align:center;
+        //font-family: nanum gothic, gulim;
+        font-size:30px;
+        font-weight:bold;
+    }
+}
+
+.co-info{
+
+}
+.co-service{
+    background:url('/contents/images/company/company-bg1.jpg') center center no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.co-system{
+    background:url('/contents/images/company/system-bg2.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+.co-portfolio{
+    background:url('/contents/images/company/company-img2.jpg') center center no-repeat;
+    color:#fff;
+}
+
+.co-exc{
+
+}
+
+.co-partners{
+    background:url('/contents/images/company/company-bg3.jpg') center center no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+
+.co-contanct{
+
+}

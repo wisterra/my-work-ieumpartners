@@ -1,6 +1,6 @@
-## Welcome to OneTop Korea Publishing
+## Welcome to IEUM PARTNERS Publishing
 
-[OneTop Korea publishing](https://wisterra.github.io/onetopkorea/pages/index.html#main)
+[IEUM PARTNERS publishing](https://wisterra.github.io/ieumpartners/pages/index.html#main)
 
 
 

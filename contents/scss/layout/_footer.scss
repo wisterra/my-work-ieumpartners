@@ -28,7 +28,7 @@
   }
 
   p {
-    color: #636367;
+    //color: #636367;
   }
 }
 
@@ -62,22 +62,22 @@
 
 .footer-logo {
   position: absolute;
-  top: 40px;
+  top: 55px;
   left: 180px;
 }
 
 .footer-copy {
-  padding-top: 45px;
-  padding-left: 400px;
-  padding-bottom: 25px;
+  padding-top: 55px;
+  padding-left: 360px;
+  padding-bottom: 55px;
 
   span,
   p {
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: 'light';
   }
 
   p {
-    padding-top: 8px;
+    padding-top: 2px;
   }
 }
