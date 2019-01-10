@@ -1,47 +1,44 @@
 /*---------------------------------------------------
 // company
 --------------------------------------------------- */
+
 // 공통적으로 적용될 내용
 .company-section {
-    vertical-align:top;
+    vertical-align: top;
     padding-top: 50px;
     padding-bottom: 50px;
-
     p {
         font-size: 18px;
         line-height: 1.5;
     }
-
     h2 {
         text-align: center;
         font-size: 25px;
         font-weight: bold;
         padding-bottom: 30px;
     }
-
-    ul, dl {
-        vertical-align:top;
+    ul,
+    dl {
+        vertical-align: top;
         display: inline-block;
         font-size: 15px;
     }
     li {
         padding-bottom: 15px;
-        list-style-type: disc;
-        //list-style-position: inside;
+        list-style-type: disc; //list-style-position: inside;
         line-height: 1.5;
-        letter-spacing:-1px;
+        letter-spacing: -1px;
     }
-    dt{
-        padding-bottom:10px;
+    dt {
+        padding-bottom: 10px;
     }
     dd {
         display: list-item;
-        list-style-type: disc;
-        //list-style-position: inside;
-        margin-left:20px;
+        list-style-type: disc; //list-style-position: inside;
+        margin-left: 20px;
         line-height: 1.8;
-        letter-spacing:-1px;
-    }    
+        letter-spacing: -1px;
+    }
 }
 
 // 회사 소개
@@ -57,7 +54,6 @@
     background: url('/contents/images/company/company-bg1.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
-
     .item {
         position: relative;
         padding-top: 30px;
@@ -65,7 +61,6 @@
         padding-left: 290px;
         border-top: 1px solid #335b7d;
     }
-
     strong {
         position: absolute;
         top: 50%;
@@ -74,79 +69,167 @@
         width: 280px;
         text-align: center;
     }
-
     ul {
         width: 220px;
         padding-right: 30px;
     }
 }
+
 // 회사 시스템
 .co-system {
-    height:840px;
+    height: 840px;
     background: url('/contents/images/company/system-img.png') center center no-repeat;
-    dl{
-        position:relative;
-        width:500px;
-        height:280px;
-        margin:0;
-        padding-top:60px;
-        padding-left:200px;
-        float:left;
-        dt{
-            
-        }
-        img{
-            position:absolute;
-            top:0;
-            //display:none;
+    dl {
+        position: relative;
+        width: 500px;
+        height: 280px;
+        margin: 0;
+        padding-top: 60px;
+        padding-left: 200px;
+        float: left;
+        dt {}
+        img {
+            position: absolute;
+            top: 0; //display:none;
         }
     }
-    dl:nth-child(2n){
-        padding-left:0px;
-    }    
-    strong{
-        display:block;
-        color:#0066b4;
+    dl:nth-child(2n) {
+        padding-left: 0px;
+    }
+    strong {
+        display: block;
+        color: #0066b4;
     }
 }
 
 .co-portfolio {
     background: url('/contents/images/company/company-bg2.jpg') center center no-repeat;
     color: #fff;
-    h2{
-        color:#2b2b2b;
+    h2 {
+        color: #2b2b2b;
     }
-    .dl-group{vertical-align:top; display:inline-block; width:49%;padding-left:60px;}
-    .dl-group:nth-child(2){padding-left:0; padding-right:60px;}
-    dl{display:block;}
-        dt{color:#0066b4;}
+    .dl-group {
+        vertical-align: top;
+        display: inline-block;
+        width: 49%;
+        padding-left: 60px;
+    }
+    .dl-group:nth-child(2) {
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    dl {
+        display: block;
+    }
+    dt {
+        color: #0066b4;
+    }
 }
 
 .co-exc {
-    .item{
-        vertical-align:top;
-        border:1px solid #dcdcdc;
-        display:inline-block;
-        width:400px;
-        height:250px;
-        margin:10px;
-        padding:30px;
-        padding-left:100px;
+    .item {
+        position:relative;
+        vertical-align: top;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        width: 470px;
+        height: 250px;
+        margin: 10px;
+        padding: 30px;
     }
-    li{
-        list-style:none;
+    .profile-img {
+        position:absolute;
+        top:32px;
+        left:34px;
+        width: 96px;
+        height: 96px;
+        background: url('/contents/images/company/profile-img.jpg') center center no-repeat;
+    }     
+    .desc{
+        padding-left:126px;
+        span{
+            &::before {
+                content: '';
+                @extend %sp-bar;
+                margin: 0 10px;
+                top:2px;
+                background-color:#e5e5e5;
+                height:15px;
+              }
+        }
     }
-    p{
-        font-size:15px;
-        font-weight:bold;
-        line-height:1.2;
+    ul{
+        padding-top:15px;
+        padding-bottom:15px;
     }
+    li {
+        list-style: none;
+        line-height:1.5;
+        padding-bottom:0;
+    }
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1;
+    }
+   
 }
 
 .co-partners {
+    //height:686px;
     background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
+    strong{
+        display:block;
+        border-bottom:1px solid #5f6c80;
+        padding-bottom:15px;
+        font-size:18px;
+    }
+    ul{
+        width:225px;
+        height:200px;
+        padding-top:20px;
+
+    }
+    li{
+        line-height:1.8;
+        padding-bottom:0;
+        list-style: none;
+    }
+    .group{
+        vertical-align:top;
+        display:inline-block;
+        padding-right:40px;
+        padding-bottom:30px;
+    }
+    .group-big{
+        padding-right:0;
+    }
 }
 
-.co-contanct {}
+.co-contanct {
+    .inner{
+        border:1px solid #e5e5e5;
+        text-align: center;
+    }
+    strong{
+        display:inline-block;
+        padding-top:30px;
+        padding-bottom:30px;
+        font-size:18px;
+        &::before {
+            content: '';
+            @extend %sp-bar;
+            margin: 0 40px;
+            background-color:#e5e5e5;
+            height:15px;
+            top:2px;
+          }
+        &:first-child::before {
+          content: '';
+          width:0;
+          margin:0;
+        }        
+    }
+}
