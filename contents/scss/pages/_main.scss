@@ -28,7 +28,7 @@
             font-size: 40px;
             //color: #575757;
             color: #9e9e9e;
-            opacity: 1;            
+            opacity: 1;
         }
 
         .slick-dots li.slick-active button:before {
@@ -60,6 +60,30 @@
                 left: 90%;
             }
         }
+
+        .visual-text {
+            width: 100%;
+            height: 80%;
+            display: table;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+
+            &-inner {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                height: 390px;
+            }
+
+            strong {
+                font-weight: bold;
+                font-size: 200%;
+                display: inline-block;
+                margin-bottom: 14px;
+            }
+        }
+
     }
 
     .main-content {
@@ -209,14 +233,16 @@
             }
         }
 
-        .ctg-mtn {
+        .ctg-sv {
             position: relative;
             width: (1180/3)+px;
             height: 254px;
-            background: #0065b3 url('../images/main/ctg-maintenance-bg.png') center 80px no-repeat;
+            background: #0065b3 url('../images/main/ctg-sv-bg.png') center bottom no-repeat;
 
             a {
                 color: #fff;
+                display: block;
+                height:100%;                
             }
         }
 
@@ -247,7 +273,7 @@
                 .slick-dots li button:before {
                     font-size: 40px;
                     color: #9e9e9e;
-                    opacity: 1;                        
+                    opacity: 1;
                 }
 
                 .slick-dots li.slick-active button:before {
@@ -262,13 +288,15 @@
             }
         }
 
-        .ctg-shop {
+        .ctg-faq {
             width: (1180/3)+px;
             height: 254px;
-            background: #e5e8ef url('../images/main/ctg-shop-bg.png') center bottom no-repeat;
+            background: #e5e8ef url('../images/main/ctg-faq-bg.png') center bottom no-repeat;
 
             a {
                 color: #1a1a1a;
+                display: block;
+                height:100%;
             }
         }
     }
