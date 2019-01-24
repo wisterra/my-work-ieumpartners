@@ -116,7 +116,7 @@
         vertical-align: top;
         display: inline-block;
         width: 49%;
-        padding-left: 60px;
+        padding-left: 54px;
     }
     .dl-group:nth-child(2) {
         padding-left: 0;
@@ -245,14 +245,15 @@
 .co-greeting {
     width:997px;
     margin:0 auto;
-    //padding-right:120px;
+    padding:0 50px;
 
     img {
         padding-bottom: 50px;
+        margin-left:-50px;
     }
     strong{
         color:#0066b4;
-        letter-spacing: 1px;
+        //letter-spacing: 1px;
     }
     p{
         padding-bottom:16px;
