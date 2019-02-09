@@ -349,11 +349,15 @@
 
 // 투자상품
 .sv-ivt {
-    .content-zone {
+    .content-zone.ivt {
         position: relative;
         width: 1200px;
         text-align: center;
     }
+    .content-zone {
+        position: relative;
+        max-width: 1200px;
+    }    
 
     h2 {
         width: 1000px;
