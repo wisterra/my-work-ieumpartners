@@ -1,0 +1,980 @@
+/*---------------------------------------------------
+// category : service
+--------------------------------------------------- */
+
+// 공통적으로 적용될 내용
+.service-section {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
+    p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 5.6rem;
+        padding-bottom: 30px;
+    }
+
+    ul,
+    dl {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    li {
+        // padding-bottom: 15px;
+        // list-style-type: disc; //list-style-position: inside;
+        // line-height: 1.5;
+        // letter-spacing: -1px;
+    }
+
+    dt {
+        padding-bottom: 10px;
+    }
+
+    dd {
+        display: list-item;
+        list-style-type: disc; //list-style-position: inside;
+        margin-left: 20px;
+        line-height: 1.8;
+        letter-spacing: -1px;
+    }
+}
+
+/*---------------------------------------------------
+// page : service
+--------------------------------------------------- */
+
+// 위에서 부터 section 순서대로
+.sv-top {
+    //height: 483px;
+    background: url('/contents/images/service/service-bg1.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        border-bottom: 1px solid #5f7daa;
+        margin-bottom: 4rem;
+    }
+
+    strong {
+        display: block;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+
+    .txt-l {
+        display: inline-block;
+        width: 58%;
+        vertical-align: top;
+        font-size: 2.5rem;
+        line-height: 1.5;
+
+        strong {
+            padding-top: 1.2rem;
+            color: #85d9ff;
+            font-weight: 900;
+            font-size: 7rem;
+            letter-spacing: 2rem;
+        }
+    }
+
+    .txt-r {
+        display: inline-block;
+        width: 41%;
+        vertical-align: top;
+        font-size: 1.8rem;
+    }
+
+    p {
+        padding-bottom: 2rem;
+    }
+}
+
+.sv-top2 {
+    .inner {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    li {
+        background: #eeeeee;
+        display: inline-block;
+        border-radius: 30px;
+        line-height: 2.4;
+        font-size: 1.5rem;
+        padding: 0 14px;
+        margin-left: 10px;
+        list-style: none; //display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            content: url("/contents/images/service/deco-note.png");
+            position: absolute;
+            top: 0;
+            left: -10px;
+        }
+    }
+
+    div {
+        vertical-align: middle;
+    }
+
+    .txt-l {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .txt-c {
+        display: inline-block;
+        width: 10%;
+    }
+
+    .txt-r {
+        display: inline-block;
+        width: 35%;
+        color: #0066b4;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    strong {
+        display: block;
+        font-size: 3.5rem;
+    }
+}
+
+.sv-benefit {
+    background: #dbf1fb;
+
+    .item {
+        width: 33%;
+        display: inline-block;
+        padding: 3rem;
+    }
+
+    p {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 2.6rem;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+    }
+
+    strong {
+        display: block;
+        color: #0066b4;
+        font-size: 2.5rem;
+    }
+
+    li {
+        list-style: circle;
+        list-style-position: inside;
+        padding-bottom: 1rem;
+    }
+}
+
+.sv-ex {
+    h2 {
+        color: #0066b4;
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-top: 2rem;
+        vertical-align: top;
+        display: table;
+        margin: 0 auto;
+    }
+
+    li {
+        margin: 0 2rem;
+        display: inline-block;
+    }
+
+    .item {
+        display: table-cell;
+        background: #0066b4;
+        color: #fff;
+        width: 234px;
+        height: 234px; //padding-top: 8.4rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    strong {
+        display: block;
+        font-size: 2.5rem; //font-weight: normal;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        line-height: 1.2;
+    }
+
+    em {
+        display: inline-block;
+        font-style: normal;
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+}
+
+.sv-detail {
+    background: #f2f2f2;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        //border: 1px solid #000;
+    }
+
+    ul {
+        //display:inline-block;
+        width: 49.5%;
+    }
+
+    li {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .map {
+        display: inline-block;
+        width: 49.5%;
+    }
+
+}
+
+.sv-result {
+    color: #0066b4;
+
+    li {
+        background: #dbf1fb;
+    }
+
+    ol {
+        padding-left: 0;
+    }
+
+    .item {
+        background: #dbf1fb;
+        padding: 3rem 4.5rem;
+        margin-bottom: 1rem;
+        color: #000;
+    }
+
+    strong {
+        color: #0066b4;
+    }
+
+    p {
+        color: #000;
+    }
+
+    em {
+        display: block;
+        color: #000;
+        font-style: normal;
+    }
+}
+
+.sv-message {
+    background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h2 {
+        font-size: 3.5rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    em {
+        display: inline-block;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 4.5rem;
+    }
+}
+
+.sv-fund-info {
+    p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.sv-effect {
+    background: #dbf1fb;
+
+    h2 {
+        text-align: left;
+    }
+
+    ol {
+        padding: 0;
+    }
+
+    li {
+        font-size: 1.5rem;
+        padding-bottom: .8rem;
+    }
+
+    .img {
+        padding-bottom: 1rem;
+    }
+}
+
+// 투자상품
+.sv-ivt {
+    .content-zone {
+        position: relative;
+        width: 1200px;
+        text-align: center;
+    }
+
+    h2 {
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 2.5rem;
+        text-align: left;
+        font-weight: bold;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    // 이 페이지에서 ivtbox가 변형되어 사용됨
+    .box {
+        display: inline-block;
+        width: 40%;
+        margin: 0 2%;
+        padding-bottom: 6rem;
+
+        & .box-inner {
+            position: relative;
+            border: 1px solid #e5e5e5;
+            padding: 2rem;
+            padding-top: 5rem;
+            //margin:0 4rem;
+        }
+
+        i {
+            position: absolute;
+            top: 1.5rem;
+            left: 2rem;
+            font-style: normal;
+            font-weight: bold;
+            color: #ff0505;
+            font-size: 1.5rem;
+        }
+
+        .ivtbox {
+
+            padding: 3rem;
+            text-align: left;
+
+            .ivt-view {
+                //transform: scale(.5);
+                padding-bottom: 9rem;
+
+            }
+
+            .ivt-title {
+                font-size: 1.5rem;
+
+                strong {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .ivt-info {
+
+                p {
+                    display: none;
+                }
+            }
+
+            .ivt-ratio {
+                transform: translateY(-74%);
+                right: 4.5rem;
+            }
+
+            .round-box {
+                transform: scale(.7);
+            }
+
+            .date {
+                position: absolute;
+                top: -3.8rem;
+                right: -4rem;
+                color: #000;
+                text-align: right;
+            }
+
+            table {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+
+                //display:none;
+                th {
+                    display: none;
+                }
+
+                td {
+                    //border:1px solid red;
+                    font-size: 1.8rem;
+                    background-color: #fff;
+                    padding-top: 1.5rem;
+                    padding-bottom: 0;
+                    color: #000;
+
+                    &::before {
+                        content: '';
+                        width: 0;
+                    }
+                }
+            }
+
+            // transform: scale(.8);
+        }
+    }
+
+
+}
+
+/*---------------------------------------------------
+// page : service-view
+--------------------------------------------------- */
+
+.sv-point {
+    background: #dbf1fb;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    .item {
+        width: 33%;
+        display: inline-block;
+        padding: 3rem;
+    }
+
+    p {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 2.6rem;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    i {
+        display: inline-block;
+        margin: 0 auto;
+        font-style: normal;
+        font-size: 1.5rem;
+        color: #0168b7;
+        background: #fff;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    strong {
+        display: block;
+        color: #0066b4;
+        font-size: 2.5rem;
+    }
+
+    .note {
+        list-style: circle;
+        list-style-position: inside;
+        padding-bottom: 1rem;
+    }
+}
+
+.sv-ivt-view {
+    padding-top: 10rem;
+
+    h2 {
+        position: relative;
+        top: .4rem;
+        text-align: left;
+        font-weight: bold;
+        font-size: 2.5rem;
+        display: inline-block;
+        margin-right: 3rem;
+    }
+
+    table {
+        font-size: 1.8rem;
+
+        strong {
+            font-size: 2.5rem;
+            color: #0168b7;
+            display: block;
+        }
+
+        th {
+            position: relative;
+            background: #e5e8ef;
+            font-weight: normal;
+            padding: 2rem 4rem;
+            text-align: center;
+            font-size: 1.8rem;
+
+        }
+
+        td {
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        margin-bottom: 10rem;
+    }
+
+    .ivt-info {
+        th {
+            text-align: left;
+
+            .btn {
+                position: absolute;
+                top: 3rem;
+                right: 4rem;
+            }
+        }
+    }
+}
+
+.ivt-note {
+    .content-zone {
+        padding-top: 5rem;
+        border-top: 1px solid #cfcfcf;
+    }
+
+    strong {
+        display: inline-block;
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+/*---------------------------------------------------
+// ivtbox
+--------------------------------------------------- */
+.ivtbox {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    padding: 5rem 4.5rem;
+    //margin-bottom: 4rem;
+
+
+    // 왼쪽
+    .ivt-view {
+        width: 60%;
+        padding-right: 2rem;
+
+        .ivt-title {
+            font-size: 2.5rem;
+
+            strong {
+                display: block;
+                font-size: 4rem;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .ivt-info {
+        position: relative;
+        margin-top: 1.2rem;
+        padding-bottom: 3.2rem;
+
+        p {
+            display: inline-block;
+            padding-top: 1.2rem;
+            padding-left: 7rem;
+            font-size: 1.5rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 7rem;
+            height: 7rem;
+            background: url('/contents/images/service/ico-t1.png') center center no-repeat;
+        }
+    }
+
+    .ivt-table {
+        background: #086faf;
+        width: 100%;
+        min-width: auto;
+        border: 0;
+        text-align: center;
+
+        thead {
+
+            th {
+                background: none;
+                text-align: center;
+                font-weight: normal;
+                padding-top: 2rem;
+                margin: 0;
+                line-height: 1;
+                height: auto;
+                font-size: 2.5rem;
+            }
+        }
+
+        tbody {
+            border: 0;
+
+        }
+
+        td {
+            position: Relative;
+            height: auto;
+            //padding-top: 0 !important;
+            padding-top: 0;
+            padding-bottom: 2rem;
+            font-size: 2.5rem;
+
+            &::before {
+                content: '';
+                @extend %sp-bar;
+                position: absolute;
+                top: -1.5rem;
+                left: 0px;
+                background-color: #267db3;
+                height: 30px;
+
+            }
+
+            &:first-child::before {
+                content: '';
+                width: 0;
+            }
+        }
+    }
+
+    // 오른쪽
+    .ivt-ratio {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-55%);
+        right: 0;
+        width: 40%;
+        text-align: center;
+
+    }
+
+    .round-box {
+        position: relative;
+        background: #fff;
+        top: 3rem;
+        width: 23.2rem;
+        height: 23.2rem;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    .c100 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        font-size: 19.2rem;
+        background-color: #e3e3e3;
+
+
+        &>span {
+            line-height: 4.5em;
+            color: #0066b4;
+            top: -0.8rem;
+            font-weight: bold;
+
+            em {
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                font-size: 2.2rem;
+                color: #4b4b4b;
+                font-style: normal;
+                display: block;
+                width: 100%;
+                font-weight: normal;
+
+                //text-align: right;
+            }
+        }
+
+
+        &:after {
+            top: 0.05em;
+            left: 0.05em;
+            width: 0.9em;
+            height: 0.9em;
+            background-color: #fff;
+        }
+    }
+
+    .date {
+        padding-top: 5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/*---------------------------------------------------
+// ivtbox 타입별 색상 변화(icon & color)
+// PF : 부동산 PF (PROJECT FINACING)
+// CGL : 개인 신용 및 담보대출 / 법인 신용 및 담보대출 (Credit gurantee)
+// NPL : NPL대출
+// ABL : 부동산 ABL (ASSET BACKED LOAN)
+--------------------------------------------------- */
+.ivtbox.type-PF {
+    background: rgba(1, 151, 232, 1);
+    background: -moz-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 151, 232, 1)), color-stop(100%, rgba(1, 104, 183, 1)));
+    background: -webkit-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
+    background: -o-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
+    background: linear-gradient(to right, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0197e8', endColorstr='#0168b7', GradientType=1);
+
+    .ivt-table {
+        background: rgba(8, 115, 179, 1);
+        background: -moz-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8, 115, 179, 1)), color-stop(100%, rgba(8, 100, 163, 1)));
+        background: -webkit-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+        background: -o-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+        background: linear-gradient(to right, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0873b3', endColorstr='#0864a3', GradientType=1);
+    }
+
+}
+
+.ivtbox.type-CGL {
+    background: rgba(1, 167, 209, 1);
+    background: -moz-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 167, 209, 1)), color-stop(100%, rgba(1, 183, 70, 1)));
+    background: -webkit-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
+    background: -o-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
+    background: linear-gradient(to right, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a7d1', endColorstr='#01b746', GradientType=1);
+
+    .ivt-info {
+
+        &::before {
+            background: url('/contents/images/service/ico-t2.png') center center no-repeat;
+        }
+    }
+
+    .ivt-table {
+        background: rgba(8, 124, 165, 1);
+        background: -moz-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8, 124, 165, 1)), color-stop(100%, rgba(8, 129, 121, 1)));
+        background: -webkit-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+        background: -o-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+        background: linear-gradient(to right, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#087ca5', endColorstr='#088179', GradientType=1);
+
+        td {
+
+            &::before {
+                background-color: #2689a1;
+            }
+        }
+    }
+
+    .c100 {
+
+        &>span {
+            color: #01b746;
+        }
+
+        .bar {
+            border-color: #01b746;
+        }
+    }
+
+}
+
+.ivtbox.type-NPL {
+    background: rgba(17, 99, 231, 1);
+    background: -moz-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(17, 99, 231, 1)), color-stop(100%, rgba(80, 26, 178, 1)));
+    background: -webkit-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
+    background: -o-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
+    background: linear-gradient(to right, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1163e7', endColorstr='#501ab2', GradientType=1);
+
+    .ivt-info {
+        &::before {
+            background: url('/contents/images/service/ico-t3.png') center center no-repeat;
+        }
+    }
+
+    .ivt-table {
+        background: rgba(39, 54, 208, 1);
+        background: -moz-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(39, 54, 208, 1)), color-stop(100%, rgba(59, 30, 191, 1)));
+        background: -webkit-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+        background: -o-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+        background: linear-gradient(to right, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2736d0', endColorstr='#3b1ebf', GradientType=1);
+
+        td {
+
+            &::before {
+                background-color: #3436cb;
+            }
+        }
+    }
+
+    .c100 {
+
+        &>span {
+            color: #4101b7;
+        }
+
+        .bar {
+            border-color: #4101b7;
+        }
+    }
+}
+
+.ivtbox.type-ABL {
+    background: rgba(231, 129, 1, 1);
+    background: -moz-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(231, 129, 1, 1)), color-stop(100%, rgba(183, 78, 1, 1)));
+    background: -webkit-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
+    background: -o-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
+    background: linear-gradient(to right, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e78101', endColorstr='#b74e01', GradientType=1);
+
+    .ivt-info {
+        &::before {
+            background: url('/contents/images/service/ico-t4.png') center center no-repeat;
+        }
+    }
+
+    .ivt-table {
+        background: rgba(195, 97, 0, 1);
+        background: -moz-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(195, 97, 0, 1)), color-stop(100%, rgba(179, 81, 0, 1)));
+        background: -webkit-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+        background: -o-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+        background: linear-gradient(to right, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c36100', endColorstr='#b35100', GradientType=1);
+
+        td {
+
+            &::before {
+                background-color: #b74e01;
+            }
+        }
+    }
+
+    .c100 {
+
+        &>span {
+            color: #b74e01;
+        }
+
+        .bar {
+            border-color: #b74e01;
+        }
+    }
+}
+
+
+
+
+// 회사 서비스
+// .co-service {
+//     background: url('/contents/images/company/company-bg1.jpg') center center no-repeat;
+//     background-size: cover;
+//     color: #fff;
+//     .item {
+//         position: relative;
+//         padding-top: 30px;
+//         padding-bottom: 10px;
+//         padding-left: 290px;
+//         border-top: 1px solid #335b7d;
+//     }
+//     strong {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         left: 0;
+//         width: 280px;
+//         text-align: center;
+//     }
+//     ul {
+//         width: 220px;
+//         padding-right: 30px;
+//     }
+// }
+
+// .co-contanct {
+//     strong {
+//         &::before {
+//             content: '';
+//             @extend %sp-bar;
+//             margin: 0 40px;
+//             background-color: #e5e5e5;
+//             height: 15px;
+//             top: 2px;
+//         }
+//         &:first-child::before {
+//             content: '';
+//             width: 0;
+//             margin: 0;
+//         }
+//     }
+// }
