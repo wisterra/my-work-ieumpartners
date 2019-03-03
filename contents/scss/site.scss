@@ -5,13 +5,13 @@ $device: 'web';
 //---------------------------------------------------
 // base setting
 //---------------------------------------------------
+@import "utils/variables";
 @import "base/base";
 @import "base/font";
 
 //---------------------------------------------------
 // utils
 //---------------------------------------------------
-@import "utils/variables";
 @import "utils/mixin";
 @import "utils/prefix";
 @import "utils/a11y-hidden";

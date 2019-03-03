@@ -1,7 +1,21 @@
 ﻿/*---------------------------------------------------
 // layout
 --------------------------------------------------- */
-$viewportSize: 1200px;
+
+// USE EXAMPLE : @include viewportSize('width');
+// content-zone을 비롯한 내부 컨테이너 사이즈 세팅
+@mixin viewportSize($prop) {
+  #{$prop}: 100%;
+  
+ @media screen and (min-width: #{$web_size}) {
+    body { background-color: rgb(219, 162, 4); }
+    #{$prop}: 992px;
+  }
+  @media screen and (min-width: #{$max_conv}) {
+    body { background-color: #fff; }
+    #{$prop}: 1200px;
+  }  
+}
 
 #skip {
   display: none;
@@ -10,14 +24,17 @@ $viewportSize: 1200px;
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone {
   position: relative;
-  width: $viewportSize;
+  //width: $viewportSize;
+  @include viewportSize('width');
+  border:1px solid red;
   margin: 0 auto;
 }
 
 /* container 공통 */
 #container {
   position: relative;
-  min-width: $viewportSize;
+  //min-width: $viewportSize;
+  @include viewportSize('min-width');
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -30,7 +47,8 @@ $viewportSize: 1200px;
 
 /* container - wide */
 .container-wide {
-  width: $viewportSize;
+  //width: $viewportSize;
+  @include viewportSize('width');
   height: 600px;
   margin: 0 auto;
 }

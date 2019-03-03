@@ -13,3 +13,29 @@
 //     $location: '../../../Images/KittyJusticeLeague/m/';
 //     $width: 640px;
 // }
+
+// 구간 세팅
+$min_conv : 575px; // 일반적인 모바일 사이즈 보다 더 작을 경우
+$mob_size : 576px; // mobile
+$tab_size : 768px; // tablet
+$web_size : 992px; // web
+$max_conv : 1280px; // 일반적인 웹 사이즈 보다 더 클 경우
+
+/* ---------------------------------------------------
+// mediaquery 구간 확인용 테스트(컬러배경)
+--------------------------------------------------- */
+@media screen and (max-width : #{$min_conv}) {
+  
+}
+@media screen and (min-width: #{$mob_size}) {
+  body { background-color: yellow }
+}
+@media screen and (min-width: #{$tab_size}) {
+  body { background-color: lightyellow }
+}
+@media screen and (min-width: #{$web_size}) {
+  body { background-color: lightgoldenrodyellow; }
+}
+@media screen and (min-width: #{$max_conv}) {
+  body { background-color: #fff; }
+}

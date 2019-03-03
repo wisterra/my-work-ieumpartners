@@ -343,16 +343,18 @@
     }
 
     .img {
-        padding-bottom: 1rem;
+        padding-bottom: 5rem;
     }
 }
 
 // 투자상품
 .sv-ivt {
+    padding-bottom:0;
+
     .content-zone.ivt {
         position: relative;
         width: 1200px;
-        text-align: center;
+        text-align: left;
     }
     .content-zone {
         position: relative;
@@ -375,7 +377,9 @@
         width: 40%;
         margin: 0 2%;
         padding-bottom: 6rem;
-
+        &:nth-child(2n){
+            margin-left:8.5rem;
+        }
         & .box-inner {
             position: relative;
             border: 1px solid #e5e5e5;
@@ -474,6 +478,13 @@
 // page : service-view
 --------------------------------------------------- */
 
+.sv-view{
+    .btn{
+        margin-top:5rem;
+        padding-left:4rem;
+        padding-right:4rem;
+    }
+}
 .sv-point {
     background: #dbf1fb;
 

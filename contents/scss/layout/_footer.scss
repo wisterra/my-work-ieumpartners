@@ -1,9 +1,8 @@
 ﻿/* ---------------------------------------------------
-// footer
+// footer (base)
 --------------------------------------------------- */
 #footer {
   position: relative;
-  min-width:1200px;
   background: #34353a;
   color: #55565a;
   overflow:hidden;
@@ -18,7 +17,7 @@
   a,
   .footer-copy {
     color: #ebecee;
-    font-size:14px;
+    font-size:1.4rem;
   }
 
   button {
@@ -32,17 +31,23 @@
   }
 }
 
+@media screen and (min-width: #{$web_size}) {
+  #footer {
+    min-width:1200px;
+  }
+}
+
 .footer-link {
   border-bottom: 1px solid #45464a;
   text-align:center;
 
   ul {
-    padding-left: 100px;
+    padding-left: 10rem;
 
     li {
       display: inline-block;
-      line-height: 56px;
-      padding: 0 10px !important;
+      line-height: 5.6rem;
+      padding: 0 1rem !important;
       a, button{
         margin:0;
         padding:0;
@@ -50,7 +55,7 @@
       &::after{
         content: '';
         @extend %sp-bar;
-        margin-left:20px;
+        margin-left:2rem;
       }      
       &:last-child::after{
         content: '';
@@ -62,14 +67,14 @@
 
 .footer-logo {
   position: absolute;
-  top: 58px;
-  left: 180px;
+  top: 5.8rem;
+  left: 18rem;
 }
 
 .footer-copy {
-  padding-top: 55px;
-  padding-left: 360px;
-  padding-bottom: 55px;
+  padding-top: 5.5rem;
+  padding-left: 3.6rem;
+  padding-bottom: 5.5rem;
 
   span,
   p {
@@ -81,3 +86,6 @@
     padding-top: 2px;
   }
 }
+
+
+

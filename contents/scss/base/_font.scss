@@ -53,11 +53,24 @@
 //---------------------------------------------------
 // setting
 //---------------------------------------------------
-
+@mixin fontSize($prop) {
+  #{$prop}: 50%;
+  
+ @media screen and (min-width: #{$tab_size}) {
+    #{$prop}: 55%;
+  }
+  @media screen and (min-width: #{$max_conv}) {
+    #{$prop}: 62.5%;
+  }  
+}
 html{
   // 16px 기준
-  font-size: 62.5%;
+  //font-size: 62.5%;
+  @include fontSize('font-size');
 }
+// USE EXAMPLE : @include viewportSize('width');
+// content-zone을 비롯한 내부 컨테이너 사이즈 세팅
+
 
 body{
   font-family: 'ng', 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif !important;
