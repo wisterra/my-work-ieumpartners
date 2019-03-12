@@ -54,13 +54,13 @@
 // setting
 //---------------------------------------------------
 @mixin fontSize($prop) {
-  #{$prop}: 50%;
+  #{$prop}: 8px;
   
- @media screen and (min-width: #{$tab_size}) {
-    #{$prop}: 55%;
+ @media screen and (min-width: #{$sm}) {
+    #{$prop}: 50%;
   }
-  @media screen and (min-width: #{$max_conv}) {
-    #{$prop}: 62.5%;
+  @media screen and (min-width: #{$md}) {
+    #{$prop}: 62.5%; //16px // 62.5%
   }  
 }
 html{

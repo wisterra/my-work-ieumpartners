@@ -7,11 +7,11 @@
 @mixin viewportSize($prop) {
   #{$prop}: 100%;
   
- @media screen and (min-width: #{$web_size}) {
+ @media screen and (min-width: #{$md}) {
     body { background-color: rgb(219, 162, 4); }
     #{$prop}: 992px;
   }
-  @media screen and (min-width: #{$max_conv}) {
+  @media screen and (min-width: #{$lg}) {
     body { background-color: #fff; }
     #{$prop}: 1200px;
   }  

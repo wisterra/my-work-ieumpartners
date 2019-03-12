@@ -25,10 +25,10 @@
     background: none;
     border: 0;
   }
-
-  p {
-    //color: #636367;
+  .content-zone{
+    position: relative;
   }
+
 }
 
 @media screen and (min-width: #{$web_size}) {
@@ -40,50 +40,62 @@
 .footer-link {
   border-bottom: 1px solid #45464a;
   text-align:center;
+  padding-top:2rem;
+  padding-bottom:2rem;  
 
   ul {
+    display: block;
     padding-left: 10rem;
 
     li {
       display: inline-block;
-      line-height: 5.6rem;
+      line-height: 1.5;
       padding: 0 1rem !important;
       a, button{
         margin:0;
         padding:0;
       }
-      &::after{
+      &::before{
         content: '';
         @extend %sp-bar;
-        margin-left:2rem;
+        margin-right:2rem;
       }      
-      &:last-child::after{
+
+      &:first-child::before{
         content: '';
         width:0;
-      }        
+      }
     }
   }
 }
 
+
 .footer-logo {
-  position: absolute;
-  top: 5.8rem;
-  left: 18rem;
+  float:left;  
+  width:20%;
+  padding-top: 6%;
+  text-align:center;
+  vertical-align:top;
+  img{
+    width:90%;
+    max-width: fit-content;
+  }
 }
 
 .footer-copy {
-  padding-top: 5.5rem;
-  padding-left: 3.6rem;
-  padding-bottom: 5.5rem;
+  float:right;  
+  width:80%;
+  padding: 6%;
 
   span,
   p {
-    line-height: 1.2;
+    line-height: 1.5;
     font-family: 'light';
+    margin:0;
   }
 
   p {
-    padding-top: 2px;
+    //padding-top: 2px;
   }
 }
 
