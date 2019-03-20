@@ -26,7 +26,6 @@
   position: relative;
   //width: $viewportSize;
   @include viewportSize('width');
-  border:1px solid red;
   margin: 0 auto;
 }
 
