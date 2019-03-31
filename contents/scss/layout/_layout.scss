@@ -6,7 +6,10 @@
 // content-zone을 비롯한 내부 컨테이너 사이즈 세팅
 @mixin viewportSize($prop) {
   #{$prop}: 100%;
-  
+  @media screen and (min-width: #{$sm}) {
+    body { background-color: rgb(219, 162, 4); }
+    #{$prop}: 992px;
+  }  
  @media screen and (min-width: #{$md}) {
     body { background-color: rgb(219, 162, 4); }
     #{$prop}: 992px;

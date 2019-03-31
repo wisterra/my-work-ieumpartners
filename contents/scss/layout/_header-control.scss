@@ -1,0 +1,30 @@
+// 모바일 내비가 켜질때 body에 추가
+.html-fix {
+    overflow: hidden;
+    height: 100%;
+}
+
+// 웹에서 가로사이즈 제어
+@media screen and (min-width: #{$web_size}) {
+    .header {
+        min-width: 1200px
+    }
+}
+
+// 모바일 헤더랑 웹 헤더랑 변환
+@media screen and (max-width: #{$tab_size}) {
+    .header {
+        display: none
+    }
+
+    .header-mobile {
+        display: block;
+    }
+}
+
+// 햄버거를 누르면 active
+.header-mobile.active {
+    .header-mobile-roll {
+        display: block;
+    }
+}

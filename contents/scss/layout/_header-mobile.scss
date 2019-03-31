@@ -1,0 +1,211 @@
+﻿/* ---------------------------------------------------
+// mobile
+--------------------------------------------------- */
+.header-mobile {
+  display: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+}
+
+.header-mobile-top {
+  height: 120px;
+  border-bottom: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.header-mobile-roll {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+// 로고
+.site-logo-m {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-logo-m-a {
+  display: block;
+}
+
+// ---------------------------------------------------
+.notice-alam-m {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 130;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  text-align: center;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.notice-alam-m-a {
+  display: block;
+}
+
+.notice-alam-new {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 36px;
+  height: 36px;
+  background: #0066b4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  border-radius: 36px;
+}
+
+// ---------------------------------------------------
+// 메뉴버튼
+.nav-toggle-m {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 130;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  text-align: center;
+
+  .icon-bar {
+    background-color: #000;
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 4.5px 0;
+    padding: 0;
+    float: left;
+  }
+}
+
+// ---------------------------------------------------
+.login-box-m {
+  height: 100px;
+  background: #0066b4;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  a {
+    font-size: 18px;
+    line-height: 100px;
+    color: #fff;
+
+  }
+}
+
+.login-box-m-left {
+  float: left;
+  padding-left: 20px;
+}
+
+.login-box-m-right {
+  float: right;
+  padding-right: 20px;
+
+  a:first-child {
+    &::after {
+      content: '';
+      @extend %sp-bar;
+      top: 4px;
+      height: 18px;
+      background-color: #fff;
+      margin: 0 20px
+    }
+  }
+}
+
+// ---------------------------------------------------
+.site-menu-m {
+  background: #fff;
+  height: auto;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .m-menu-depth1-item {
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    border-bottom: 1px solid #d2d2d2;
+    background: #fff;
+    color: #000;
+    font-size: 34px;
+    font-weight: bold;
+
+    &:after {
+      content: url(../images/icon/icon-down.png);
+      display: block;
+      position: absolute;
+      top: 26px;
+      right: 15px;
+    }
+  }
+
+  .m-menu-depth2 {
+    display: none;
+    padding: 25px 0;
+    background: #f2f2f2;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .m-menu-depth2-item {
+    display: block;
+    padding: 15px 0;
+    font-size: 30px;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    a {
+      color: #000;
+    }
+  }
+
+  // ---------------------------------------------------
+  .m-menu-depth1.active {
+    .m-menu-depth1-item:after {
+      content: url(../images/icon/icon-up.png);
+    }
+
+    .m-menu-depth2 {
+      display: block !important;
+    }
+  }
+}
+
+.m-menu-depth2-item.active {
+  a {
+    color: #0066b4;
+  }
+}
