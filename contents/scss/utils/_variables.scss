@@ -1,7 +1,6 @@
 //---------------------------------------------------
 // variables
 //---------------------------------------------------
-
 //location
 // $location: '../../../Images/KittyJusticeLeague/';
 
@@ -17,12 +16,16 @@
 // 구간 세팅
 $min_conv : 575px; // 일반적인 모바일 사이즈 보다 더 작을 경우
 $mob_size : 576px; // mobile
+
 $tab_size : 768px; // tablet
+
 $web_size : 992px; // web
+
 $max_conv : 1280px; // 일반적인 웹 사이즈 보다 더 클 경우
 
 // bootstrap 구간
 $xs : 767px; // max mobile
+
 $sm : 768px; // min tablet
 $md : 992px; // min desktop
 $lg : 1200px; // min
@@ -46,10 +49,10 @@ $lg : 1200px; // min
 //   body { background-color: #fff; }
 // }
 @media screen and (max-width: #{$xs}) {
-  body { background-color: red; }
+  //body { background-color: red; }
 }
 @media screen and (min-width: #{$sm}) {
-  body { background-color: lightsalmon; }
+  //body { background-color: lightsalmon; }
 }
 @media screen and (min-width: #{$md}) {
   body { background-color: lightgoldenrodyellow; }
