@@ -2,10 +2,9 @@
 // prefix
 //---------------------------------------------------
 // usage
-//.selector {
 //	@include prefix(transform, rotate(45deg));
-//}
-
+//---------------------------------------------------
+// origin
 //@mixin prefix($declarations, $prefixes: ()) {
 //	@each $property, $value in $declarations {
 //		@each $prefix in $prefixes {
@@ -14,7 +13,7 @@
 //		#{$property}: $value;
 //	}
 //}
-
+//---------------------------------------------------
 // vendor frefix
 @mixin prefix($property, $value:(), $prefixes:()) {
 	$prefixes:(webkit moz ms o);

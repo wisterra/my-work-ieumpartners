@@ -15,7 +15,13 @@
         border:1px solid #e3e3e3;
         border-right:0;
         span{
-            @extend %a11y-hidden;
+            position: absolute;
+            top: auto;
+            left: -9999em;
+            overflow: hidden;
+            margin: -1px;
+            width: 1px;
+            height: 1px;
         }
         &:last-child{
             border-right:1px solid #e3e3e3;

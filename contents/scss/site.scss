@@ -1,15 +1,8 @@
 @charset 'UTF-8'; 
 
-$device: 'web';
-
-@import "./utils/index";
-
+@import "./util/index";
 @import "./base/index";
-
 @import "./effect/index";
-
 @import "./component/index";
-
 @import "./layout/index";
-
 @import "./pages/index";

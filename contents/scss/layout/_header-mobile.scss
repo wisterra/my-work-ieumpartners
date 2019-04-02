@@ -6,55 +6,45 @@
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
+  z-index: 80;  
   top: 0;
   left: 0;
-  z-index: 80;
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
 .header-mobile-top {
-  height: 120px;
+  height: 60px;
   border-bottom: 1px solid #d9d9d9;
-  background: #fff;
-
-  @media screen and (max-width: #{$mob_size}) {
-    height: 60px;
-  }
+  background: #fff
 }
 
 .header-mobile-roll {
   display: none;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 // 로고
 .site-logo-m {
-  padding: 30px 0;
-  text-align: center;
-
-  @media screen and (max-width: #{$mob_size}) {
-    padding: 15px 0;
-  }
+  padding: 22px 0;
+  text-align: center
 }
 
 .site-logo-m-a {
-  display: block;
+  display: inline-block
 }
 
-.site-logo-m-a-img {
-  @media screen and (max-width: #{$mob_size}) {
-    transform: scale(0.5);
-  }
+.site-logo-m-img {
+  width:105px;
 }
 
 // ---------------------------------------------------
 .notice-alam-m {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 130;
+  z-index: 130;  
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   margin: 0;
@@ -63,32 +53,26 @@
   border-radius: 0;
   background: #fff;
   text-align: center;
-  border: 0;
   -webkit-appearance: none;
-
-  @media screen and (max-width: #{$mob_size}) {
-    top: 10px;
-    right: 10px;
-    transform: scale(0.5);
-  }
+  transform: scale(0.6)
 }
 
 .notice-alam-m-a {
-  display: block;
+  display: block
 }
 
 .notice-alam-new {
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -12px;
+  right: -12px;
   width: 36px;
   height: 36px;
   border-radius: 100%;
   background: #0066b4;
   color: #fff;
+  font-weight: bold;    
   font-size: 20px;
-  line-height: 36px;
-  font-weight: bold;
+  line-height: 36px
 }
 
 // ---------------------------------------------------
@@ -96,8 +80,8 @@
 .nav-toggle-m {
   position: absolute;
   z-index: 130;
-  top: 25px;
-  left: 25px;
+  top: 10px;
+  left: 10px;
   width: 40px;
   height: 40px;
   margin: 0;
@@ -106,32 +90,35 @@
   border-radius: 0;
   background: #fff;
   text-align: center;
-
-  @media screen and (max-width: #{$mob_size}) {
-    top: 8px;
-    left: 8px;
-    transform: scale(0.5);
-  }
-
-  .icon-bar {
-    float: left;
-    display: block;
-    width: 40px;
-    height: 4px;
-    margin: 4px 0;
-    padding: 0;
-    background-color: #000;
-  }
+}
+.nav-toggle-m .icon-bar {
+  display: block;
+  float: left;  
+  width: 20px;
+  height: 2px;
+  margin: 2px 9px;
+  padding: 0;
+  background-color: #000;
+  transition: all ease 0.3s;
 }
 
+.nav-toggle-m.active {
+  .bar-top {
+    width:28px;
+    transform: rotate(43deg) translate(1px, 8px);
+  }
+  .bar-middle {
+    opacity:0;
+  }
+  .bar-bottom {
+    width:28px;
+    transform: rotate(-43deg) translate(0px, -8px);
+  }  
+}
 // ---------------------------------------------------
 .login-box-m {
-  height: 100px;
+  height: 50px;
   background: #0066b4;
-
-  @media screen and (max-width: #{$mob_size}) {
-    height: 50px;
-  }
 
   &:after {
     content: '';
@@ -141,55 +128,36 @@
 
   a {
     color: #fff;
-    font-size: 18px;
-    line-height: 100px;
-
-    @media screen and (max-width: #{$mob_size}) {
-      font-size: 13px;
-      line-height: 50px;
-    }
+    font-size: 15px;
+    line-height: 50px;
   }
 }
 
 .login-box-m-left {
   float: left;
   padding-left: 20px;
-
-  @media screen and (max-width: #{$mob_size}) {
-    padding-left: 10px;
-  }
 }
 
 .login-box-m-right {
   float: right;
   padding-right: 20px;
 
-  @media screen and (max-width: #{$mob_size}) {
-    padding-right: 10px;
-  }
-
   a:first-child {
     &::after {
       content: '';
       @extend %sp-bar;
-      top: 4px;
-      height: 18px;
+      top: 2px;
+      height: 13px;
       margin: 0 20px;
-      background-color: #fff;
-
-      @media screen and (max-width: #{$mob_size}) {
-        top: 2px;
-        height: 9px;
-        margin: 0 10px;
-      }
+      background-color: #2079bd;
     }
   }
 }
 
 // ---------------------------------------------------
 .site-menu-m {
-  background: #fff;
   height: auto;
+  background: #fff;  
   text-align: center;
 
   &:after {
@@ -201,53 +169,33 @@
   .m-menu-depth1-item {
     position: relative;
     display: block;
-    padding: 30px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #d2d2d2;
     background: #fff;
     color: #000;
-    font-size: 34px;
+    font-size: 17px;
     font-weight: bold;
-
-    @media screen and (max-width: #{$mob_size}) {
-      padding: 15px 0;
-      font-size: 17px;
-    }
 
     &:after {
       content: url(../images/icon/icon-down.png);
       display: block;
       position: absolute;
-      top: 26px;
-      right: 15px;
-
-      @media screen and (max-width: #{$mob_size}) {
-        top: 17px;
-        right: 8px;
-        transform: scale(0.5);
-      }
+      top: 17px;
+      right: 8px;
+      transform: scale(0.5);
     }
   }
 
   .m-menu-depth2 {
     display: none;
-    padding: 25px 0;
+    padding: 14px 0;
     background: #f2f2f2;
     border-bottom: 1px solid #d9d9d9;
-
-    @media screen and (max-width: #{$mob_size}) {
-      padding: 13px 0;
-    }
   }
 
   .m-menu-depth2-item {
     display: block;
-    padding: 15px 0;
-    font-size: 30px;
-
-    @media screen and (max-width: #{$mob_size}) {
-      padding: 8px 0;
-      font-size: 15px;
-    }
+    font-size: 15px;
 
     &:after {
       content: '';
@@ -256,7 +204,9 @@
     }
 
     a {
+      padding: 8px 0;      
       color: #000;
+      display:block;
     }
   }
 

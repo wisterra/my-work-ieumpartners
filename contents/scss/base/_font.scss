@@ -1,70 +1,78 @@
 /* font setting */
+// 업데이트 필요
 
 // 'Noto Sans KR'
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 // Nanum Gothic
 @font-face {
-    font-family: 'ng';
-    font-weight: normal;
-    font-style: normal;    
-    src: url('../../vendor/font/NanumGothic.eot');
-    src: url('../../vendor/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
-         url('../../vendor/font/NanumGothic.woff') format('woff'),
-         url('../../vendor/font/NanumGothic.ttf') format('truetype');
-         //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
+  font-family: 'ng';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../vendor/font/NanumGothic.eot');
+  src: url('../../vendor/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+    url('../../vendor/font/NanumGothic.woff') format('woff'),
+    url('../../vendor/font/NanumGothic.ttf') format('truetype');
+  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
+
 @font-face {
   font-family: 'bold';
   font-weight: 700;
-  font-style: normal;  
+  font-style: normal;
   src: url('../../vendor/font/NanumGothicBold.eot');
   src: url('../../vendor/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
-       url('../../vendor/font/NanumGothicBold.woff') format('woff'),
-       url('../../vendor/font/NanumGothicBold.ttf') format('truetype');
-       //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
+    url('../../vendor/font/NanumGothicBold.woff') format('woff'),
+    url('../../vendor/font/NanumGothicBold.ttf') format('truetype');
+  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
+
 @font-face {
   font-family: 'ebold';
   font-weight: 900;
-  font-style: normal;  
+  font-style: normal;
   src: url('../../vendor/font/NanumGothicExtraBold.eot');
   src: url('../../vendor/font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
-       url('../../vendor/font/NanumGothicExtraBold.woff') format('woff'),
-       url('../../vendor/font/NanumGothicExtraBold.ttf') format('truetype');
-       //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
+    url('../../vendor/font/NanumGothicExtraBold.woff') format('woff'),
+    url('../../vendor/font/NanumGothicExtraBold.ttf') format('truetype');
+  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
+
 @font-face {
   font-family: 'light';
   font-weight: normal;
-  font-style: normal;  
+  font-style: normal;
   src: url('../../vendor/font/NanumGothicLight.eot');
   src: url('../../vendor/font/NanumGothicLight.eot?#iefix') format('embedded-opentype'),
-       url('../../vendor/font/NanumGothicLight.woff') format('woff'),
-       url('../../vendor/font/NanumGothicLight.ttf') format('truetype');
-       //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
+    url('../../vendor/font/NanumGothicLight.woff') format('woff'),
+    url('../../vendor/font/NanumGothicLight.ttf') format('truetype');
+  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
+
 //---------------------------------------------------
 // setting
 //---------------------------------------------------
 @mixin fontSize($prop) {
   #{$prop}: 8px;
-  
- @media screen and (min-width: #{$sm}) {
+
+  @media screen and (min-width: #{$sm}) {
     #{$prop}: 50%;
   }
+
   @media screen and (min-width: #{$md}) {
     #{$prop}: 62.5%; //16px // 62.5%
-  }  
+  }
 }
-html{
+
+html {
   // 16px 기준
   //font-size: 62.5%;
   @include fontSize('font-size');
 }
+
 // USE EXAMPLE : @include viewportSize('width');
 // content-zone을 비롯한 내부 컨테이너 사이즈 세팅
 
-body{
+body {
   font-family: 'ng', 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif !important;
 }
