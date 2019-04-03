@@ -2,12 +2,14 @@
 // category : service
 --------------------------------------------------- */
 
+.service-page-header {
+    @media screen and (max-width: #{$tab_size}) {
+        display: none;
+    }
+}
+
 // 공통적으로 적용될 내용
 .service-section {
-    vertical-align: top;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
-
     p {
         font-size: 1.8rem;
         line-height: 1.5;
@@ -19,32 +21,6 @@
         line-height: 5.6rem;
         padding-bottom: 30px;
     }
-
-    ul,
-    dl {
-        vertical-align: top;
-        display: inline-block;
-        font-size: 15px;
-    }
-
-    li {
-        // padding-bottom: 15px;
-        // list-style-type: disc; //list-style-position: inside;
-        // line-height: 1.5;
-        // letter-spacing: -1px;
-    }
-
-    dt {
-        padding-bottom: 10px;
-    }
-
-    dd {
-        display: list-item;
-        list-style-type: disc; //list-style-position: inside;
-        margin-left: 20px;
-        line-height: 1.8;
-        letter-spacing: -1px;
-    }
 }
 
 /*---------------------------------------------------
@@ -52,20 +28,23 @@
 --------------------------------------------------- */
 
 // 위에서 부터 section 순서대로
-.sv-top {
-    //height: 483px;
+.service-section-top {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: url('/contents/images/service/service-bg1.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
+    vertical-align: top;
+    text-align: center;
 
-    .inner {
+    .service-section-top-con {
         width: 80%;
         margin: 0 auto;
     }
 
     h2 {
-        border-bottom: 1px solid #5f7daa;
         margin-bottom: 4rem;
+        border-bottom: 1px solid #5f7daa;
     }
 
     strong {
@@ -74,47 +53,63 @@
         font-weight: bold;
     }
 
-    .txt-l {
-        display: inline-block;
-        width: 58%;
-        vertical-align: top;
-        font-size: 2.5rem;
-        line-height: 1.5;
-
-        strong {
-            padding-top: 1.2rem;
-            color: #85d9ff;
-            font-weight: 900;
-            font-size: 7rem;
-            letter-spacing: 2rem;
-        }
-    }
-
-    .txt-r {
-        display: inline-block;
-        width: 41%;
-        vertical-align: top;
-        font-size: 1.8rem;
-    }
-
     p {
         padding-bottom: 2rem;
     }
+
+    .service-section-top-con-left {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        vertical-align: top;
+    }
+
+    .service-section-top-con-left-char {
+        padding-top: 1.2rem;
+        color: #85d9ff;
+        font-size: 7rem;
+        font-weight: 900;
+        letter-spacing: 2rem;
+    }
+
+    .service-section-top-con-right {
+        font-size: 1.8rem;
+        vertical-align: top;
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
+        text-align: left;
+
+        .service-section-top-con-left {
+            display: inline-block;
+            width: 58%;
+        }
+
+        .service-section-top-con-right {
+            display: inline-block;
+            width: 41%;
+        }
+    }
 }
 
-.sv-top2 {
-    .inner {
+.service-section-solution {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
+    .service-section-solution-con {
         width: 100%;
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
-    ul {
-        display: inline-block;
+    .service-section-solution-con-left {
+        width:320px;
+        margin:0 auto;
+        vertical-align: middle;
     }
 
-    li {
+    .service-section-solution-con-left-item {
         background: #eeeeee;
         display: inline-block;
         border-radius: 30px;
@@ -125,6 +120,7 @@
         list-style: none; //display: inline-block;
         margin-bottom: 20px;
         position: relative;
+        vertical-align: middle;
 
         &::before {
             content: url("/contents/images/service/deco-note.png");
@@ -134,40 +130,51 @@
         }
     }
 
-    div {
+    .service-section-solution-con-center {
+        text-align: center;
         vertical-align: middle;
     }
 
-    .txt-l {
-        display: inline-block;
-        width: 45%;
-    }
-
-    .txt-c {
-        display: inline-block;
-        width: 10%;
-    }
-
-    .txt-r {
-        display: inline-block;
-        width: 35%;
+    .service-section-solution-con-right {
         color: #0066b4;
         font-size: 2.5rem;
         text-align: center;
+        vertical-align: middle;
     }
 
-    strong {
+    .service-section-solution-con-right-strong {
         display: block;
         font-size: 3.5rem;
     }
+
+    @media screen and (min-width: #{$tab_size}) {
+        .service-section-solution-con-left{
+            display: inline-block;
+            width: 45%;
+        }
+
+        .service-section-solution-con-center{
+            display: inline-block;
+            width: 10%;
+        }
+
+        .service-section-solution-con-right{
+            display: inline-block;
+            width: 35%;
+        }
+    }
+
 }
 
-.sv-benefit {
+.service-section-benefit {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: #dbf1fb;
+    text-align:center;
 
-    .item {
-        width: 33%;
-        display: inline-block;
+    .service-section-benefit-item {
+
         padding: 3rem;
     }
 
@@ -184,18 +191,42 @@
         font-size: 2.5rem;
     }
 
+    ul {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 15px;
+    }
+
     li {
         list-style: circle;
         list-style-position: inside;
         padding-bottom: 1rem;
     }
+
+    @media screen and (min-width: #{$tab_size}) {
+        .service-section-benefit-item{
+            width: 33%;
+            display: inline-block;
+            text-align:left;
+        }
+    }    
 }
 
-.sv-ex {
+.service-section-ex {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
     h2 {
         color: #0066b4;
         font-size: 2.5rem;
         line-height: 1.5;
+    }
+
+    ul {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 15px;
     }
 
     ul {
@@ -206,11 +237,10 @@
     }
 
     li {
-        margin: 0 2rem;
-        display: inline-block;
+        margin: 2rem 0;
     }
 
-    .item {
+    .service-section-ex-item {
         display: table-cell;
         background: #0066b4;
         color: #fff;
@@ -236,15 +266,31 @@
         font-size: 1.5rem;
         line-height: 1.3;
     }
+
+    @media screen and (min-width: #{$tab_size}) {
+        li {
+            margin: 0 2rem;
+            display: inline-block;
+        }
+    }     
 }
 
-.sv-detail {
+.service-section-detail {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: #f2f2f2;
 
     h2 {
         font-size: 2.5rem;
         text-align: center;
         //border: 1px solid #000;
+    }
+
+    ul {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 15px;
     }
 
     ul {
@@ -257,15 +303,30 @@
         padding-bottom: 1rem;
     }
 
-    .map {
-        display: inline-block;
-        width: 49.5%;
-    }
 
+
+    @media screen and (min-width: #{$tab_size}) {
+        .service-section-detail-desc{
+            width: 49.5%;
+        }
+        .map{
+            display: inline-block;
+            width: 49.5%;
+        }
+    }  
 }
 
-.sv-result {
+.service-section-result {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     color: #0066b4;
+
+    ul {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 15px;
+    }
 
     li {
         background: #dbf1fb;
@@ -275,10 +336,10 @@
         padding-left: 0;
     }
 
-    .item {
+    .service-section-result-item {
         background: #dbf1fb;
         padding: 3rem 4.5rem;
-        margin-bottom: 1rem;
+        margin: 1rem;
         color: #000;
     }
 
@@ -295,9 +356,18 @@
         color: #000;
         font-style: normal;
     }
+
+    @media screen and (min-width: #{$tab_size}) {
+        .service-section-result-item {
+            margin-bottom: 1rem;
+        }
+    }    
 }
 
-.sv-message {
+.service-section-message {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
@@ -319,14 +389,21 @@
     }
 }
 
-.sv-fund-info {
+.service-section-fund-info {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
     p {
         text-align: center;
         margin-bottom: 2rem;
     }
 }
 
-.sv-effect {
+.service-section-effect {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: #dbf1fb;
 
     h2 {
@@ -348,18 +425,22 @@
 }
 
 // 투자상품
-.sv-ivt {
-    padding-bottom:0;
+.service-section-ivt {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    padding-bottom: 0;
 
     .content-zone.ivt {
         position: relative;
         width: 1200px;
         text-align: left;
     }
+
     .content-zone {
         position: relative;
         max-width: 1200px;
-    }    
+    }
 
     h2 {
         width: 1000px;
@@ -377,9 +458,11 @@
         width: 40%;
         margin: 0 2%;
         padding-bottom: 6rem;
-        &:nth-child(2n){
-            margin-left:8.5rem;
+
+        &:nth-child(2n) {
+            margin-left: 8.5rem;
         }
+
         & .box-inner {
             position: relative;
             border: 1px solid #e5e5e5;
@@ -478,14 +561,22 @@
 // page : service-view
 --------------------------------------------------- */
 
-.sv-view{
-    .btn{
-        margin-top:5rem;
-        padding-left:4rem;
-        padding-right:4rem;
+.service-section-view {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
+    .btn {
+        margin-top: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
-.sv-point {
+
+.service-section-point {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     background: #dbf1fb;
 
     h2 {
@@ -532,7 +623,10 @@
     }
 }
 
-.sv-ivt-view {
+.service-section-ivt-view {
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     padding-top: 10rem;
 
     h2 {
@@ -586,7 +680,7 @@
     }
 }
 
-.ivt-note {
+.service-section-ivt-note {
     .content-zone {
         padding-top: 5rem;
         border-top: 1px solid #cfcfcf;

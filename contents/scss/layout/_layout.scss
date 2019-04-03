@@ -2,22 +2,33 @@
 // layout
 --------------------------------------------------- */
 
-// USE EXAMPLE : @include viewportSize('width');
+// USE EXAMPLE : @include rwd-width('width');
 // content-zone을 비롯한 내부 컨테이너 사이즈 세팅
-@mixin viewportSize($prop) {
+@mixin rwd-width($prop) {
   #{$prop}: 100%;
+
   @media screen and (min-width: #{$sm}) {
-    body { background-color: rgb(219, 162, 4); }
-    #{$prop}: 992px;
-  }  
- @media screen and (min-width: #{$md}) {
-    body { background-color: rgb(219, 162, 4); }
+    body {
+      background-color: rgb(219, 162, 4);
+    }
     #{$prop}: 992px;
   }
+
+  @media screen and (min-width: #{$md}) {
+    body {
+      background-color: rgb(219, 162, 4);
+    }
+
+    #{$prop}: 992px;
+  }
+
   @media screen and (min-width: #{$lg}) {
-    body { background-color: #fff; }
-    #{$prop}: 1200px;
-  }  
+    body {
+      background-color: #fff;
+    }
+
+    #{$prop}: 1000px;
+  }
 }
 
 #skip {
@@ -27,19 +38,22 @@
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone {
   position: relative;
-  //width: $viewportSize;
-  @include viewportSize('width');
+  @include rwd-width('width');
   margin: 0 auto;
 }
 
 /* container 공통 */
 #container {
-  position: relative;
-  //min-width: $viewportSize;
-  @include viewportSize('min-width');
-  min-height: 100%;
-  margin: 0 auto;
   overflow: hidden;
+  position: relative;
+  @include rwd-width('min-width');
+  min-height: 100%;
+  padding-top: 60px;
+  margin: 0 auto;
+
+  @media screen and (min-width: #{$tab_size}) {
+    padding: 0;
+  }
 }
 
 /* container - main */
@@ -49,8 +63,7 @@
 
 /* container - wide */
 .container-wide {
-  //width: $viewportSize;
-  @include viewportSize('width');
+  @include rwd-width('width');
   height: 600px;
   margin: 0 auto;
 }
@@ -59,28 +72,66 @@
 // subpage LNB
 --------------------------------------------------- */
 #lnb {
-  width: 100%;
+  width: 90%;
   height: 50px;
-  line-height: 50px;
-  font-size:15px;
+  margin: 50px auto 0;
   background: #c4c4c4;
+  font-size: 15px;
+  line-height: 50px;
 
-  ul {
-    text-align: center;
+  @media screen and (min-width: #{$tab_size}) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.lnb-selected {
+  position:relative;
+  text-align: center;
+  color: #0066b4;
+  &:after {
+    content: url(../images/icon/icon-down.png);
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    transform: scale(0.5);
+  }
+  @media screen and (min-width: #{$tab_size}) {
+    display:none;
+  }  
+}
+
+.lnb-con {
+  display:none;
+  position:relative;
+  z-index: 1;
+  text-align: center;
+  background:#c4c4c4;
+
+  @media screen and (min-width: #{$tab_size}) {
+    display:block;
+    width: 100%;
+    margin: 0;
   }
 
-  li {
-    display: inline-block;
-    margin: 0 50px;
-  }
+}
 
-  a {
-    color: #fff;
-    &.on{
-      color: #0066b4;
-    }
-  }
+.lnb-con.active {
+  display: block;
+}
 
+.lnb-con-item {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.lnb-con-item-a {
+  color: #fff;
+}
+
+.lnb-con-item-a.on {
+  color: #0066b4;
 }
 
 /*---------------------------------------------------
@@ -91,9 +142,9 @@
   font-size: 16px;
   line-height: 1.5;
 
-  .content-zone {
-    width: 1000px;
-  }
+  // .content-zone {
+  //   width: 1000px;
+  // }
 
 }
 
@@ -119,23 +170,26 @@
 /*---------------------------------------------------
 // tab-select
 --------------------------------------------------- */
-.tab-select{
-  padding-bottom:50px;
-  a{
-    float:left;
-    width:50%;
-    height:58px;
-    line-height:58px;
+.tab-select {
+  padding-bottom: 50px;
+
+  a {
+    float: left;
+    width: 50%;
+    height: 58px;
+    line-height: 58px;
     //font-size:18px;
-    text-align:center;
-    border:1px solid #dddddd;
-    color:#000;
-    &:last-child{
-      border-left:0;
+    text-align: center;
+    border: 1px solid #dddddd;
+    color: #000;
+
+    &:last-child {
+      border-left: 0;
     }
-    &.active{
+
+    &.active {
       background: #0066b4;
-      color:#fff;
+      color: #fff;
     }
   }
 }
