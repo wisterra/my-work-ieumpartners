@@ -55,8 +55,8 @@ $lg : 1200px; // min
   //body { background-color: lightsalmon; }
 }
 @media screen and (min-width: #{$md}) {
-  body { background-color: lightgoldenrodyellow; }
+  //body { background-color: lightgoldenrodyellow; }
 }
 @media screen and (min-width: #{$lg}) {
-  body { background-color: #fff; }
+  //body { background-color: #fff; }
 }

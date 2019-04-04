@@ -2,20 +2,8 @@
 /* ---------------------------------------------------
 // mediaquery 구간 확인용 테스트(컬러배경)
 --------------------------------------------------- */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@media screen and (min-width: 992px) {
-  body {
-    background-color: lightgoldenrodyellow;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    background-color: #fff;
-  }
-}
-
 /* tag base */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   word-break: keep-all;
 }
