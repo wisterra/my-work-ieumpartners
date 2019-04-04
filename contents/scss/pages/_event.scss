@@ -2,20 +2,28 @@
 // event	
 --------------------------------------------------- */	
 .thumb-list{	
-    width:1024px;	
+    //width:1024px;	
     position:relative;	
     left:-12px;	
     min-height:600px;	
 
      li{	
         float:left;	
+        width:50%;        
         padding:12px;	
+        @media screen and (min-width: #{$tab_size}) {
+            width:33.333%;        
+          }          
     }	
     a{	
-        width:316px;	
+        //width:316px;	
+        width:100%;
         display:block;	
         border:1px solid #e5e5e5;	
         color: inherit;	
+        img{
+            width:100%;
+        }
     }	
     .event-info{	
         padding:15px;	

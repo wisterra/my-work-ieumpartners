@@ -222,7 +222,8 @@ input[type=radio] {
 }
 
 .form-address {
-    width: 600px;
+    //width: 600px;
+    display:block !important;
 
     input {
         width: 100% !important;

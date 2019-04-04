@@ -6,10 +6,6 @@
   overflow: hidden;
   background: #34353a;
   color: #55565a;
-
-  .content-zone {
-    position: relative
-  }
 }
 
 @media screen and (min-width: #{$web_size}) {
@@ -27,7 +23,7 @@
 
 .footer-link-group {
   display: block;
-  padding-left: 10rem
+  //padding-left: 10rem
 }
 
 .footer-link-item {
@@ -82,9 +78,15 @@
 .footer-logo {
   float: left;
   width: 20%;
-  padding-top: 4%;
-  text-align: right;
-  vertical-align: top
+  vertical-align: top;
+  padding-top: 6%;
+  text-align: center;
+
+  @media screen and (min-width: #{$web_size}) {
+    //width: 20%;
+    padding-top: 4%;
+    text-align: right;
+  }  
 }
 
 .footer-logo-a {
@@ -96,32 +98,25 @@
   max-width: fit-content
 }
 
-@media screen and (max-width: #{$mob_size}) {
-  .footer-logo {
-    padding-top: 6%;
-    text-align: center
-  }
-}
+
 
 // ---------------------------------------------------
 // footer 카피
 .footer-copy {
   float: right;
   width: 80%;
-  padding: 6%;
-  padding-top: 4%;
+  padding: 6% 0;
   color: #ebecee;
-  font-size: 1.4rem
+  font-size: 1.4rem;
+  @media screen and (min-width: #{$web_size}) {
+    //width: 80%;    
+    padding: 6%;
+    padding-top: 4%;
+  }    
 }
 
 .footer-copy-line {
   margin: 0;
   line-height: 1.5;
   font-family: 'light'
-}
-
-@media screen and (max-width: #{$mob_size}) {
-  .footer-copy {
-    padding: 6% 0
-  }
 }

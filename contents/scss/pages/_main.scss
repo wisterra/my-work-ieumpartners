@@ -2,13 +2,17 @@
 // main
 --------------------------------------------------- */
 .container-main {
+    //display:none;
+    @media screen and (min-width: #{$tab_size}) {
+        //display:block;
+      }  
     .main-visual {
         height: 472px;
-        min-width: 1200px;
+        //min-width: 1200px;
 
         .visual-item a {
             width: 100%;
-            min-width: 1000px;
+            //min-width: 1000px;
             height: 472px;
             background-position: center;
             background-size: cover;
@@ -26,7 +30,6 @@
 
         .slick-dots li button:before {
             font-size: 40px;
-            //color: #575757;
             color: #9e9e9e;
             opacity: 1;
         }
@@ -89,13 +92,21 @@
     .main-content {
         position: relative;
         top: -84px;
-        width: 1180px;
+        //width: 1180px;
         height: 330px;
         margin: 0 auto;
 
         &>div {
+            //float: left;
+        }
+
+        .main-content-left{
             float: left;
         }
+
+        .main-content-right{
+float: left;
+        }        
 
         .notice {
             position: relative;
@@ -234,6 +245,9 @@
         }
 
         .ctg-sv {
+            @media screen and (min-width: #{$tab_size}) {
+                float: left;
+              }                 
             position: relative;
             width: (1180/3)+px;
             height: 254px;
@@ -247,6 +261,9 @@
         }
 
         .ctg-event {
+            @media screen and (min-width: #{$tab_size}) {
+                float: left;
+              }                 
             position: relative;
             border-top: 1px solid #e2e2e2;
             width: (1180/3)+px;
