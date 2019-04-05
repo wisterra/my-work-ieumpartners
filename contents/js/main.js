@@ -9,7 +9,7 @@ $(function () {
 
 
 function sliderActon() {
-    var $sliderMain = $('.visual-con');
+    var $sliderMain = $('.main-visual-inner');
     var $sliderBanner = $('.banner-con');
     var $sliderNotice = $('#sliderNotice');
 
