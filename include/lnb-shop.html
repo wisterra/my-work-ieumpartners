@@ -1,10 +1,11 @@
 <div id="lnb">
-    <ul>
-        <li>
+    <div class="lnb-selected">매장안내</div>
+    <ul class="lnb-con">
+        <li class="lnb-con-item">
             <a href="#shop/shop-info" class="on fakelink">매장안내</a>
         </li>
-        <li>
-            <a href="#shop/shop" class="fakelink">매장상세</a>
+        <li class="lnb-con-item">
+            <a href="#shop/shop" class="lnb-con-item-a fakelink">매장상세</a>
         </li>
     </ul>
 </div>
@@ -21,6 +22,6 @@
             location.href = 'index.html#' + src;
             location.reload();
         });
-
+        controlMobileLnb();
     });
 </script>

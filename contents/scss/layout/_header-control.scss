@@ -5,17 +5,17 @@
 }
 
 // 웹에서 가로사이즈 제어
-@media screen and (min-width: #{$web_size}) {
-    .header {
-        //min-width: 1200px
-    }
-}
+// @media screen and (min-width: #{$web_size}) {
+//     .header {
+//         //min-width: 1200px
+//     }
+// }
 
 // 모바일 헤더랑 웹 헤더랑 변환
 @media screen and (max-width: #{$tab_size}) {
     .header {
-        display: none
-    }
+        display: none;
+   }
 
     .header-mobile {
         display: block;
@@ -24,7 +24,12 @@
 
 // 햄버거를 누르면 active
 .header-mobile.active {
+  overflow-y:scroll;
+  height:100%;
     .header-mobile-roll {
-        display: block;
+        //display: block;
+        height:auto;
+        transition: 0.3s ease-out;
     }
+
 }

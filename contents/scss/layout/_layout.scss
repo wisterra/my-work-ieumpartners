@@ -122,8 +122,11 @@
 }
 
 .lnb-con-item {
-  display: inline-block;
-  margin: 0 50px;
+display: block;
+  @media screen and (min-width: #{$tab_size}) {
+    display: inline-block;
+    margin: 0 50px;
+  }  
 }
 
 .lnb-con-item-a {

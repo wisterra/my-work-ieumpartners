@@ -14,17 +14,17 @@
 </div>
 
 <script>
-        $(document).ready(function () {
-            //이 부분은 임시 링크 세팅입니다.
-            var hashName = location.hash;
-            targetPageName = hashName.split('#')[1];
+    $(document).ready(function () {
+        //이 부분은 임시 링크 세팅입니다.
+        var hashName = location.hash;
+        targetPageName = hashName.split('#')[1];
 
-            // [임시] a태그 클릭시 페이지 변경
-            $('a.fakelink').click(function () {
-                var src = String(this).split('#')[1];
-                location.href = 'index.html#' + src;
-                location.reload();
-            });
-            
-        });    
+        // [임시] a태그 클릭시 페이지 변경
+        $('a.fakelink').click(function () {
+            var src = String(this).split('#')[1];
+            location.href = 'index.html#' + src;
+            location.reload();
+        });
+        controlMobileLnb();
+    });
 </script>

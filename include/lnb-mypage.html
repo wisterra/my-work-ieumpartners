@@ -1,38 +1,39 @@
 <div id="lnb">
-    <ul>
-        <li>
+    <div class="lnb-selected">기본 정보</div>
+    <ul class="lnb-con">
+        <li class="lnb-con-item">
             <a href="#mypage/mypage" class="on fakelink">기본 정보</a>
         </li>
-        <li>
-            <a href="#mypage/mycar" class="fakelink">내차정보</a>
+        <li class="lnb-con-item">
+            <a href="#mypage/mycar" class="lnb-con-item-a fakelink">내차정보</a>
         </li>
-        <li>
-            <a href="#mypage/maintenanceRsrv" class="fakelink">정비예약내역</a>
+        <li class="lnb-con-item">
+            <a href="#mypage/maintenanceRsrv" class="lnb-con-item-a fakelink">정비예약내역</a>
         </li>
-        <li>
-            <a href="#mypage/maintenance" class="fakelink">정비내역</a>
+        <li class="lnb-con-item">
+            <a href="#mypage/maintenance" class="lnb-con-item-a fakelink">정비내역</a>
         </li>
-        <li>
-            <a href="#mypage/cunsulting" class="fakelink">상담내역</a>
+        <li class="lnb-con-item">
+            <a href="#mypage/cunsulting" class="lnb-con-item-a fakelink">상담내역</a>
         </li>
-        <li>
-            <a href="#mypage/mycoupon" class="fakelink">나의 쿠폰</a>
+        <li class="lnb-con-item">
+            <a href="#mypage/mycoupon" class="lnb-con-item-a fakelink">나의 쿠폰</a>
         </li>
     </ul>
 </div>
 
 <script>
-        $(document).ready(function () {
-            //이 부분은 임시 링크 세팅입니다.
-            var hashName = location.hash;
-            targetPageName = hashName.split('#')[1];
+    $(document).ready(function () {
+        //이 부분은 임시 링크 세팅입니다.
+        var hashName = location.hash;
+        targetPageName = hashName.split('#')[1];
 
-            // [임시] a태그 클릭시 페이지 변경
-            $('a.fakelink').click(function () {
-                var src = String(this).split('#')[1];
-                location.href = 'index.html#' + src;
-                location.reload();
-            });
-            
-        });    
+        // [임시] a태그 클릭시 페이지 변경
+        $('a.fakelink').click(function () {
+            var src = String(this).split('#')[1];
+            location.href = 'index.html#' + src;
+            location.reload();
+        });
+        controlMobileLnb();
+    });
 </script>

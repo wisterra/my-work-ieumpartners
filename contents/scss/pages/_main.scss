@@ -94,7 +94,6 @@
 
 .main-content {
     position: relative;
-    top: -84px;
     width: 100%;
     max-width: 1180px;
 
@@ -102,10 +101,10 @@
 
     @media screen and (min-width: #{$tab_size}) {
         width: 90%;
+        top: -84px;
     }
 
     @media screen and (min-width: #{$web_size}) {
-        width: 90%;
         height: 330px;
     }
 }
@@ -114,7 +113,7 @@
 
     width: 100%;
 
-    @media screen and (min-width: #{$web_size}) {
+    @media screen and (min-width: 1120px) {
         float: left;
         width: 66.666%;
     }
@@ -129,7 +128,7 @@
         width: 100%;
     }
 
-    @media screen and (min-width: #{$web_size}) {
+    @media screen and (min-width: 1120px) {
         float: left;
         width: 33.333%;
     }

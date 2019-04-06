@@ -1415,8 +1415,14 @@ table td {
 }
 
 .lnb-con-item {
-  display: inline-block;
-  margin: 0 50px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .lnb-con-item {
+    display: inline-block;
+    margin: 0 50px;
+  }
 }
 
 .lnb-con-item-a {
@@ -1650,15 +1656,11 @@ table td {
 }
 
 .header-mobile-top {
+  position: relative;
+  z-index: 1;
   height: 60px;
   border-bottom: 1px solid #d9d9d9;
   background: #fff;
-}
-
-.header-mobile-roll {
-  display: none;
-  margin: 0;
-  padding: 0;
 }
 
 .site-logo-m {
@@ -1737,17 +1739,17 @@ table td {
   transition: all ease 0.3s;
 }
 
-.nav-toggle-m.active .bar-top {
+.nav-toggle-m.active .icon-bar.bar-top {
   width: 28px;
   -webkit-transform: rotate(43deg) translate(1px, 8px);
           transform: rotate(43deg) translate(1px, 8px);
 }
 
-.nav-toggle-m.active .bar-middle {
+.nav-toggle-m.active .icon-bar.bar-middle {
   opacity: 0;
 }
 
-.nav-toggle-m.active .bar-bottom {
+.nav-toggle-m.active .icon-bar.bar-bottom {
   width: 28px;
   -webkit-transform: rotate(-43deg) translate(0px, -8px);
           transform: rotate(-43deg) translate(0px, -8px);
@@ -1788,9 +1790,30 @@ table td {
   background-color: #2079bd;
 }
 
+.header-mobile-roll {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
+
+.header-mobile-dimmed {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.header-mobile-dimmed.active {
+  display: block;
+}
+
 .site-menu-m {
+  position: relative;
   height: auto;
-  background: #fff;
   text-align: center;
 }
 
@@ -1800,7 +1823,7 @@ table td {
   clear: both;
 }
 
-.site-menu-m .m-menu-depth1-item {
+.m-menu-depth1-item {
   position: relative;
   display: block;
   padding: 15px 0;
@@ -1811,7 +1834,7 @@ table td {
   font-weight: bold;
 }
 
-.site-menu-m .m-menu-depth1-item:after {
+.m-menu-depth1-item:after {
   content: url(../images/icon/icon-down.png);
   display: block;
   position: absolute;
@@ -1821,36 +1844,40 @@ table td {
           transform: scale(0.5);
 }
 
-.site-menu-m .m-menu-depth2 {
-  display: none;
+.m-munu-depth1.active .m-menu-depth1-item:after {
+  content: url(../images/icon/icon-up.png);
+}
+
+.m-menu-depth2 {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.m-menu-depth2.active {
+  height: auto;
   padding: 14px 0;
   background: #f2f2f2;
   border-bottom: 1px solid #d9d9d9;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
 }
 
-.site-menu-m .m-menu-depth2-item {
-  display: block;
+.m-menu-depth2-item {
   font-size: 15px;
 }
 
-.site-menu-m .m-menu-depth2-item:after {
+.m-menu-depth2-item:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.site-menu-m .m-menu-depth2-item a {
+.m-menu-depth2-item a {
   padding: 8px 0;
   color: #000;
   display: block;
-}
-
-.site-menu-m .m-menu-depth1.active .m-menu-depth1-item:after {
-  content: url(../images/icon/icon-up.png);
-}
-
-.site-menu-m .m-menu-depth1.active .m-menu-depth2 {
-  display: block !important;
 }
 
 .m-menu-depth2-item.active a {
@@ -1871,8 +1898,15 @@ table td {
   }
 }
 
+.header-mobile.active {
+  overflow-y: scroll;
+  height: 100%;
+}
+
 .header-mobile.active .header-mobile-roll {
-  display: block;
+  height: auto;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 /* ---------------------------------------------------
@@ -2170,7 +2204,6 @@ table td {
 
 .main-content {
   position: relative;
-  top: -84px;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
@@ -2179,12 +2212,12 @@ table td {
 @media screen and (min-width: 768px) {
   .main-content {
     width: 90%;
+    top: -84px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .main-content {
-    width: 90%;
     height: 330px;
   }
 }
@@ -2193,7 +2226,7 @@ table td {
   width: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1120px) {
   .main-content-left {
     float: left;
     width: 66.666%;
@@ -2211,7 +2244,7 @@ table td {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1120px) {
   .main-content-right {
     float: left;
     width: 33.333%;

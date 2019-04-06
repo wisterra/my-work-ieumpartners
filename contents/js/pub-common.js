@@ -21,11 +21,89 @@ var scrollTop = $(window).scrollTop();
 //     if (directInput) directInput;
 // }
 
-$(document).ready(function () {
-    //initEventC();
-    //loading();
-});
+// $(document).ready(function () {
+//     //initEventC();
+//     //loading();
+//     controlNavi();
+// });
 
+//---------------------------------------------------
+// mobile navi
+//---------------------------------------------------
+var mNaviToggle = true;
+function controlMobileNavi() {
+    
+    function openNavi() {
+        $('body').addClass('html-fix');
+        $('.header-mobile').addClass('active');
+        $('.header-mobile-dimmed').addClass('active');
+        $('.header-mobile').addClass('active');
+        $('.nav-toggle-m').addClass('active');
+        $('.header-mobile-roll').css('height', '270px');
+    }
+
+    function closeNavi() {
+        resetDepth();        
+        $('body').removeClass('html-fix');
+        $('.header-mobile').removeClass('active');
+        $('.header-mobile-dimmed').removeClass('active');
+        $('.header-mobile').removeClass('active');
+        $('.nav-toggle-m').removeClass('active');
+        $('.header-mobile-roll').css('height', '0');
+    }
+
+    // 열린 뎁스 리셋
+    function resetDepth() {
+        $('.m-menu-depth1').removeClass('active');
+        $('.m-menu-depth2').removeClass('active');
+    }
+
+    // 햄버거 클릭시
+    $('.nav-toggle-m').click(function () {
+        if (mNaviToggle == true) {
+            openNavi();
+        } else {
+            closeNavi();
+        }
+        mNaviToggle = !mNaviToggle;
+    });
+
+    // 내비딤드 클릭시
+    $('.header-mobile-dimmed').click(function () {
+        closeNavi();
+    });
+
+    // 메뉴들 클릭시
+    $('.m-menu-depth1').click(function (e) {
+        e.preventDefault;
+        $this = $(this);
+        resetDepth();
+        if ($this.hasClass('active')) {
+            $this.removeClass('active');
+            $this.find('.m-menu-depth2').removeClass('active');
+        } else {
+            $this.addClass('active');
+            $this.find('.m-menu-depth2').addClass('active');
+            $('.header-mobile-roll').css('height', 'auto');
+        }
+    });
+
+}
+
+//---------------------------------------------------
+// lnb control
+//---------------------------------------------------
+var mLnbToggle = true;
+function controlMobileLnb(){
+    $('.lnb-selected').click(function () {
+        if (mLnbToggle == true) {
+            $('.lnb-con').addClass('active');
+        } else {
+            $('.lnb-con').removeClass('active');
+        }
+        mLnbToggle = !mLnbToggle;
+    });    
+}
 //---------------------------------------------------
 // 위치로 이동
 // to : number, string(targetArea)
@@ -36,10 +114,13 @@ function goPosition(to) {
     if (tg.indexOf('#') != -1) {
         var tg = $(tg).offset().top;
     }
-    $("html, body").stop().animate(
-        { scrollTop: tg },
+    $("html, body").stop().animate({
+            scrollTop: tg
+        },
         500,
-        function () { scrollReady = true; }
+        function () {
+            scrollReady = true;
+        }
     );
 }
 
@@ -63,6 +144,7 @@ function openPop(flag, dimmedBoolean) {
         $('.popup .btn-right').hide();
     }
 };
+
 function closePop(flag, dimmedBoolean) {
     popState = !popState;
     var dim = dimmedBoolean; // 생략이 기본, false일 경우 dim을 사용하지 않는다
