@@ -1296,6 +1296,7 @@ table td {
   position: relative;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 1026px) {
@@ -1307,13 +1308,19 @@ table td {
   }
 }
 
+@media screen and (min-width: 1040px) {
+  .content-zone {
+    padding: 0;
+  }
+}
+
 /* container 공통 */
 #container {
   overflow: hidden;
   position: relative;
   min-width: 100%;
   min-height: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   margin: 0 auto;
 }
 
@@ -1844,7 +1851,7 @@ table td {
           transform: scale(0.5);
 }
 
-.m-munu-depth1.active .m-menu-depth1-item:after {
+.m-menu-depth1.active .m-menu-depth1-item:after {
   content: url(../images/icon/icon-up.png);
 }
 
@@ -2241,6 +2248,7 @@ table td {
   .main-content-right {
     float: left;
     width: 100%;
+    margin-top: 15px;
   }
 }
 
@@ -2248,6 +2256,7 @@ table td {
   .main-content-right {
     float: left;
     width: 33.333%;
+    margin-top: 0;
   }
 }
 
@@ -2395,43 +2404,59 @@ table td {
   }
 }
 
-.main-content-event .event-banner {
-  padding-top: 24px;
-  margin-left: 15px;
-  width: 364px;
+.main-event-banner {
+  max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-event-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px;
+  }
+}
+
+.main-event-banner .slick-list {
   overflow: hidden;
 }
 
-.main-content-event .event-banner .slick-dots {
-  position: relative;
-  top: -166px;
+.main-event-banner .slick-dots {
+  position: absolute;
+  top: -36px;
+  right: 0;
   text-align: right;
 }
 
-.main-content-event .event-banner .slick-dots li {
+.main-event-banner .slick-dots li {
   padding: 0;
   margin: 0;
 }
 
-.main-content-event .event-banner .slick-dots li button:before {
+.main-event-banner .slick-dots li button:before {
   font-size: 40px;
   color: #9e9e9e;
   opacity: 1;
 }
 
-.main-content-event .event-banner .slick-dots li.slick-active button:before {
+.main-event-banner .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.main-event-banner .slick-dots li.slick-active button:before {
   color: #0066b4;
   opacity: 1;
 }
 
-.main-content-event .event-banner img {
+.main-event-banner img {
   width: 100%;
 }
 
 .main-content-cscenter {
   width: 100%;
   padding-top: 4px;
-  padding-left: 42px;
+  padding-left: 5%;
   height: 54px;
   background: #11afde;
   color: #fff;
@@ -2620,41 +2645,22 @@ table td {
 }
 
 .company-section p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 .company-section h2 {
-  text-align: center;
+  padding-bottom: 30px;
   font-size: 25px;
   font-weight: bold;
-  padding-bottom: 30px;
+  text-align: center;
 }
 
 .company-section ul,
 .company-section dl {
-  vertical-align: top;
   display: inline-block;
   font-size: 15px;
-}
-
-.company-section li {
-  padding-bottom: 15px;
-  list-style-type: disc;
-  line-height: 1.5;
-  letter-spacing: -1px;
-}
-
-.company-section dt {
-  padding-bottom: 10px;
-}
-
-.company-section dd {
-  display: list-item;
-  list-style-type: disc;
-  margin-left: 20px;
-  line-height: 1.8;
-  letter-spacing: -1px;
+  vertical-align: top;
 }
 
 /*---------------------------------------------------
@@ -2694,6 +2700,13 @@ table td {
   padding-right: 30px;
 }
 
+.co-service li {
+  padding-bottom: 15px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  list-style-type: disc;
+}
+
 .co-system {
   height: 840px;
   background: url("/contents/images/company/system-img.png") center center no-repeat;
@@ -2716,6 +2729,18 @@ table td {
 
 .co-system dl:nth-child(2n) {
   padding-left: 0px;
+}
+
+.co-system dt {
+  padding-bottom: 10px;
+}
+
+.co-system dd {
+  display: list-item;
+  margin-left: 20px;
+  line-height: 1.8;
+  letter-spacing: -1px;
+  list-style-type: disc;
 }
 
 .co-system strong {
@@ -2750,6 +2775,14 @@ table td {
 
 .co-portfolio dt {
   color: #0066b4;
+}
+
+.co-portfolio dd {
+  display: list-item;
+  margin-left: 20px;
+  line-height: 1.8;
+  letter-spacing: -1px;
+  list-style-type: disc;
 }
 
 .co-exc .item {
@@ -2791,8 +2824,6 @@ table td {
 
 .co-exc li {
   list-style: none;
-  line-height: 1.5;
-  padding-bottom: 0;
 }
 
 .co-exc p {
@@ -2802,6 +2833,7 @@ table td {
 }
 
 .co-partners {
+  border: 1px solid green;
   background: url("/contents/images/company/company-bg3.jpg") center center no-repeat;
   background-size: cover;
   color: #fff;
@@ -2822,8 +2854,8 @@ table td {
 
 .co-partners li {
   line-height: 1.8;
-  padding-bottom: 0;
   list-style: none;
+  letter-spacing: -1px;
 }
 
 .co-partners .group {

@@ -40,6 +40,10 @@
   position: relative;
   @include rwd-width('width');
   margin: 0 auto;
+  padding:0 20px;
+  @media screen and (min-width: 1040px) {
+    padding: 0;
+  }  
 }
 
 /* container 공통 */
@@ -48,7 +52,7 @@
   position: relative;
   @include rwd-width('min-width');
   min-height: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   margin: 0 auto;
 
   @media screen and (min-width: #{$tab_size}) {

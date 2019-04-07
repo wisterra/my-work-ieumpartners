@@ -212,8 +212,7 @@
     right: 8px;
     transform: scale(0.5);
   }
-
-  .m-munu-depth1.active &:after {
+  .m-menu-depth1.active &:after {
     content: url(../images/icon/icon-up.png);
   }
 }

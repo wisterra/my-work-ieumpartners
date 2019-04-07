@@ -7,37 +7,24 @@
     vertical-align: top;
     padding-top: 50px;
     padding-bottom: 50px;
+
     p {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1.5;
     }
+
     h2 {
-        text-align: center;
+        padding-bottom: 30px;
         font-size: 25px;
         font-weight: bold;
-        padding-bottom: 30px;
+        text-align: center;        
     }
+
     ul,
     dl {
-        vertical-align: top;
-        display: inline-block;
+        display: inline-block;        
         font-size: 15px;
-    }
-    li {
-        padding-bottom: 15px;
-        list-style-type: disc; //list-style-position: inside;
-        line-height: 1.5;
-        letter-spacing: -1px;
-    }
-    dt {
-        padding-bottom: 10px;
-    }
-    dd {
-        display: list-item;
-        list-style-type: disc; //list-style-position: inside;
-        margin-left: 20px;
-        line-height: 1.8;
-        letter-spacing: -1px;
+        vertical-align: top;        
     }
 }
 
@@ -77,6 +64,12 @@
         width: 220px;
         padding-right: 30px;
     }
+    li {
+        padding-bottom: 15px;
+        line-height: 1.5;
+        letter-spacing: -1px;        
+        list-style-type: disc; //list-style-position: inside;
+    }    
 }
 
 // 회사 시스템
@@ -91,7 +84,6 @@
         padding-top: 60px;
         padding-left: 200px;
         float: left;
-        dt {}
         img {
             position: absolute;
             top: 0; //display:none;
@@ -100,6 +92,16 @@
     dl:nth-child(2n) {
         padding-left: 0px;
     }
+    dt {
+        padding-bottom: 10px;
+    }    
+    dd {
+        display: list-item;
+        margin-left: 20px;        
+        line-height: 1.8;
+        letter-spacing: -1px;
+        list-style-type: disc; //list-style-position: inside;        
+    }    
     strong {
         display: block;
         color: #0066b4;
@@ -128,6 +130,13 @@
     dt {
         color: #0066b4;
     }
+    dd {
+        display: list-item;
+        margin-left: 20px;        
+        line-height: 1.8;
+        letter-spacing: -1px;
+        list-style-type: disc; //list-style-position: inside;        
+    }    
 }
 
 .co-exc {
@@ -168,8 +177,6 @@
     }
     li {
         list-style: none;
-        line-height:1.5;
-        padding-bottom:0;
     }
     p {
         font-size: 15px;
@@ -180,6 +187,7 @@
 }
 
 .co-partners {
+    border:1px solid green;
     //height:686px;
     background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
     background-size: cover;
@@ -198,8 +206,8 @@
     }
     li{
         line-height:1.8;
-        padding-bottom:0;
         list-style: none;
+        letter-spacing: -1px;        
     }
     .group{
         vertical-align:top;
@@ -229,7 +237,8 @@
             background-color:#e5e5e5;
             height:15px;
             top:2px;
-          }
+        }
+
         &:first-child::before {
           content: '';
           width:0;

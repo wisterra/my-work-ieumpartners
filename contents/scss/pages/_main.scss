@@ -126,11 +126,13 @@
     @media screen and (min-width: #{$tab_size}) {
         float: left;
         width: 100%;
+        margin-top:15px;
     }
 
     @media screen and (min-width: 1120px) {
         float: left;
         width: 33.333%;
+        margin-top:0;
     }
 }
 
@@ -277,55 +279,69 @@
     }
 
     @extend %ctg;
+
     position: relative;
     border-top: 1px solid #e2e2e2;
     //width: (1180/3)+px;
     width:50%;
     height: 254px;
     background: #fff;
+}
 
-    .event-banner {
-        padding-top: 24px;
-        margin-left: 15px;
-        width: 364px;
-        overflow: hidden;
-
-        .slick-dots {
-            position: relative;
-            top: -166px;
-            text-align: right;
-        }
-
-        .slick-dots li {
-            padding: 0;
-            margin: 0;
-        }
-
-        .slick-dots li button:before {
-            font-size: 40px;
-            color: #9e9e9e;
-            opacity: 1;
-        }
-
-        .slick-dots li.slick-active button:before {
-            color: #0066b4;
-            opacity: 1;
-        }
-
-        img {
-            width: 100%;
-        }
-
+.main-event-banner {
+    //width: 364px;
+    max-width: 460px;
+    width: 100%;
+    @media screen and (min-width: #{$tab_size}) {
+        position:absolute;
+        bottom:0;
+        left:0; 
+         padding:0 15px;      
     }
+
+
+    
+.slick-list{
+    overflow:hidden;
+}
+    .slick-dots {
+        position: absolute;
+        top: -36px;
+        right:0;
+        text-align: right;
+    }
+
+    .slick-dots li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .slick-dots li button:before {
+        font-size: 40px;
+        color: #9e9e9e;
+        opacity: 1;
+    }
+
+    .slick-dotted.slick-slider{
+        margin-bottom:0;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #0066b4;
+        opacity: 1;
+    }
+
+    img {
+        width: 100%;
+    }
+
 }
 
 
 .main-content-cscenter {
-
     //width: (1180/3)+px;
     width: 100%;
     padding-top: 4px;
-    padding-left: 42px;
+    padding-left: 5%;
     height: 54px;
     background: #11afde;
     color: #fff;
