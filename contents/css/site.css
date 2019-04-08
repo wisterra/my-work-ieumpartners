@@ -1294,14 +1294,14 @@ table td {
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1030px) {
   .content-zone {
-    width: 1000px;
+    max-width: 1000px;
   }
   .content-zone body {
     background-color: #fff;
@@ -1324,7 +1324,7 @@ table td {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1030px) {
   #container {
     min-width: 1000px;
   }
@@ -1351,7 +1351,7 @@ table td {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1030px) {
   .container-wide {
     width: 1000px;
   }
@@ -2645,7 +2645,7 @@ table td {
 }
 
 .company-section p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -2666,45 +2666,117 @@ table td {
 /*---------------------------------------------------
 // company
 --------------------------------------------------- */
-.co-info img {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.company-section-info-img {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
-.co-service {
+@media screen and (min-width: 768px) {
+  .company-section-info-img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.company-section-info-img-m {
+  width: 100%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.company-section-info-img-w {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .company-section-info-img-m {
+    display: none;
+  }
+  .company-section-info-img-w {
+    display: block;
+  }
+}
+
+.company-section-service {
   background: url("/contents/images/company/company-bg1.jpg") center center no-repeat;
   background-size: cover;
   color: #fff;
 }
 
-.co-service .item {
+.company-section-service-item {
   position: relative;
   padding-top: 30px;
   padding-bottom: 10px;
-  padding-left: 290px;
   border-top: 1px solid #335b7d;
+  width: 100%;
 }
 
-.co-service strong {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  width: 280px;
+@media screen and (min-width: 768px) {
+  .company-section-service-item {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 290px;
+  }
+}
+
+.company-section-service-item-title {
+  display: block;
   text-align: center;
+  padding-bottom: 30px;
 }
 
-.co-service ul {
-  width: 220px;
-  padding-right: 30px;
+.company-section-service-item-title br {
+  display: none;
 }
 
-.co-service li {
+@media screen and (min-width: 768px) {
+  .company-section-service-item-title {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    width: 280px;
+    padding-bottom: 0;
+  }
+  .company-section-service-item-title br {
+    display: block;
+  }
+}
+
+.company-section-service-item-con {
+  width: 49%;
+  padding-left: 20px;
+}
+
+.company-section-service-item-con li {
   padding-bottom: 15px;
   line-height: 1.5;
   letter-spacing: -1px;
   list-style-type: disc;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .company-section-service-item-con {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company-section-service-item-con {
+    width: 240px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .company-section-service-item-con {
+    width: 220px;
+    padding-right: 30px;
+  }
 }
 
 .co-system {

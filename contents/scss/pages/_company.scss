@@ -9,7 +9,7 @@
     padding-bottom: 50px;
 
     p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
@@ -17,14 +17,14 @@
         padding-bottom: 30px;
         font-size: 25px;
         font-weight: bold;
-        text-align: center;        
+        text-align: center;
     }
 
     ul,
     dl {
-        display: inline-block;        
+        display: inline-block;
         font-size: 15px;
-        vertical-align: top;        
+        vertical-align: top;
     }
 }
 
@@ -33,49 +33,116 @@
 --------------------------------------------------- */
 
 // 회사 소개
-.co-info {
-    img {
+.company-section-info-img {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+
+    @media screen and (min-width: #{$tab_size}) {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 }
 
+.company-section-info-img-m {
+    width: 100%;
+    max-width: fit-content;
+}
+
+.company-section-info-img-w {
+    display: none;
+}
+
+@media screen and (min-width: #{$web_size}) {
+    .company-section-info-img-m {
+        display: none;
+    }
+
+    .company-section-info-img-w {
+        display: block;
+    }
+}
+
+
 // 회사 서비스
-.co-service {
+.company-section-service {
     background: url('/contents/images/company/company-bg1.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
-    .item {
-        position: relative;
+    //text-align:center;
+}
+
+.company-section-service-item {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 1px solid #335b7d;
+    width: 100%;
+
+    @media screen and (min-width: #{$tab_size}) {
         padding-top: 30px;
         padding-bottom: 10px;
         padding-left: 290px;
-        border-top: 1px solid #335b7d;
     }
-    strong {
+
+}
+
+.company-section-service-item-title {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+
+    br {
+        display: none;
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
         width: 280px;
-        text-align: center;
+        padding-bottom: 0;
+
+        br {
+            display: block;
+        }
     }
-    ul {
-        width: 220px;
-        padding-right: 30px;
-    }
+}
+
+.company-section-service-item-con {
+    width: 49%;
+    padding-left: 20px;
+
     li {
         padding-bottom: 15px;
         line-height: 1.5;
-        letter-spacing: -1px;        
+        letter-spacing: -1px;
         list-style-type: disc; //list-style-position: inside;
-    }    
+        text-align: left;
+    }
+
+    @media screen and (max-width: #{$mob_size}) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
+        width: 240px;
+        padding-right: 10px;
+    }
+
+    @media screen and (min-width: #{$web_size}) {
+        width: 220px;
+        padding-right: 30px;
+    }
 }
+
 
 // 회사 시스템
 .co-system {
     height: 840px;
     background: url('/contents/images/company/system-img.png') center center no-repeat;
+
     dl {
         position: relative;
         width: 500px;
@@ -84,24 +151,29 @@
         padding-top: 60px;
         padding-left: 200px;
         float: left;
+
         img {
             position: absolute;
             top: 0; //display:none;
         }
     }
+
     dl:nth-child(2n) {
         padding-left: 0px;
     }
+
     dt {
         padding-bottom: 10px;
-    }    
+    }
+
     dd {
         display: list-item;
-        margin-left: 20px;        
+        margin-left: 20px;
         line-height: 1.8;
         letter-spacing: -1px;
         list-style-type: disc; //list-style-position: inside;        
-    }    
+    }
+
     strong {
         display: block;
         color: #0066b4;
@@ -111,37 +183,43 @@
 .co-portfolio {
     background: url('/contents/images/company/company-bg2.jpg') center center no-repeat;
     color: #fff;
+
     h2 {
         color: #2b2b2b;
     }
+
     .dl-group {
         vertical-align: top;
         display: inline-block;
         width: 49%;
         padding-left: 54px;
     }
+
     .dl-group:nth-child(2) {
         padding-left: 0;
         padding-right: 60px;
     }
+
     dl {
         display: block;
     }
+
     dt {
         color: #0066b4;
     }
+
     dd {
         display: list-item;
-        margin-left: 20px;        
+        margin-left: 20px;
         line-height: 1.8;
         letter-spacing: -1px;
         list-style-type: disc; //list-style-position: inside;        
-    }    
+    }
 }
 
 .co-exc {
     .item {
-        position:relative;
+        position: relative;
         vertical-align: top;
         border: 1px solid #dcdcdc;
         display: inline-block;
@@ -150,100 +228,113 @@
         margin: 10px;
         padding: 30px;
     }
+
     .profile-img {
-        position:absolute;
-        top:32px;
-        left:34px;
+        position: absolute;
+        top: 32px;
+        left: 34px;
         width: 96px;
         height: 96px;
         background: url('/contents/images/company/profile-img.jpg') center center no-repeat;
-    }     
-    .desc{
-        padding-left:126px;
-        span{
+    }
+
+    .desc {
+        padding-left: 126px;
+
+        span {
             &::before {
                 content: '';
                 @extend %sp-bar;
                 margin: 0 10px;
-                top:2px;
-                background-color:#e5e5e5;
-                height:15px;
-              }
+                top: 2px;
+                background-color: #e5e5e5;
+                height: 15px;
+            }
         }
     }
-    ul{
-        padding-top:15px;
-        padding-bottom:15px;
+
+    ul {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
+
     li {
         list-style: none;
     }
+
     p {
         font-size: 15px;
         font-weight: bold;
         line-height: 1;
     }
-   
+
 }
 
 .co-partners {
-    border:1px solid green;
+    border: 1px solid green;
     //height:686px;
     background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
     background-size: cover;
     color: #fff;
-    strong{
-        display:block;
-        border-bottom:1px solid #5f6c80;
-        padding-bottom:15px;
-        font-size:18px;
+
+    strong {
+        display: block;
+        border-bottom: 1px solid #5f6c80;
+        padding-bottom: 15px;
+        font-size: 18px;
     }
-    ul{
-        width:225px;
-        height:200px;
-        padding-top:20px;
+
+    ul {
+        width: 225px;
+        height: 200px;
+        padding-top: 20px;
 
     }
-    li{
-        line-height:1.8;
+
+    li {
+        line-height: 1.8;
         list-style: none;
-        letter-spacing: -1px;        
+        letter-spacing: -1px;
     }
-    .group{
-        vertical-align:top;
-        display:inline-block;
-        padding-right:40px;
-        padding-bottom:30px;
+
+    .group {
+        vertical-align: top;
+        display: inline-block;
+        padding-right: 40px;
+        padding-bottom: 30px;
     }
-    .group-big{
-        padding-right:0;
+
+    .group-big {
+        padding-right: 0;
     }
 }
 
 .co-contanct {
-    .inner{
-        border:1px solid #e5e5e5;
+    .inner {
+        border: 1px solid #e5e5e5;
         text-align: center;
     }
-    strong{
-        display:inline-block;
-        padding-top:30px;
-        padding-bottom:30px;
-        font-size:18px;
+
+    strong {
+        display: inline-block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 18px;
+
         &::before {
             content: '';
             @extend %sp-bar;
             margin: 0 40px;
-            background-color:#e5e5e5;
-            height:15px;
-            top:2px;
+            background-color: #e5e5e5;
+            height: 15px;
+            top: 2px;
         }
 
         &:first-child::before {
-          content: '';
-          width:0;
-          margin:0;
-        }        
+            content: '';
+            width: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -252,20 +343,22 @@
 --------------------------------------------------- */
 // 대표 인사말
 .co-greeting {
-    width:997px;
-    margin:0 auto;
-    padding:0 50px;
+    width: 997px;
+    margin: 0 auto;
+    padding: 0 50px;
 
     img {
         padding-bottom: 50px;
-        margin-left:-50px;
+        margin-left: -50px;
     }
-    strong{
-        color:#0066b4;
+
+    strong {
+        color: #0066b4;
         //letter-spacing: 1px;
     }
-    p{
-        padding-bottom:16px;
+
+    p {
+        padding-bottom: 16px;
     }
-    
+
 }

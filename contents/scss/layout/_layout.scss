@@ -22,7 +22,7 @@
   //   #{$prop}: 992px;
   // }
 
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1030px) {
     body {
       background-color: #fff;
     }
@@ -38,7 +38,7 @@
 /* 컨텐츠 컨테이너의 사이즈 제한 */
 .content-zone {
   position: relative;
-  @include rwd-width('width');
+  @include rwd-width('max-width');
   margin: 0 auto;
   padding:0 20px;
   @media screen and (min-width: 1040px) {
