@@ -4,7 +4,7 @@
 // 우측 세로바
 //---------------------------------------------------
 %sp-bar {
-    position:relative;
+    position: relative;
     display: inline-block;
     width: 1px;
     height: 10px;
@@ -24,7 +24,7 @@
     display: inline-block;
     width: 1px;
     height: 10px;
-    margin:0 12px;
+    margin: 0 12px;
     background: #999999;
 }
 
@@ -39,13 +39,15 @@
     padding: 2px 4px;
     font-weight: bold;
 }
+
 .glyphicon-triangle-top {
-    position:relative;
-    top:2px;
+    position: relative;
+    top: 2px;
     transform: scale(.5, .8);
 }
+
 .glyphicon-triangle-bottom {
-    position:relative;
-    top:2px;    
+    position: relative;
+    top: 2px;
     transform: scale(.5, .8);
 }

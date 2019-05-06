@@ -1,20 +1,18 @@
-﻿//---------------------------------------------------
+﻿@import "../util/mixin/prefix";
+
+//---------------------------------------------------
 // for this site
 //---------------------------------------------------
 .header-title {
   font-size: 0;
 }
-/*.container{
-  min-width:unset;
-  max-width:unset;
-  width:auto;
-  margin:0;
-  padding:0;
-}*/
 
-.container.body-content{
-  width:auto;
-  padding:0;
+.container {
+  min-width: unset;
+  max-width: unset;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 //---------------------------------------------------
 // ir
@@ -27,28 +25,28 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  @include background('event-intro-heading.png', $y:0px);
-  width: 100%;
-  height: 320px;
+  @include background('event-intro-heading.png', $y:-30px);
+  width: 800px;
+  height: 500px;
   z-index: 1;
 
   &.kt{
-    @include background('event-intro-heading2.png', $y:0px);
+    @include background('event-intro-heading2.png', $y:-30px);
   }
 
   .deco {
     position: absolute;
-    top: 0px;
-    left: 54px;
+    top: 0;
+    left: 20px;
     width: 126px;
     height: 233px;
-    @include background('event-intro-heading-deco.png', $y:0px);
+    @include background('event-intro-heading-deco.png', $y:-30px);
   }
 }
 
 .event-area .heading {
-  @include background('event-area-heading.png', $y:110px);
-  height: 480px;
+  @include background('event-area-heading.png', $y:210px);
+  height: 700px;
 }
 
 /*.product-intro .heading {
@@ -58,7 +56,7 @@
 
 .event-info {
   @include background('event-info-img.png');
-  height: 920px;
+  height: 1150px;
 }
 //---------------------------------------------------
 // event 영역 스타일
@@ -72,29 +70,29 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 80px;
+  padding-top: 70px;
   width: 100%;
-  //min-width: 1000px;
+  min-width: 1000px;
   overflow: hidden;
 
   .bg1 {
     position: relative;
-    height: 973px;
+    height: 1238px;
   }
 
   .bg2 {
     position: relative;
-    height: 2560px;
+    height: 2885px;
     //@include background('section-bg2.jpg');
     &::after {
-      content: url('/Images/KittyJusticeLeague/m/section-deco-bottom.png');
+      content: url('/Images/KittyJusticeLeague/w/section-deco-bottom.png');
       display: block;
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       //width:1000px;
-      height: 771px;
+      height: 928px;
     }
 
     .section-deco-top-snow {
@@ -108,12 +106,12 @@ body {
 
     .section-deco-center {
       position: absolute;
-      top: 0;
+      top: -17px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
-      //@include background('section-deco-center.png', $y:16px);
+      @include background('section-deco-center.png', $y:16px);
     }
 
     .section-deco-center-snow {
@@ -138,8 +136,8 @@ body {
 
 .event-container {
   position: relative;
-  //min-width: 1000px;
-  padding-top: 80px;
+  min-width: 1000px;
+  padding-top: 70px;
 
   button {
     padding: 0;
@@ -163,22 +161,23 @@ body {
   // 이벤트 도입부
   .event-intro {
     position: relative;
-    height: 973px;
+    height: 1238px;
 
     .toyview-container {
       position: relative;
-      height: 973px;
+      height: 1238px;
       //@include prefix(transition, all .5s ease-in-out);
       overflow: hidden;
 
       .paging {
         position: absolute;
-        top: 315px;
+        top: 470px;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        //min-width:1000px;
-        //max-width:1600px;
+        min-width: 1000px;
+        max-width: 1600px;
+
         > div {
           width: 200px;
           cursor: pointer;
@@ -204,14 +203,14 @@ body {
         .btn-prev {
           position: absolute;
           top: 0;
-          left: 2%;
+          left: 5%;
           text-align: left;
         }
 
         .btn-next {
           position: absolute;
           top: 0;
-          right: 2%;
+          right: 5%;
           text-align: right;
         }
       }
@@ -254,8 +253,8 @@ body {
         }
 
         .logo {
-          top:15px;
-          left:15px;
+          top:30px;
+          left:30px;
           width:140px;
           height:140px;
         }
@@ -286,7 +285,7 @@ body {
               @include background('visual-#{$scene}-toy.png', $y:bottom);
             }
             .center {
-              @include background('visual-#{$scene}-center.png', $y:384px);
+              @include background('visual-#{$scene}-center.png', $y:500px);
             }
           }
         }
@@ -294,13 +293,50 @@ body {
       }
     }
   }
+
+    /*.mov-box {
+      position: relative;
+      margin: 0 auto;
+      width:866px;
+      height:487px;
+      @include background('mainPlayerCover.jpg');
+      background-size:cover;
+      box-shadow: 1px 17px 40px 0px rgba(0,0,0,0.85);
+    }*/
+
+  // 탭 부분
+  /*.section-tab {
+    //position:fixed;
+    //top:0;
+    //left:0;
+    width: 100%;
+    height: 88px;
+    border-top:1px solid #463b2e;
+    border-bottom:1px solid #4a3e30;
+    z-index:999;
+    @include background('tab-select1.jpg', $color:#2e2113);
+
+    button {
+      display: inline-block;
+      width: 49%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+    }
+
+    &.tab-2 {
+      @include background('tab-select2.jpg', $color:#2e2113);
+    }
+  }*/
   // 이벤트 참여영역
   .event-area {
     position: relative;
-    height: 2560px;
+    height: 2885px;
     overflow: hidden;
 
     &::before {
+      //content:url('/Images/KittyJusticeLeague/w/section-deco-top.png');
       content: '';
       @include background('section-deco-top.png', $repeat:repeat-x);
       display: block;
@@ -314,10 +350,10 @@ body {
     // 네이버 검색 유도 영역
     .naver-search-go {
       position: relative;
-      width: 100%;
+      width: 1000px;
       margin: 0 auto;
-      height: 300px;
-      padding-top: 160px;
+      height: 400px;
+      padding-top: 230px;
 
       a {
         position: relative;
@@ -328,7 +364,7 @@ body {
       .search-deco {
         position: absolute;
         top: 0;
-        left: 30px;
+        left: 210px;
         width: 563px;
         height: 280px;
         @include background('naver-search-deco.png', $y: 0);
@@ -336,8 +372,8 @@ body {
 
       .search-deco-click {
         position: absolute;
-        top: 70px;
-        right: 20px;
+        top: 110px;
+        right: 50px;
         width: 90px;
         height: 91px;
         @include background('naver-search-deco-click.png', $y: 0);
@@ -345,8 +381,8 @@ body {
 
       .text-flow {
         position: absolute;
-        top: 178px;
-        right: 310px;
+        top: 260px;
+        right: 410px;
         width: 0px;
         height: 50px;
         background: #fff;

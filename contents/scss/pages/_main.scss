@@ -1,106 +1,146 @@
+@import "../util/mixin/clear-both";
+
 /* ---------------------------------------------------
 // main
 --------------------------------------------------- */
-.container-main {
+$main-visual-slider-height-mobile : 340px;
+$main-visual-slider-height-web : 471px;
 
-    //display:none;
+// main상단
+.main-visual,
+.main-visual-inner {
+    position: relative;
+    height: $main-visual-slider-height-mobile;
+    min-width: 320px;
+
     @media screen and (min-width: #{$tab_size}) {
-        //display:block;
+        height: $main-visual-slider-height-web;
     }
 }
 
-.main-visual {
-    height: 472px;
-    //min-width: 1200px;
+/* main상단 - 동그라미 부분 */
+.main-visual .slick-dots {
+    position: absolute;
+    bottom: 25px;
 
-    .slick-dots {
-        position: relative;
-        top: -135px;
+    @media screen and (min-width: #{$tab_size}) {
+        bottom: 115px;
     }
 
-    .slick-dots li {
+    li {
         margin: 0 2px;
     }
 
-    .slick-dots li button:before {
+    li button:before {
         font-size: 40px;
         color: #9e9e9e;
         opacity: 1;
     }
 
-    .slick-dots li.slick-active button:before {
+    li.slick-active button:before {
         opacity: 1;
         color: #fff;
     }
+}
 
-    .slider-paging {
-        position: absolute;
-        top: 140px;
-        left: 50%;
-        transform: translateX(-50%);
+/* main상단 - 좌우 페이징 */
+.main-visual-paging {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.main-visual-paging-img {
+    width: 30px;
+
+    @media screen and (min-width: #{$tab_size}) {
         width: 100%;
-
-        button {
-            background: none;
-            border: 0;
-        }
-
-        .slider-prev {
-            position: absolute;
-            top: 0;
-            right: 90%;
-        }
-
-        .slider-next {
-            position: absolute;
-            top: 0;
-            left: 90%;
-        }
     }
 }
 
+.main-visual-paging-prev {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    right: 90%;
+    border: 0;
+    background: none;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: block !important;
+    }
+}
+
+.main-visual-paging-next {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    left: 90%;
+    border: 0;
+    background: none;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: block !important;
+    }
+}
+
+/* main상단 - 슬라이딩 각 화면 */
 .main-visual-item a {
+    display: inline-block;
     width: 100%;
-    //min-width: 1000px;
-    height: 472px;
     background-position: center;
     background-size: cover;
-    display: inline-block;
-}
 
+    @media screen and (min-width: #{$tab_size}) {
+        height: 472px;
+    }
+}
 
 .main-visual-item-text {
+    display: table;
     width: 100%;
     height: 80%;
-    display: table;
-    text-align: center;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
+}
 
-    &-inner {
-        display: table-cell;
-        vertical-align: middle;
-        width: 100%;
-        height: 390px;
-    }
+.main-visual-item-text-inner {
+    display: table-cell;
+    width: 100%;
+    height: $main-visual-slider-height-mobile;
+    vertical-align: middle;
 
-    strong {
-        font-weight: bold;
-        font-size: 200%;
-        display: inline-block;
-        margin-bottom: 14px;
+    @media screen and (min-width: #{$tab_size}) {
+        height: $main-visual-slider-height-web;
     }
 }
 
+.main-visual-item-text strong {
+    font-weight: bold;
+    font-size: 160%;
+    display: inline-block;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: #{$tab_size}) {
+        font-size: 200%;
+    }
+}
+
+// ---------------------------------------------------
+/* main 컨텐츠 */
 .main-content {
     position: relative;
     width: 100%;
     max-width: 1180px;
-
     margin: 0 auto;
+    padding: 20px;
 
     @media screen and (min-width: #{$tab_size}) {
         width: 90%;
+        padding: 0;
         top: -84px;
     }
 
@@ -110,7 +150,6 @@
 }
 
 .main-content-left {
-
     width: 100%;
 
     @media screen and (min-width: 1120px) {
@@ -120,233 +159,288 @@
 }
 
 .main-content-right {
-
     width: 100%;
 
     @media screen and (min-width: #{$tab_size}) {
         float: left;
         width: 100%;
-        margin-top:15px;
+        margin-top: 15px;
     }
 
     @media screen and (min-width: 1120px) {
         float: left;
         width: 33.333%;
-        margin-top:0;
+        margin-top: 0;
     }
 }
 
-.main-content-notice {
-    position: relative;
-    width: (1180/3)*2+px;
-    width: 100%;
-    padding-left: 34px;
-    height: 54px;
-    line-height: 53px;
+// ---------------------------------------------------
+/* 공지사항 */
+.main-notice {
     overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px;
     background: #fff;
 
-    strong {
-        position:absolute;
-        top:0;
-        left:20px;
+    @media screen and (min-width: #{$tab_size}) {
+        //width: (1180/3)*2+px;        
+        padding-left: 34px;
+        height: 54px;
+        line-height: 53px;
+    }
+}
+
+// 공지사항 제목
+.main-notice-title {
+    display: block;
+    padding-top: 20px;
+    line-height: 55px;
+    font-size: 20px;
+    font-family: bold;
+    text-align: center;
+
+    &:after {
+        display: none;
+        content: '';
+        @extend %sp-bar;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
+        padding-top: 0;
         display: inline-block;
         vertical-align: top;
-        line-height: 55px;
+        position: absolute;
+        top: 0;
+        left: 20px;
         font-size: 15px;
-        font-family: bold;
+        text-align: left;
 
         &:after {
-            content: '';
-            @extend %sp-bar;
-            margin-left: 15px;
-            margin-right: 10px;
+            display: block;
         }
     }
+}
 
-    ul {
-        display: inline-block;
-        width: 100%;
-        height:30px;
-        padding-left:70px;
-        padding-right:30px;
-        //border:1px solid green;
-        z-index: 2;
+.main-notice-slider {
+    display: inline-block;
+    z-index: 2;
+    width: 100%;
+    height: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    @media screen and (min-width: #{$tab_size}) {
+        padding-left: 70px;
+        padding-right: 30px;
     }
+}
 
-    li {
-        width: 100%;
-        position: relative;
-    }
+.main-notice-slider-item {
+    width: 100%;
+    position: relative;
+}
 
-    a {
-        color: #1a1a1a;
-    }
+.main-notice-slider-item-cursor {
+    color: #1a1a1a;
+}
 
-    i {
-        margin-left: 6px;
-    }
+.main-notice-slider-icon {
+    margin-left: 6px;
+}
 
-    span {
+.main-notice-slider-date {
+    display: block;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline;
         position: absolute;
         top: 0px;
         right: 13px;
     }
-
-    .notice-paging {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 55px;
-
-        .notice-prev {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        .notice-next {
-            position: absolute;
-            top: 27px;
-            right: 0;
-        }
-    }
-
-    button {
-        background: none;
-        border: 0;
-        padding: 0;
-        border: 1px solid #d1d1d1;
-        height: 28px;
-        overflow: hidden;
-
-        img {
-            //width:20px;
-            //height:20px;
-
-            background: gray;
-        }
-    }
-
 }
 
+.main-notice-paging {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    //height: 55px;
+}
 
+.main-notice-paging-img {
+    width: 100%;
 
-%ctg {
+    @media screen and (min-width: #{$tab_size}) {
+        width: 28px;
+        height: 28px;
+        border: 1px solid #d1d1d1;
+    }
+}
+
+.main-notice-paging-prev {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    z-index: 2;
+    background: none;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 28px;
+
+    @media screen and (min-width: #{$tab_size}) {
+        top: 0;
+        left: unset;
+        right: 0;
+        height: 28px;
+    }
+}
+
+.main-notice-paging-next {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    z-index: 2;
+    background: none;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 28px;
+
+    @media screen and (min-width: #{$tab_size}) {
+        top: 27px;
+        right: 0;
+        height: 28px;
+    }
+}
+
+// ---------------------------------------------------
+%category-style {
     padding-top: 24px;
     text-align: center;
 
-    strong {
+    .main-content-title {
         font-size: 23px;
-        line-height: 1.8;
         font-family: bold;
-
+        line-height: 1.8;
     }
 }
 
-.main-content-service {
-    @extend %ctg;
-
-    @media screen and (max-width: #{$tab_size}) {
-        width: 100%;
-    }
-
-    @media screen and (min-width: #{$tab_size}) {
-        float: left;
-    }
-
-
+// 서비스 안내
+.main-service {
+    @extend %category-style;
     position: relative;
     //width: (1180/3)+px;
-    width:50%;
-    height: 254px;
+    width: 100%;
+    height: 208px;
     background: #0065b3 url('../images/main/ctg-sv-bg.png') center bottom no-repeat;
-
-    a {
-        color: #fff;
-        display: block;
-        height: 100%;
-    }
-}
-
-.main-content-event {
-    @media screen and (max-width: #{$tab_size}) {
-        width: 100%;
-    }
+    background-size: 330px;
 
     @media screen and (min-width: #{$tab_size}) {
         float: left;
+        width: 50%;
+        height: 254px;
+        background-size: auto;
     }
+}
 
-    @extend %ctg;
+.main-service-cursor {
+    display: block;
+    height: 100%;
+    color: #fff !important;
+}
 
+// ---------------------------------------------------
+// 이벤트 안내
+.main-event {
+    @extend %category-style;
     position: relative;
     border-top: 1px solid #e2e2e2;
     //width: (1180/3)+px;
-    width:50%;
-    height: 254px;
+    width: 100%;
+    height: auto;
     background: #fff;
+
+    @media screen and (min-width: #{$tab_size}) {
+        float: left;
+        width: 50%;
+        height: 254px;
+    }
 }
 
 .main-event-banner {
     //width: 364px;
-    max-width: 460px;
+    position: relative;
     width: 100%;
+    @include clear-both;
+
     @media screen and (min-width: #{$tab_size}) {
-        position:absolute;
-        bottom:0;
-        left:0; 
-         padding:0 15px;      
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 460px;
+        padding: 0 15px;
     }
-
-
-    
-.slick-list{
-    overflow:hidden;
 }
-    .slick-dots {
+
+.main-event-banner img {
+    width: 100%;
+}
+
+.main-event-banner .slick-dots {
+    position: relative;
+    height: 50px;
+    top: 10px;
+
+    @media screen and (min-width: #{$tab_size}) {
         position: absolute;
         top: -36px;
-        right:0;
+        right: 0;
+        height: auto;
         text-align: right;
     }
-
-    .slick-dots li {
-        padding: 0;
-        margin: 0;
-    }
-
-    .slick-dots li button:before {
-        font-size: 40px;
-        color: #9e9e9e;
-        opacity: 1;
-    }
-
-    .slick-dotted.slick-slider{
-        margin-bottom:0;
-    }
-    .slick-dots li.slick-active button:before {
-        color: #0066b4;
-        opacity: 1;
-    }
-
-    img {
-        width: 100%;
-    }
-
 }
 
+.main-event-banner .slick-dots li {
+    margin: 0;
+    padding: 0;
+}
 
-.main-content-cscenter {
+.main-event-banner .slick-dots li button:before {
+    font-size: 48px;
+    color: #9e9e9e;
+    opacity: 1;
+
+    @media screen and (min-width: #{$tab_size}) {
+        font-size: 40px;
+    }    
+}
+
+.main-event-banner .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.main-event-banner .slick-dots li.slick-active button:before {
+    color: #0066b4;
+    opacity: 1;
+}
+
+// ---------------------------------------------------
+// CS센터
+.main-cscenter {
+    display: none;
     //width: (1180/3)+px;
     width: 100%;
+    height: 54px;
     padding-top: 4px;
     padding-left: 5%;
-    height: 54px;
     background: #11afde;
     color: #fff;
 
-    strong {
+    .main-content-title {
         padding-top: 4px;
         padding-right: 16px;
         float: left;
@@ -354,37 +448,86 @@
         font-family: bold;
     }
 
-    p {
-        float: left;
-        letter-spacing: -1px;
-        line-height: 1.2;
-    }
-
-    em {
-        font-size: 22px;
-        font-style: normal;
-        letter-spacing: 0;
-        font-family: bold;
-    }
-
-    span {
-        font-size: 14px;
-        letter-spacing: 0;
-        padding-left: 2px;
-        font-weight: bold;
+    @media screen and (min-width: #{$tab_size}) {
+        display: block;
     }
 }
 
-.main-content-request {
-    @extend %ctg;
+.main-cscenter-text {
+    float: left;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.main-cscenter-tel {
+    font-size: 22px;
+    font-style: normal;
+    letter-spacing: 0;
+    font-family: bold;
+}
+
+.main-cscenter-text-time {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+// ---------------------------------------------------
+// 의뢰하기
+.main-request {
+    @extend %category-style;
     //width: (1180/3)+px;
     width: 100%;
-    height: 254px;
+    height: 208px;
     background: #e5e8ef url('../images/main/ctg-faq-bg.png') center bottom no-repeat;
+    background-size: 330px;
 
-    a {
-        color: #1a1a1a;
-        display: block;
-        height: 100%;
+    @media screen and (min-width: #{$tab_size}) {
+        height: 254px;
+        background-size: auto;
     }
+}
+
+.main-request-cursor {
+    display: block;
+    height: 100%;
+    color: #1a1a1a !important;
+}
+
+// ---------------------------------------------------
+// CS센터 모바일용
+.main-cscenter-mobile {
+    text-align: center;
+    color: #11afde;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    .main-content-title {
+        font-size: 15px;
+        font-family: bold;
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: none;
+    }
+}
+
+.main-cscenter-mobile-text {
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.main-cscenter-mobile-tel {
+    font-size: 26px;
+    font-style: normal;
+    letter-spacing: 0;
+    font-family: bold;
+}
+
+.main-cscenter-mobile-time {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding-left: 2px;
+    font-weight: bold;
 }

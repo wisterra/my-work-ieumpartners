@@ -3,20 +3,20 @@ body {
   word-break: keep-all;
 }
 
-// html, body {
-//   height: 100%
-// }
+html, body {
+  height: 100%;
+}
 
 fieldset {
   margin: 0;
   padding: 0;
   border: 0;
-  vertical-align: top
+  vertical-align: top;
 }
 
 // p {
 //   margin: 0;
-//   padding: 0
+//   padding: 0;
 // }
 
 // dl, ul,
@@ -30,7 +30,7 @@ ul,
 li {
   list-style: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 img {
@@ -52,10 +52,11 @@ img {
 //   border: 0;
 //   background: none;
 //   outline: 0;
-//   cursor: pointer
+//   cursor: pointer;
 // }
 
-button, input {
+button,
+input {
   outline: 0;
   -webkit-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -moz-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -82,24 +83,3 @@ a:link,
 a:visited {
   text-decoration: none;
 }
-
-// ie 용 스크롤 바
-// html { scrollbar-arrow-color: #efefef;
-
-//   scrollbar-Track-Color: #efefef; 
-//   scrollbar-base-color: #dfdfdf;
-
-//   scrollbar-Face-Color: #dfdfdf;
-
-//   scrollbar-3dLight-Color: #dfdfdf;         
-//   scrollbar-DarkShadow-Color: #dfdfdf;
-
-//   scrollbar-Highlight-Color: #dfdfdf;
-
-//   scrollbar-Shadow-Color: #dfdfdf}
-// /* Chrome, Safari용 스크롤 바 */
-// ::-webkit-scrollbar {width: 12px; height: 12px;  }
-// ::-webkit-scrollbar-button:start:decrement, 
-// ::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px; background: url() rgba(0,0,0,.05);}
-// ::-webkit-scrollbar-track {     background: rgba(0,0,0,.05); }
-// ::-webkit-scrollbar-thumb {  background: rgba(0,0,0,.1);  }

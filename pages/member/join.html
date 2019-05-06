@@ -1,22 +1,4 @@
 <div id="container" class="container-sub">
-    <!-- LNB -->
-    <!--
-    <div id="lnb">
-        <ul>
-            <li>
-                <a href="#member/login" class="fakelink">로그인</a>
-            </li>
-            <li>
-                <a href="#member/login" class="fakelink">아이디/비밀번호 찾기</a>
-            </li>
-            <li>
-                <a href="#member/join" class="fakelink">회원가입</a>
-            </li>
-        </ul>
-    </div>
-    -->
-    <!-- // LNB -->
-
     <!-- Sub Content -->
     <div class="sub-content">
         <div class="content-zone">
@@ -28,7 +10,7 @@
             <div>
                 <form action="" class="form-inline">
                     <strong>이음파트너스 이용약관<span>(필수)</span></strong>
-                    <div class="agree-right agree-all">
+                    <div class="form-agree-right agree-all">
                         <label class="checkbox-inline">
                             <input type="checkbox" name="policyAll" id="policyAll" value="agree">
                             <i class="icon-checkbox"></i>
@@ -38,7 +20,7 @@
                     <div class="policy-doc">
                         <div id="policyEssential"></div>
                     </div>
-                    <div class="agree-right">
+                    <div class="form-agree-right">
                         <label class="radio-inline">
                             <input type="radio" name="policyE" id="policyE-Y" value="agree">
                             <i class="icon-radio"></i>
@@ -54,14 +36,15 @@
                     <div class="policy-doc">
                         <div id="policySelection"></div>
                     </div>
-                    <div class="agree-right">
+                    <div class="form-agree-right">
                         <label class="radio-inline">
                             <input type="radio" name="policyS" id="policyS-Y" value="agree">
                             <i class="icon-radio"></i>
                             동의
                         </label>
                         <label class="radio-inline">
-                            <input type="radio" name="policyS" id="policyS-N" value="disagree"><i class="icon-radio"></i>
+                            <input type="radio" name="policyS" id="policyS-N" value="disagree"><i
+                                class="icon-radio"></i>
                             미동의
                         </label>
                     </div>
@@ -86,7 +69,7 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="userID">
                                     </div>
-                                    <button class="btn btn-default btn-overlapcheck">중복확인</button>
+                                    <button class="btn btn-default join-btn-overlapcheck">중복확인</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -128,8 +111,10 @@
                                     <label for="userEmail">이메일</label>
                                 </th>
                                 <td>
+                                    <div class="form-group form-email">
+                                        <input type="email" class="form-control" id="userEmail">
+                                    </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="userEmail"> @
                                         <select class="form-control">
                                             <option>선택</option>
                                             <option>naver.com</option>
@@ -143,13 +128,12 @@
                                 </th>
                                 <td>
                                     <div class="form-group">
-
-                                        <select class="form-control">
+                                        <select class="form-control form-input-tel">
                                             <option>선택</option>
                                             <option>010</option>
                                         </select> -
-                                        <input type="tel" class="form-control" style="width:100px" id="userPhone"> -
-                                        <input type="tel" class="form-control" style="width:100px" id="userPhone">
+                                        <input type="tel" class="form-control form-input-tel" id="userPhone"> -
+                                        <input type="tel" class="form-control form-input-tel" id="userPhone">
                                     </div>
                                 </td>
                             </tr>
@@ -169,7 +153,7 @@
                             <tr>
                                 <th><label for="userEmail">이메일 수신여부</label></th>
                                 <td>
-                                    <div class="agree-left">
+                                    <div class="form-agree-left">
                                         <label class="radio-inline">
                                             <input type="radio" name="userEmail" id="userEmail-Y" value="agree">
                                             <i class="icon-radio"></i>
@@ -186,7 +170,7 @@
                             <tr>
                                 <th><label for="userSMS">SMS 수신여부</label></th>
                                 <td>
-                                    <div class="agree-left">
+                                    <div class="form-agree-left">
                                         <label class="radio-inline">
                                             <input type="radio" name="userSMS" id="userSMS-Y" value="agree">
                                             <i class="icon-radio"></i>
@@ -228,10 +212,10 @@
             }
         });
         $("#policyE-Y, #policyS-Y").click(function () {
-            if ($('#policyE-Y').prop("checked")&&$('#policyS-Y').prop("checked")) {
+            if ($('#policyE-Y').prop("checked") && $('#policyS-Y').prop("checked")) {
                 $("#policyAll").prop("checked", true);
             }
-        });        
+        });
         $("#policyE-N, #policyS-N").click(function () {
             if ($(this).prop("checked")) {
                 $("#policyAll").prop("checked", false);

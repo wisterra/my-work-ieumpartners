@@ -18,13 +18,20 @@
   .page-header {
     text-align: left;
     border-bottom: 2px solid #0066b4;
-    margin-top:70px;
+    margin-top:25px;
+    @media screen and (min-width: #{$tab_size}) {
+      margin-top:70px;
+    }    
   
     h1 {
       display: inline-block;
       font-family: bold;
-      font-size: 36px;
+      font-size: 25px;
       vertical-align: bottom;
+
+      @media screen and (min-width: #{$tab_size}) {
+        font-size: 36px;
+      } 
     }
   
     p {

@@ -1,8 +1,9 @@
-<div id="container" class="container-main">
+<div id="container">
     <!-- main slider -->
     <div class="main-visual">
         <div class="main-visual-inner">
             <div class="main-visual-item">
+                <!-- css 별도로 수정없이 다이렉트로 배경 삽입해주시면 됩니다 -->
                 <a href="javascript:;" style="background-image: url(../contents/images/main/main-visual1.jpg)">
                     <div class="main-visual-item-text">
                         <div class="main-visual-item-text-inner">
@@ -42,47 +43,56 @@
                 </a>
             </div>
         </div>
-        <div class="slider-paging">
-            <button class="slider-prev"><img src="../contents/images/main/btn-prev.png" alt="이전" /></button>
-            <button class="slider-next"><img src="../contents/images/main/btn-next.png" alt="다음" /></button>
+        <div class="main-visual-paging">
+            <button class="main-visual-paging-prev"><img src="../contents/images/main/btn-prev.png" class="main-visual-paging-img" alt="이전" /></button>
+            <button class="main-visual-paging-next"><img src="../contents/images/main/btn-next.png" class="main-visual-paging-img" alt="다음" /></button>
         </div>
     </div>
     <!-- // main slider -->
 
     <div class="main-content">
-        
         <div class="main-content-left">
-            <div class="main-content-notice">
-                <strong>공지사항</strong>
-                <ul id="sliderNotice">
-                    <li><a href="#">
-                            이음파트너스 오픈기념 행사 안내 <i class="icon-new">NEW</i>
-                            <span>2019.01.21</span>
-                        </a></li>
-                    <li><a href="#">
-                            이음파트너스 오픈기념 행사 안내 <i class="icon-new">NEW</i>
-                            <span>2019.01.21</span>
-                        </a></li>
+            <div class="main-notice">
+                <strong class="main-notice-title">공지사항</strong>
+                <ul class="main-notice-slider">
+                    <li class="main-notice-slider-item">
+                        <a href="#" class="main-notice-slider-item-cursor">
+                            이음파트너스 오픈기념 행사 안내 <i class="icon-new main-notice-slider-icon">NEW</i>
+                            <span class="main-notice-slider-date">2019.01.21</span>
+                        </a>
+                    </li>
+                    <li class="main-notice-slider-item">
+                        <a href="#" class="main-notice-slider-item-cursor">
+                            이음파트너스 오픈기념 행사 안내 <i class="icon-new main-notice-slider-icon">NEW</i>
+                            <span class="main-notice-slider-date">2019.01.21</span>
+                        </a>
+                    </li>
                 </ul>
-                <div class="notice-paging">
-                    <button class="notice-prev"><img src="../contents/images/main/notice-prev.png" alt="이전" /></button>
-                    <button class="notice-next"><img src="../contents/images/main/notice-next.png" alt="다음" /></button>
+                <div class="main-notice-paging">
+                    <button class="main-notice-paging-prev">
+                        <img src="../contents/images/main/notice-prev-m.png" alt="이전" class="visible-xs main-notice-paging-img" />
+                        <img src="../contents/images/main/notice-prev.png" alt="이전" class="visible-sm visible-md visible-lg main-notice-paging-img" />
+                    </button>
+                    <button class="main-notice-paging-next">
+                        <img src="../contents/images/main/notice-next-m.png" alt="다음" class="visible-xs main-notice-paging-img" />
+                        <img src="../contents/images/main/notice-next.png" alt="다음" class="visible-sm visible-md visible-lg main-notice-paging-img" />
+                    </button>
                 </div>
             </div>
 
-            <div class="main-content-service">
-                <a href="#main" class="fakelink">
-                    <strong>서비스 안내</strong>
+            <div class="main-service">
+                <a href="#main" class="fakelink main-service-cursor">
+                    <strong class="main-content-title">서비스 안내</strong>
                     <p>이음파트너스의 다양한 서비스를 소개합니다.</p>
                 </a>
             </div>
 
-            <div class="main-content-event">
-                <strong>이벤트</strong>
+            <div class="main-event">
+                <strong class="main-content-title">이벤트</strong>
                 <p>다양한 이벤트에 참여하고 혜택을 받아가세요.</p>
                 <!-- banner slider -->
                 <div class="main-event-banner">
-                    <div class="banner-con">
+                    <div class="main-banner-con">
                         <div class="banner-item">
                             <a href="javascript:;"><img src="../contents/images/main/banner1.jpg" alt=""></a>
                         </div>
@@ -96,20 +106,26 @@
         </div>
 
         <div class="main-content-right">
-            <div class="main-content-cscenter">
-                <strong>고객센터</strong>
-                <p><em>032 - 858 - 4119</em><br>
-                    평일 <span>09:00 - 18:00</span> (토, 일 공휴일 제외 )</p>
+            <div class="main-cscenter">
+                <strong class="main-content-title">고객센터</strong>
+                <p class="main-cscenter-text">
+                    <em class="main-cscenter-tel">032 - 721 - 5366</em><br>
+                    평일 <span class="main-cscenter-text-time">09:00 - 18:00</span> (토, 일 공휴일 제외 )
+                </p>
             </div>
-
-            <div class="main-content-request">
-                <a href="#main" class="fakelink">
-                    <strong>의뢰하기</strong>
+            <div class="main-request">
+                <a href="#main" class="fakelink main-request-cursor">
+                    <strong class="main-content-title">의뢰하기</strong>
                     <p>더 이상 고민하지 말고 지금 바로 문의하세요.</p>
                 </a>
             </div>
         </div>
-        
+        <div class="main-cscenter-mobile">
+            <strong class="main-content-title">고객센터</strong>
+            <p class="main-cscenter-mobile-text">
+                <em class="main-cscenter-mobile-tel">032 - 721 - 5366</em><br>
+                평일 <span class="main-cscenter-mobile-time">09:00 - 18:00</span> (토, 일 공휴일 제외 )</p>
+        </div>
     </div>
 </div>
 

@@ -1,8 +1,8 @@
 @charset 'UTF-8'; 
 
-@import "./util/index";
-@import "./base/index";
+@import "./util/media";
+@import "./base/index"; // 정리필요 (font)
 @import "./effect/index";
-@import "./component/index";
+@import "./component/index"; // 정리필요 (all)
 @import "./layout/index";
-@import "./pages/index";
+@import "./pages/index"; // 정리필요 (all)

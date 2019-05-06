@@ -8,43 +8,51 @@
   color: #55565a;
 }
 
-@media screen and (min-width: #{$web_size}) {
-
-}
-
 // ---------------------------------------------------
 // footer 링크영역
 .footer-link {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #45464a;
-  text-align: center
+  text-align: center;
+
+  @media screen and (min-width: #{$tab_size}) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .footer-link-group {
   display: block;
-  //padding-left: 10rem
 }
 
 .footer-link-item {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 10px;
   margin: 0;
   line-height: 1.5;
 }
 
-.footer-link-item-a {
+.footer-link-item-a,
+.footer-link-item-a:link,
+.footer-link-item-a:visited,
+.footer-link-item-a:hover,
+.footer-link-item-a:active {
   margin: 0;
   padding: 0;
   color: #ebecee;
-  font-size: 1.4rem
+  font-size: 11px;
+
+  @media screen and (min-width: #{$tab_size}) {
+    font-size: 14px;
+  }
 }
 
 // 세로선
 .footer-link-item:before {
   content: '';
   @extend %sp-bar;
-  margin-right: 2rem
+  margin-right: 20px
 }
 
 // 세로선 중 웹에서 선 없애는 용도
@@ -65,11 +73,11 @@
   }
 
   .footer-link-item {
-    padding: 0 0.5rem
+    padding: 0 5px
   }
 
   .footer-link-item:before {
-    margin-right: 1rem
+    margin-right: 10px
   }
 }
 
@@ -79,14 +87,13 @@
   float: left;
   width: 20%;
   vertical-align: top;
-  padding-top: 6%;
+  padding-top: 30px;
   text-align: center;
 
-  @media screen and (min-width: #{$web_size}) {
-    //width: 20%;
-    padding-top: 4%;
+  @media screen and (min-width: #{$tab_size}) {
+    padding-top: 40px;
     text-align: right;
-  }  
+  }
 }
 
 .footer-logo-a {
@@ -95,28 +102,27 @@
 
 .footer-logo-img {
   width: 90%;
+  max-width: fit-content;
   max-width: fit-content
 }
-
-
 
 // ---------------------------------------------------
 // footer 카피
 .footer-copy {
   float: right;
   width: 80%;
-  padding: 6% 0;
+  padding: 30px 0 30px 20px;
   color: #ebecee;
-  font-size: 1.4rem;
-  @media screen and (min-width: #{$web_size}) {
-    //width: 80%;    
-    padding: 6%;
-    padding-top: 4%;
-  }    
+  font-size: 11px;
+
+  @media screen and (min-width: #{$tab_size}) {
+    font-size: 14px;
+    padding-left: 50px;
+  }
 }
 
 .footer-copy-line {
   margin: 0;
+  font-family: 'light';
   line-height: 1.5;
-  font-family: 'light'
 }

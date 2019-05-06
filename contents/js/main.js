@@ -10,8 +10,8 @@ $(function () {
 
 function sliderActon() {
     var $sliderMain = $('.main-visual-inner');
-    var $sliderBanner = $('.banner-con');
-    var $sliderNotice = $('#sliderNotice');
+    var $sliderBanner = $('.main-banner-con');
+    var $sliderNotice = $('.main-notice-slider');
 
     // slider option
     var slickMainOptions = {
@@ -19,8 +19,8 @@ function sliderActon() {
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: $('.slider-prev'),
-        nextArrow: $('.slider-next')
+        prevArrow: $('.main-visual-paging-prev'),
+        nextArrow: $('.main-visual-paging-next')
     }
     // 메인비쥬얼
     $sliderMain.slick(slickMainOptions);
@@ -35,9 +35,9 @@ function sliderActon() {
         vertical:true,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: $('.notice-prev'),
-        nextArrow: $('.notice-next'),
+        prevArrow: $('.main-notice-paging-prev'),
+        nextArrow: $('.main-notice-paging-next'),
         swipe:false
-    });    
+    });  
 }
 

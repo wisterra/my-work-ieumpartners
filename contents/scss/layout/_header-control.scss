@@ -4,16 +4,9 @@
     height: 100%;
 }
 
-// 웹에서 가로사이즈 제어
-// @media screen and (min-width: #{$web_size}) {
-//     .header {
-//         //min-width: 1200px
-//     }
-// }
-
 // 모바일 헤더랑 웹 헤더랑 변환
 @media screen and (max-width: #{$tab_size}) {
-    .header {
+    .header-web {
         display: none;
    }
 
@@ -26,8 +19,8 @@
 .header-mobile.active {
   overflow-y:scroll;
   height:100%;
+  
     .header-mobile-roll {
-        //display: block;
         height:auto;
         transition: 0.3s ease-out;
     }

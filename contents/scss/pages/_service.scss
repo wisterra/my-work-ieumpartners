@@ -311,6 +311,9 @@
         }
         .map{
             display: inline-block;
+            position:absolute;
+            top:90px;
+            right:0;
             width: 49.5%;
         }
     }  
@@ -398,6 +401,15 @@
         text-align: center;
         margin-bottom: 2rem;
     }
+
+}
+.service-section-fund-info-img {
+    text-align: center;
+    img {
+        width:100%;
+        margin:0 auto;
+        max-width:fit-content;
+    }
 }
 
 .service-section-effect {
@@ -420,7 +432,13 @@
     }
 
     .img {
+        text-align: center;
         padding-bottom: 5rem;
+        img {
+            width:100%;
+            margin:0 auto;
+            max-width:fit-content; 
+        }
     }
 }
 
@@ -452,14 +470,19 @@
 
     // 이 페이지에서 ivtbox가 변형되어 사용됨
     .box {
-        display: inline-block;
-        width: 40%;
+
+        
         margin: 0 2%;
         padding-bottom: 6rem;
 
-        &:nth-child(2n) {
-            margin-left: 8.5rem;
+        @media screen and (min-width: #{$tab_size}) {
+            display: inline-block;            
+            width: 45%;
+            &:nth-child(2n) {
+                //margin-left: 8.5rem;
+            }            
         }
+
 
         & .box-inner {
             position: relative;
@@ -583,9 +606,12 @@
     }
 
     .item {
-        width: 33%;
+        width: 100%;
         display: inline-block;
         padding: 3rem;
+        @media screen and (min-width: #{$tab_size}) {
+            width: 33%;
+        }          
     }
 
     p {
@@ -650,10 +676,11 @@
             position: relative;
             background: #e5e8ef;
             font-weight: normal;
-            padding: 2rem 4rem;
             text-align: center;
             font-size: 1.8rem;
-
+            @media screen and (min-width: #{$tab_size}) {
+                padding: 20px 40px;
+            }  
         }
 
         td {

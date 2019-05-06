@@ -1,5 +1,4 @@
 /* font setting */
-// 업데이트 필요
 
 // 'Noto Sans KR'
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -13,7 +12,6 @@
   src: url('../../vendor/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
     url('../../vendor/font/NanumGothic.woff') format('woff'),
     url('../../vendor/font/NanumGothic.ttf') format('truetype');
-  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
 
 @font-face {
@@ -24,7 +22,6 @@
   src: url('../../vendor/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
     url('../../vendor/font/NanumGothicBold.woff') format('woff'),
     url('../../vendor/font/NanumGothicBold.ttf') format('truetype');
-  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
 
 @font-face {
@@ -35,7 +32,6 @@
   src: url('../../vendor/font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
     url('../../vendor/font/NanumGothicExtraBold.woff') format('woff'),
     url('../../vendor/font/NanumGothicExtraBold.ttf') format('truetype');
-  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
 
 @font-face {
@@ -46,7 +42,6 @@
   src: url('../../vendor/font/NanumGothicLight.eot?#iefix') format('embedded-opentype'),
     url('../../vendor/font/NanumGothicLight.woff') format('woff'),
     url('../../vendor/font/NanumGothicLight.ttf') format('truetype');
-  //url('../fonts/NanumGothic.svg#NanumGothic') format('svg');
 }
 
 //---------------------------------------------------
@@ -69,9 +64,6 @@ html {
   //font-size: 62.5%;
   @include fontSize('font-size');
 }
-
-// USE EXAMPLE : @include viewportSize('width');
-// content-zone을 비롯한 내부 컨테이너 사이즈 세팅
 
 body {
   font-family: 'ng', 'Myriad Pro', 'Malgun Gothic', dotum, sans-serif !important;

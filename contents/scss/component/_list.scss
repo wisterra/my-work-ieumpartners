@@ -1,0 +1,54 @@
+/* dl.list-view */
+
+.list-view dt {
+  position: relative;
+  width: auto;
+  height: 60px;
+  padding-left: 20px;
+  background-color: #e5e8ef;
+  font-family: 'bold';
+  line-height: 60px;
+}
+
+.list-view dt span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #999999;
+}
+
+.list-view dd {
+  padding: 50px;
+}
+
+/* ul.list-paging */
+.list-pager {
+  padding-bottom: 30px;
+  border-top: 1px solid #e5e5e5;
+  line-height: 60px;
+}
+
+.list-pager li {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+
+.list-pager li span {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list-pager li a {
+  font-size: 15px;
+  color: #000;
+}
+
+.list-pager li .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999999;
+}

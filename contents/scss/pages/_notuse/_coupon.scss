@@ -1,0 +1,27 @@
+
+/*---------------------------------------------------
+// tab-select
+--------------------------------------------------- */
+.tab-select {
+    padding-bottom: 50px;
+  
+    a {
+      float: left;
+      width: 50%;
+      height: 58px;
+      line-height: 58px;
+      //font-size:18px;
+      text-align: center;
+      border: 1px solid #dddddd;
+      color: #000;
+  
+      &:last-child {
+        border-left: 0;
+      }
+  
+      &.active {
+        background: #0066b4;
+        color: #fff;
+      }
+    }
+  }

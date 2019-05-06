@@ -1,8 +1,8 @@
 ﻿/* ---------------------------------------------------
 // header
 --------------------------------------------------- */
-.header {
-  position: relative
+.header-web {
+  position: relative;
 }
 
 // 로고
@@ -10,36 +10,37 @@
   position: absolute;
   top: 25px;
   left: 20px;
-  z-index: 1
+  z-index: 1;
 }
 
 .site-logo-a {
-  display: block
+  display: block;
 }
 
 // ---------------------------------------------------
 /* 로그인 박스 */
 .login-box {
   padding-top: 26px;
-  padding-right:26px;
+  padding-right: 26px;
   padding-bottom: 26px;
   text-align: right;
-  @media screen and (min-width: 1026px ) {
-    padding-right:0;
-}
+
+  @media screen and (min-width: 1026px) {
+    padding-right: 0;
+  }
 }
 
 .login-box-btns {
-  display: inline-block
+  display: inline-block;
 }
 
 .login-box-btns-item {
-  display: inline-block
+  display: inline-block;
 }
 
 .login-box-btns-item-a {
   color: #000;
-  font-size: 13px
+  font-size: 13px;
 }
 
 .login-box-btns-item-btn {
@@ -47,44 +48,39 @@
   font-family: bold;
 
   &.btn-primary {
-    color: #fff
+    color: #fff;
   }
 }
 
 // ---------------------------------------------------
 // 앞쪽의 텍스트그룹 - 세로선
-.login-box-text {
+.login-box-con {
   display: inline-block;
-  padding-right: 22px
+  padding-right: 22px;
 }
 
-.login-box-text-item {
+.login-box-con-item {
   display: inline-block;
 
   &::before {
     content: '';
     @extend %sp-bar;
-    margin: 0 10px
-  }
-
-  &:first-child::before {
-    width: 0
+    margin: 0 10px;
   }
 }
 
-.login-box-text-item-a {
+/* 첫번째 아이템에는 세로선을 없앰 */
+.login-box-con-item:first-child::before {
+  width: 0;
+}
+
+.login-box-con-item-a {
   color: #000;
-  font-size: 13px
+  font-size: 13px;
 }
 
 // ---------------------------------------------------
 /* 사이트 GNB */
-@media screen and (min-width: #{$web_size}) {
-  .site-menu {
-    //min-width: 1000px
-  }
-}
-
 .site-menu {
   position: relative;
   z-index: 100;
@@ -96,7 +92,7 @@
   &:after {
     content: '';
     display: block;
-    clear: both
+    clear: both;
   }
 }
 
@@ -106,11 +102,11 @@
   color: #000;
   font-size: 16px;
   font-family: bold;
-  text-align: center
+  text-align: center;
 }
 
 .site-menu-container {
-  text-align:center;
+  text-align: center;
 }
 
 // depth1
@@ -121,7 +117,7 @@
   width: ($width/5);
   margin: 0;
   padding: 0;
-  line-height: 52px
+  line-height: 52px;
 }
 
 .depth1-text-style {
@@ -130,7 +126,6 @@
 
 // depth2
 .menu-depth2 {
-  //display: none;
   overflow: hidden;
   position: absolute;
   z-index: 1;
@@ -138,41 +133,25 @@
   left: 0;
   width: 100%;
   height: 0;
-  background: #0265b6
+  background: #0265b6;
 }
 
 .menu-depth2-item {
   border-top: 1px solid #3385c3;
-  line-height: 50px  
+  line-height: 50px;
 }
 
 .depth2-text-style {
   @extend %site-menu-text-style;
-  color: #fff
+  color: #fff;
 }
-
-// depth3
-// .menu-depth3 {
-//   display: none;
-
-//   .text-style {
-//     color: #777;
-//     font-size: 90%;
-//     text-indent: 10px;
-//     text-align: left
-//   }
-
-//   .menu-depth3-item {
-//     line-height: 2
-//   }
-// }
 
 /* ---------------------------------------------------
 // header - active
 --------------------------------------------------- */
 .menu-depth1.active {
   .depth1-text-style {
-    color: #0265b6
+    color: #0265b6;
   }
 }
 
@@ -180,7 +159,7 @@
 .menu-depth1:hover {
   .depth1-text-style {
     background: #0066b4;
-    color: #fff
+    color: #fff;
   }
 }
 
@@ -191,53 +170,6 @@
   }
 
   .depth2-text-style:hover {
-    color: #fff
+    color: #fff;
   }
 }
-
-// .menu-depth2 {
-//   &.active {
-//     display: block;
-//   }
-// }
-
-// case. 여러단 펼처질때
-// &:hover .menu-depth2 {
-//   display: block;
-//   height:200px;
-//   animation-name: menuDepth2-on;
-//   animation-duration: .5s;
-// }   
-// case. 여러단 넓은판
-//   &:hover {
-//     position:absolute;
-//     top:94px;
-//     display: block;
-//     height:240px;
-//     animation-name: menuDepth2-wide;
-//     animation-duration: .5s;
-//   } 
-
-
-/* ---------------------------------------------------
-// header animate
---------------------------------------------------- */
-// @keyframes menuDepth2-on {
-//   from {
-//     height: 0;
-//   }
-
-//   to {
-//     height: 200px;
-//   }
-// }
-
-// @keyframes menuDepth2-out {
-//   from {
-//     height: 200px;
-//   }
-
-//   to {
-//     height: 0;
-//   }
-// }

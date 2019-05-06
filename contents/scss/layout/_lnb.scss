@@ -1,0 +1,79 @@
+/*---------------------------------------------------
+// LNB
+--------------------------------------------------- */
+.lnb-wrap {
+    width: 90%;
+    height: 50px;
+    margin: 50px auto 0;
+    background: #c4c4c4;
+    font-size: 15px;
+    line-height: 50px;
+
+    @media screen and (min-width: #{$tab_size}) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* 모바일에서 선택된 메뉴 보이는 부분 */
+.lnb-selected {
+    position: relative;
+    text-align: center;
+    color: #0066b4;
+
+    &:after {
+        content: url(../images/icon/icon-down.png);
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        transform: scale(0.5);
+    }
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: none;
+    }
+}
+
+.lnb-con {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background: #c4c4c4;
+    text-align: center;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+.lnb-con-item-a,
+.lnb-con-item-a:link,
+.lnb-con-item-a:visited,
+.lnb-con-item-a:hover,
+.lnb-con-item-a:active {
+    color: #fff;
+}
+
+.lnb-con-item-a.on {
+    color: #0066b4;
+}
+
+// ---------------------------------------------------
+/* 현재페이지일때 */
+// ---------------------------------------------------
+.lnb-con.active {
+    display: block;
+}
+
+.lnb-con-item {
+    display: block;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        margin: 0 50px;
+    }
+}

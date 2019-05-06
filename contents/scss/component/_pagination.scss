@@ -1,6 +1,10 @@
 ﻿/* pagination */
+.pagination>li>a, .pagination>li>span {
+    padding:3px 7px;
+}
 .pagination{
     a{
+        padding:6px 12px;
         background:none !important;
         border:0 !important;
         color:#000 !important;
@@ -17,20 +21,39 @@
     li{
         &:nth-child(1) a{
             background:url('../images/paging-pprev.png') center center no-repeat !important;
-            width:34px;
+            width:17px;
         }
         &:nth-child(2) a{
             background:url('../images/paging-prev.png') center center no-repeat !important;
-            width:34px;
+            width:17px;
         } 
         &:nth-last-child(2) a{
             background:url('../images/paging-next.png') center center no-repeat !important;
-            width:34px;
+            width:17px;
         }
         &:nth-last-child(1) a{
             background:url('../images/paging-nnext.png') center center no-repeat !important;
-            width:34px;
+            width:17px;
         }         
     }    
 }
 
+@media screen and (min-width: #{$tab_size}) {
+    .pagination>li>a, .pagination>li>span {
+        padding:6px 12px;
+    }
+    .pagination li{
+        &:nth-child(1) a{
+              width:34px;
+        }
+        &:nth-child(2) a{
+            width:34px;
+        } 
+        &:nth-last-child(2) a{
+            width:34px;
+        }
+        &:nth-last-child(1) a{
+            width:34px;
+        }         
+    }        
+}
