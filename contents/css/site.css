@@ -1253,33 +1253,70 @@ table td {
   text-align: left;
 }
 
-/* dl.list-view */
+/* dl.list-view : 자세히보기 */
 .list-view dt {
   position: relative;
   width: auto;
-  height: 60px;
-  padding-left: 20px;
+  height: 50px;
+  margin-bottom: 30px;
+  text-indent: 20px;
   background-color: #e5e8ef;
   font-family: 'bold';
-  line-height: 60px;
+  line-height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-view dt {
+    height: 60px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    line-height: 60px;
+  }
 }
 
 .list-view dt span {
-  position: absolute;
-  top: 0;
-  right: 20px;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
   color: #999999;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-view dt span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    border-bottom: 0;
+    background: none;
+    line-height: 1.2;
+  }
 }
 
 .list-view dd {
-  padding: 50px;
+  padding: 20px;
 }
 
-/* ul.list-paging */
+@media screen and (min-width: 768px) {
+  .list-view dd {
+    padding: 50px;
+  }
+}
+
+/* ul.list-paging : 이전 다음글 */
 .list-pager {
   padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
-  line-height: 60px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-pager {
+    line-height: 60px;
+  }
 }
 
 .list-pager li {
@@ -1295,9 +1332,24 @@ table td {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .list-pager li span {
+    line-height: 60px;
+  }
+}
+
 .list-pager li a {
-  font-size: 15px;
+  display: block;
+  padding-left: 35px;
   color: #000;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-pager li a {
+    display: inline-block;
+    padding: 0;
+  }
 }
 
 .list-pager li .date {
@@ -1305,6 +1357,7 @@ table td {
   top: 0;
   right: 0;
   color: #999999;
+  text-align: right;
 }
 
 /* typography */
@@ -3515,9 +3568,10 @@ table td {
   text-align: center;
 }
 
-.service-section-top .service-section-top-con {
-  width: 80%;
-  margin: 0 auto;
+@media screen and (min-width: 768px) {
+  .service-section-top {
+    text-align: left;
+  }
 }
 
 .service-section-top h2 {
@@ -3535,13 +3589,25 @@ table td {
   padding-bottom: 2rem;
 }
 
-.service-section-top .service-section-top-con-left {
+.service-section-top-con {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service-section-top-con-left {
   font-size: 2.5rem;
   line-height: 1.5;
   vertical-align: top;
 }
 
-.service-section-top .service-section-top-con-left-char {
+@media screen and (min-width: 768px) {
+  .service-section-top-con-left {
+    display: inline-block;
+    width: 58%;
+  }
+}
+
+.service-section-top-con-left-char {
   padding-top: 1.2rem;
   color: #85d9ff;
   font-size: 7rem;
@@ -3549,20 +3615,13 @@ table td {
   letter-spacing: 2rem;
 }
 
-.service-section-top .service-section-top-con-right {
+.service-section-top-con-right {
   font-size: 1.8rem;
   vertical-align: top;
 }
 
 @media screen and (min-width: 768px) {
-  .service-section-top {
-    text-align: left;
-  }
-  .service-section-top .service-section-top-con-left {
-    display: inline-block;
-    width: 58%;
-  }
-  .service-section-top .service-section-top-con-right {
+  .service-section-top-con-right {
     display: inline-block;
     width: 41%;
   }
@@ -3574,20 +3633,27 @@ table td {
   padding-bottom: 6rem;
 }
 
-.service-section-solution .service-section-solution-con {
+.service-section-solution-con {
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.service-section-solution .service-section-solution-con-left {
+.service-section-solution-con-left {
   width: 320px;
   margin: 0 auto;
   vertical-align: middle;
 }
 
-.service-section-solution .service-section-solution-con-left-item {
+@media screen and (min-width: 768px) {
+  .service-section-solution-con-left {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+.service-section-solution-con-left-item {
   background: #eeeeee;
   display: inline-block;
   border-radius: 30px;
@@ -3601,43 +3667,42 @@ table td {
   vertical-align: middle;
 }
 
-.service-section-solution .service-section-solution-con-left-item::before {
+.service-section-solution-con-left-item::before {
   content: url("/contents/images/service/deco-note.png");
   position: absolute;
   top: 0;
   left: -10px;
 }
 
-.service-section-solution .service-section-solution-con-center {
+.service-section-solution-con-center {
   text-align: center;
   vertical-align: middle;
 }
 
-.service-section-solution .service-section-solution-con-right {
+@media screen and (min-width: 768px) {
+  .service-section-solution-con-center {
+    display: inline-block;
+    width: 10%;
+  }
+}
+
+.service-section-solution-con-right {
   color: #0066b4;
   font-size: 2.5rem;
   text-align: center;
   vertical-align: middle;
 }
 
-.service-section-solution .service-section-solution-con-right-strong {
-  display: block;
-  font-size: 3.5rem;
-}
-
 @media screen and (min-width: 768px) {
-  .service-section-solution .service-section-solution-con-left {
-    display: inline-block;
-    width: 45%;
-  }
-  .service-section-solution .service-section-solution-con-center {
-    display: inline-block;
-    width: 10%;
-  }
-  .service-section-solution .service-section-solution-con-right {
+  .service-section-solution-con-right {
     display: inline-block;
     width: 35%;
   }
+}
+
+.service-section-solution-con-right-strong {
+  display: block;
+  font-size: 3.5rem;
 }
 
 .service-section-benefit {
@@ -3648,8 +3713,16 @@ table td {
   text-align: center;
 }
 
-.service-section-benefit .service-section-benefit-item {
+.service-section-benefit-item {
   padding: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .service-section-benefit-item {
+    width: 32.333%;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 .service-section-benefit p {
@@ -3675,14 +3748,6 @@ table td {
   list-style: circle;
   list-style-position: inside;
   padding-bottom: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .service-section-benefit .service-section-benefit-item {
-    width: 33%;
-    display: inline-block;
-    text-align: left;
-  }
 }
 
 .service-section-ex {
@@ -3714,7 +3779,20 @@ table td {
   margin: 2rem 0;
 }
 
-.service-section-ex .service-section-ex-item {
+@media screen and (min-width: 768px) {
+  .service-section-ex li {
+    margin: 0 0.4rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service-section-ex li {
+    margin: 0 2rem;
+  }
+}
+
+.service-section-ex-item {
   display: table-cell;
   background: #0066b4;
   color: #fff;
@@ -3739,13 +3817,6 @@ table td {
   font-style: normal;
   font-size: 1.5rem;
   line-height: 1.3;
-}
-
-@media screen and (min-width: 768px) {
-  .service-section-ex li {
-    margin: 0 2rem;
-    display: inline-block;
-  }
 }
 
 .service-section-detail {
@@ -3779,13 +3850,26 @@ table td {
   .service-section-detail .service-section-detail-desc {
     width: 49.5%;
   }
+}
+
+.service-section-detail .map {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
   .service-section-detail .map {
     display: inline-block;
     position: absolute;
     top: 90px;
     right: 0;
     width: 49.5%;
+    padding-right: 20px;
+    padding-bottom: 0;
   }
+}
+
+.service-section-detail .map img {
+  width: 100%;
 }
 
 .service-section-result {
@@ -3809,11 +3893,17 @@ table td {
   padding-left: 0;
 }
 
-.service-section-result .service-section-result-item {
+.service-section-result-item {
   background: #dbf1fb;
   padding: 3rem 4.5rem;
   margin: 1rem;
   color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .service-section-result-item {
+    margin-bottom: 1rem;
+  }
 }
 
 .service-section-result strong {
@@ -3828,12 +3918,6 @@ table td {
   display: block;
   color: #000;
   font-style: normal;
-}
-
-@media screen and (min-width: 768px) {
-  .service-section-result .service-section-result-item {
-    margin-bottom: 1rem;
-  }
 }
 
 .service-section-message {
@@ -3879,9 +3963,13 @@ table td {
 .service-section-fund-info-img img {
   width: 100%;
   margin: 0 auto;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 992px) {
+  .service-section-fund-info-img img {
+    max-width: unset;
+  }
 }
 
 .service-section-effect {
@@ -3912,9 +4000,13 @@ table td {
 .service-section-effect .img img {
   width: 100%;
   margin: 0 auto;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 334px;
+}
+
+@media screen and (min-width: 992px) {
+  .service-section-effect .img img {
+    max-width: unset;
+  }
 }
 
 .service-section-ivt {
@@ -4342,7 +4434,6 @@ table td {
 --------------------------------------------------- */
 .ivtbox.type-PF {
   background: #0197e8;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #0197e8), color-stop(100%, #0168b7));
   background: -webkit-gradient(linear, left top, right top, from(#0197e8), to(#0168b7));
   background: linear-gradient(to right, #0197e8 0%, #0168b7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0197e8', endColorstr='#0168b7', GradientType=1);
@@ -4350,7 +4441,6 @@ table td {
 
 .ivtbox.type-PF .ivt-table {
   background: #0873b3;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #0873b3), color-stop(100%, #0864a3));
   background: -webkit-gradient(linear, left top, right top, from(#0873b3), to(#0864a3));
   background: linear-gradient(to right, #0873b3 0%, #0864a3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0873b3', endColorstr='#0864a3', GradientType=1);
@@ -4358,7 +4448,6 @@ table td {
 
 .ivtbox.type-CGL {
   background: #01a7d1;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #01a7d1), color-stop(100%, #01b746));
   background: -webkit-gradient(linear, left top, right top, from(#01a7d1), to(#01b746));
   background: linear-gradient(to right, #01a7d1 0%, #01b746 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a7d1', endColorstr='#01b746', GradientType=1);
@@ -4370,7 +4459,6 @@ table td {
 
 .ivtbox.type-CGL .ivt-table {
   background: #087ca5;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #087ca5), color-stop(100%, #088179));
   background: -webkit-gradient(linear, left top, right top, from(#087ca5), to(#088179));
   background: linear-gradient(to right, #087ca5 0%, #088179 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#087ca5', endColorstr='#088179', GradientType=1);
@@ -4390,7 +4478,6 @@ table td {
 
 .ivtbox.type-NPL {
   background: #1163e7;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #1163e7), color-stop(100%, #501ab2));
   background: -webkit-gradient(linear, left top, right top, from(#1163e7), to(#501ab2));
   background: linear-gradient(to right, #1163e7 0%, #501ab2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1163e7', endColorstr='#501ab2', GradientType=1);
@@ -4402,13 +4489,12 @@ table td {
 
 .ivtbox.type-NPL .ivt-table {
   background: #2736d0;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #2736d0), color-stop(100%, #3b1ebf));
   background: -webkit-gradient(linear, left top, right top, from(#2736d0), to(#3b1ebf));
   background: linear-gradient(to right, #2736d0 0%, #3b1ebf 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2736d0', endColorstr='#3b1ebf', GradientType=1);
 }
 
-.ivtbox.type-NPL .ivt-table td::before {
+.ivtbox.type-NPL .ivt-table .ivtbox.type-NPL .ivt-table td::before {
   background-color: #3436cb;
 }
 
@@ -4422,7 +4508,6 @@ table td {
 
 .ivtbox.type-ABL {
   background: #e78101;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #e78101), color-stop(100%, #b74e01));
   background: -webkit-gradient(linear, left top, right top, from(#e78101), to(#b74e01));
   background: linear-gradient(to right, #e78101 0%, #b74e01 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e78101', endColorstr='#b74e01', GradientType=1);
@@ -4434,7 +4519,6 @@ table td {
 
 .ivtbox.type-ABL .ivt-table {
   background: #c36100;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #c36100), color-stop(100%, #b35100));
   background: -webkit-gradient(linear, left top, right top, from(#c36100), to(#b35100));
   background: linear-gradient(to right, #c36100 0%, #b35100 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c36100', endColorstr='#b35100', GradientType=1);

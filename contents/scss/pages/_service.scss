@@ -9,18 +9,16 @@
 }
 
 // 공통적으로 적용될 내용
-.service-section {
-    p {
-        font-size: 1.8rem;
-        line-height: 1.5;
-    }
+.service-section p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
 
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        line-height: 5.6rem;
-        padding-bottom: 30px;
-    }
+.service-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5.6rem;
+    padding-bottom: 30px;
 }
 
 /*---------------------------------------------------
@@ -28,6 +26,7 @@
 --------------------------------------------------- */
 
 // 위에서 부터 section 순서대로
+
 .service-section-top {
     padding-top: 2rem;
     padding-bottom: 6rem;
@@ -37,57 +36,57 @@
     vertical-align: top;
     text-align: center;
 
-    .service-section-top-con {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        margin-bottom: 4rem;
-        border-bottom: 1px solid #5f7daa;
-    }
-
-    strong {
-        display: block;
-        font-size: 4.5rem;
-        font-weight: bold;
-    }
-
-    p {
-        padding-bottom: 2rem;
-    }
-
-    .service-section-top-con-left {
-        font-size: 2.5rem;
-        line-height: 1.5;
-        vertical-align: top;
-    }
-
-    .service-section-top-con-left-char {
-        padding-top: 1.2rem;
-        color: #85d9ff;
-        font-size: 7rem;
-        font-weight: 900;
-        letter-spacing: 2rem;
-    }
-
-    .service-section-top-con-right {
-        font-size: 1.8rem;
-        vertical-align: top;
-    }
-
     @media screen and (min-width: #{$tab_size}) {
         text-align: left;
+    }
+}
 
-        .service-section-top-con-left {
-            display: inline-block;
-            width: 58%;
-        }
+.service-section-top h2 {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #5f7daa;
+}
 
-        .service-section-top-con-right {
-            display: inline-block;
-            width: 41%;
-        }
+.service-section-top strong {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.service-section-top p {
+    padding-bottom: 2rem;
+}
+
+.service-section-top-con {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-section-top-con-left {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    vertical-align: top;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        width: 58%;
+    }
+}
+
+.service-section-top-con-left-char {
+    padding-top: 1.2rem;
+    color: #85d9ff;
+    font-size: 7rem;
+    font-weight: 900;
+    letter-spacing: 2rem;
+}
+
+.service-section-top-con-right {
+    font-size: 1.8rem;
+    vertical-align: top;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        width: 41%;
     }
 }
 
@@ -95,184 +94,184 @@
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
+}
 
-    .service-section-solution-con {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+.service-section-solution-con {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    .service-section-solution-con-left {
-        width:320px;
-        margin:0 auto;
-        vertical-align: middle;
-    }
-
-    .service-section-solution-con-left-item {
-        background: #eeeeee;
-        display: inline-block;
-        border-radius: 30px;
-        line-height: 2.4;
-        font-size: 1.5rem;
-        padding: 0 14px;
-        margin-left: 10px;
-        list-style: none; //display: inline-block;
-        margin-bottom: 20px;
-        position: relative;
-        vertical-align: middle;
-
-        &::before {
-            content: url("/contents/images/service/deco-note.png");
-            position: absolute;
-            top: 0;
-            left: -10px;
-        }
-    }
-
-    .service-section-solution-con-center {
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    .service-section-solution-con-right {
-        color: #0066b4;
-        font-size: 2.5rem;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    .service-section-solution-con-right-strong {
-        display: block;
-        font-size: 3.5rem;
-    }
+.service-section-solution-con-left {
+    width: 320px;
+    margin: 0 auto;
+    vertical-align: middle;
 
     @media screen and (min-width: #{$tab_size}) {
-        .service-section-solution-con-left{
-            display: inline-block;
-            width: 45%;
-        }
-
-        .service-section-solution-con-center{
-            display: inline-block;
-            width: 10%;
-        }
-
-        .service-section-solution-con-right{
-            display: inline-block;
-            width: 35%;
-        }
+        display: inline-block;
+        width: 45%;
     }
-
 }
+
+.service-section-solution-con-left-item {
+    background: #eeeeee;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 2.4;
+    font-size: 1.5rem;
+    padding: 0 14px;
+    margin-left: 10px;
+    list-style: none; //display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    vertical-align: middle;
+
+    &::before {
+        content: url("/contents/images/service/deco-note.png");
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+}
+
+.service-section-solution-con-center {
+    text-align: center;
+    vertical-align: middle;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        width: 10%;
+    }
+}
+
+.service-section-solution-con-right {
+    color: #0066b4;
+    font-size: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        width: 35%;
+    }
+}
+
+.service-section-solution-con-right-strong {
+    display: block;
+    font-size: 3.5rem;
+}
+
 
 .service-section-benefit {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
     background: #dbf1fb;
-    text-align:center;
+    text-align: center;
+}
 
-    .service-section-benefit-item {
-
-        padding: 3rem;
-    }
-
-    p {
-        border-bottom: 1px solid #fff;
-        padding-bottom: 2.6rem;
-        margin-bottom: 3rem;
-        font-size: 1.8rem;
-    }
-
-    strong {
-        display: block;
-        color: #0066b4;
-        font-size: 2.5rem;
-    }
-
-    ul {
-        vertical-align: top;
-        display: inline-block;
-        font-size: 15px;
-    }
-
-    li {
-        list-style: circle;
-        list-style-position: inside;
-        padding-bottom: 1rem;
-    }
+.service-section-benefit-item {
+    padding: 3rem;
 
     @media screen and (min-width: #{$tab_size}) {
-        .service-section-benefit-item{
-            width: 33%;
-            display: inline-block;
-            text-align:left;
-        }
-    }    
+        width: 32.333%;
+        display: inline-block;
+        text-align: left;
+    }
 }
+
+.service-section-benefit p {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.6rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.service-section-benefit strong {
+    display: block;
+    color: #0066b4;
+    font-size: 2.5rem;
+}
+
+.service-section-benefit ul {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.service-section-benefit li {
+    list-style: circle;
+    list-style-position: inside;
+    padding-bottom: 1rem;
+}
+
+
 
 .service-section-ex {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
+}
 
-    h2 {
-        color: #0066b4;
-        font-size: 2.5rem;
-        line-height: 1.5;
-    }
+.service-section-ex h2 {
+    color: #0066b4;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
 
-    ul {
-        vertical-align: top;
-        display: inline-block;
-        font-size: 15px;
-    }
+.service-section-ex ul {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 15px;
+}
 
-    ul {
-        padding-top: 2rem;
-        vertical-align: top;
-        display: table;
-        margin: 0 auto;
-    }
+.service-section-ex ul {
+    padding-top: 2rem;
+    vertical-align: top;
+    display: table;
+    margin: 0 auto;
+}
 
-    li {
-        margin: 2rem 0;
-    }
-
-    .service-section-ex-item {
-        display: table-cell;
-        background: #0066b4;
-        color: #fff;
-        width: 234px;
-        height: 234px; //padding-top: 8.4rem;
-        border-radius: 50%;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 1.8rem;
-    }
-
-    strong {
-        display: block;
-        font-size: 2.5rem; //font-weight: normal;
-        padding-top: .8rem;
-        padding-bottom: .8rem;
-        line-height: 1.2;
-    }
-
-    em {
-        display: inline-block;
-        font-style: normal;
-        font-size: 1.5rem;
-        line-height: 1.3;
-    }
+.service-section-ex li {
+    margin: 2rem 0;
 
     @media screen and (min-width: #{$tab_size}) {
-        li {
-            margin: 0 2rem;
-            display: inline-block;
-        }
-    }     
+        margin: 0 0.4rem;
+        display: inline-block;
+    }
+
+    @media screen and (min-width: #{$web_size}) {
+        margin: 0 2rem;
+    }
+
+}
+
+.service-section-ex-item {
+    display: table-cell;
+    background: #0066b4;
+    color: #fff;
+    width: 234px;
+    height: 234px; //padding-top: 8.4rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.service-section-ex strong {
+    display: block;
+    font-size: 2.5rem; //font-weight: normal;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    line-height: 1.2;
+}
+
+.service-section-ex em {
+    display: inline-block;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.3;
 }
 
 .service-section-detail {
@@ -280,91 +279,100 @@
     padding-top: 2rem;
     padding-bottom: 6rem;
     background: #f2f2f2;
+}
 
-    h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        //border: 1px solid #000;
-    }
+.service-section-detail h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    //border: 1px solid #000;
+}
 
-    ul {
-        vertical-align: top;
-        display: inline-block;
-        font-size: 15px;
-    }
+.service-section-detail ul {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 15px;
+}
 
-    ul {
-        //display:inline-block;
+.service-section-detail ul {
+    //display:inline-block;
+    width: 49.5%;
+}
+
+.service-section-detail li {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.service-section-detail .service-section-detail-desc {
+    @media screen and (min-width: #{$tab_size}) {
         width: 49.5%;
     }
+}
 
-    li {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-    }
-
-
+.service-section-detail .map {
+    padding-bottom: 20px;
 
     @media screen and (min-width: #{$tab_size}) {
-        .service-section-detail-desc{
-            width: 49.5%;
-        }
-        .map{
-            display: inline-block;
-            position:absolute;
-            top:90px;
-            right:0;
-            width: 49.5%;
-        }
-    }  
+        display: inline-block;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 49.5%;
+        padding-right: 20px;
+        padding-bottom: 0;        
+    }
 }
+
+.service-section-detail .map img {
+    width: 100%;
+}
+
+
 
 .service-section-result {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
     color: #0066b4;
+}
 
-    ul {
-        vertical-align: top;
-        display: inline-block;
-        font-size: 15px;
-    }
+.service-section-result ul {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 15px;
+}
 
-    li {
-        background: #dbf1fb;
-    }
+.service-section-result li {
+    background: #dbf1fb;
+}
 
-    ol {
-        padding-left: 0;
-    }
+.service-section-result ol {
+    padding-left: 0;
+}
 
-    .service-section-result-item {
-        background: #dbf1fb;
-        padding: 3rem 4.5rem;
-        margin: 1rem;
-        color: #000;
-    }
-
-    strong {
-        color: #0066b4;
-    }
-
-    p {
-        color: #000;
-    }
-
-    em {
-        display: block;
-        color: #000;
-        font-style: normal;
-    }
+.service-section-result-item {
+    background: #dbf1fb;
+    padding: 3rem 4.5rem;
+    margin: 1rem;
+    color: #000;
 
     @media screen and (min-width: #{$tab_size}) {
-        .service-section-result-item {
-            margin-bottom: 1rem;
-        }
-    }    
+        margin-bottom: 1rem;
+    }
+}
+
+.service-section-result strong {
+    color: #0066b4;
+}
+
+.service-section-result p {
+    color: #000;
+}
+
+.service-section-result em {
+    display: block;
+    color: #000;
+    font-style: normal;
 }
 
 .service-section-message {
@@ -376,71 +384,89 @@
     color: #fff;
     padding-top: 4rem;
     padding-bottom: 4rem;
-
-    h2 {
-        font-size: 3.5rem;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-    }
-
-    em {
-        display: inline-block;
-        font-weight: bold;
-        font-style: normal;
-        font-size: 4.5rem;
-    }
 }
+
+.service-section-message h2 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.service-section-message em {
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4.5rem;
+}
+
+
+
 
 .service-section-fund-info {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
-
-    p {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
 }
+
+.service-section-fund-info p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
 .service-section-fund-info-img {
     text-align: center;
-    img {
-        width:100%;
-        margin:0 auto;
-        max-width:fit-content;
+}
+
+.service-section-fund-info-img img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 335px;
+    @media screen and (min-width: 992px) {
+        max-width: unset;
     }
 }
+
+
+
 
 .service-section-effect {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
     background: #dbf1fb;
-
-    h2 {
-        text-align: left;
-    }
-
-    ol {
-        padding: 0;
-    }
-
-    li {
-        font-size: 1.5rem;
-        padding-bottom: .8rem;
-    }
-
-    .img {
-        text-align: center;
-        padding-bottom: 5rem;
-        img {
-            width:100%;
-            margin:0 auto;
-            max-width:fit-content; 
-        }
-    }
 }
+
+.service-section-effect h2 {
+    text-align: left;
+}
+
+.service-section-effect ol {
+    padding: 0;
+}
+
+.service-section-effect li {
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+.service-section-effect .img {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.service-section-effect .img img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 334px;
+    @media screen and (min-width: 992px) {
+        max-width: unset;
+    }    
+}
+
+
 
 // 투자상품
 .service-section-ivt {
@@ -448,203 +474,200 @@
     padding-top: 2rem;
     padding-bottom: 6rem;
     padding-bottom: 0;
+}
 
-    .content-zone.ivt {
-//        width: 1200px;
-        text-align: left;
+.service-section-ivt .content-zone.ivt {
+    //        width: 1200px;
+    text-align: left;
+}
+
+.service-section-ivt .content-zone {
+    //      max-width: 1200px;
+}
+
+.service-section-ivt h2 {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+// 이 페이지에서 ivtbox가 변형되어 사용됨
+.service-section-ivt .box {
+    margin: 0 2%;
+    padding-bottom: 6rem;
+
+    @media screen and (min-width: #{$tab_size}) {
+        display: inline-block;
+        width: 45%;
+
+        &:nth-child(2n) {
+            //margin-left: 8.5rem;
+        }
     }
+}
 
-    .content-zone {
-  //      max-width: 1200px;
-    }
+.service-section-ivt .box .box-inner {
+    position: relative;
+    border: 1px solid #e5e5e5;
+    padding: 2rem;
+    padding-top: 5rem;
+    //margin:0 4rem;
+}
 
-    h2 {
-        width: 1000px;
-        margin: 0 auto;
+.service-section-ivt .box i {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #ff0505;
+    font-size: 1.5rem;
+}
+
+.service-section-ivt .box .ivtbox {
+    padding: 3rem;
+    text-align: left;
+    // transform: scale(.8);
+}
+
+.service-section-ivt .box .ivtbox .ivt-view {
+    //transform: scale(.5);
+    padding-bottom: 9rem;
+
+}
+
+.service-section-ivt .box .ivtbox .ivt-title {
+    font-size: 1.5rem;
+
+    strong {
         font-size: 2.5rem;
-        text-align: left;
-        font-weight: bold;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
     }
+}
 
-    // 이 페이지에서 ivtbox가 변형되어 사용됨
-    .box {
+.service-section-ivt .box .ivtbox .ivt-info {
 
-        
-        margin: 0 2%;
-        padding-bottom: 6rem;
-
-        @media screen and (min-width: #{$tab_size}) {
-            display: inline-block;            
-            width: 45%;
-            &:nth-child(2n) {
-                //margin-left: 8.5rem;
-            }            
-        }
-
-
-        & .box-inner {
-            position: relative;
-            border: 1px solid #e5e5e5;
-            padding: 2rem;
-            padding-top: 5rem;
-            //margin:0 4rem;
-        }
-
-        i {
-            position: absolute;
-            top: 1.5rem;
-            left: 2rem;
-            font-style: normal;
-            font-weight: bold;
-            color: #ff0505;
-            font-size: 1.5rem;
-        }
-
-        .ivtbox {
-
-            padding: 3rem;
-            text-align: left;
-
-            .ivt-view {
-                //transform: scale(.5);
-                padding-bottom: 9rem;
-
-            }
-
-            .ivt-title {
-                font-size: 1.5rem;
-
-                strong {
-                    font-size: 2.5rem;
-                }
-            }
-
-            .ivt-info {
-
-                p {
-                    display: none;
-                }
-            }
-
-            .ivt-ratio {
-                transform: translateY(-74%);
-                right: 4.5rem;
-            }
-
-            .round-box {
-                transform: scale(.7);
-            }
-
-            .date {
-                position: absolute;
-                top: -3.8rem;
-                right: -4rem;
-                color: #000;
-                text-align: right;
-            }
-
-            table {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-
-                //display:none;
-                th {
-                    display: none;
-                }
-
-                td {
-                    //border:1px solid red;
-                    font-size: 1.8rem;
-                    background-color: #fff;
-                    padding-top: 1.5rem;
-                    padding-bottom: 0;
-                    color: #000;
-
-                    &::before {
-                        content: '';
-                        width: 0;
-                    }
-                }
-            }
-
-            // transform: scale(.8);
-        }
+    p {
+        display: none;
     }
+}
 
+.service-section-ivt .box .ivtbox .ivt-ratio {
+    transform: translateY(-74%);
+    right: 4.5rem;
+}
 
+.service-section-ivt .box .ivtbox .round-box {
+    transform: scale(.7);
+}
+
+.service-section-ivt .box .ivtbox .date {
+    position: absolute;
+    top: -3.8rem;
+    right: -4rem;
+    color: #000;
+    text-align: right;
+}
+
+.service-section-ivt .box .ivtbox table {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    //display:none;
+}
+
+.service-section-ivt .box .ivtbox table th {
+    display: none;
+}
+
+.service-section-ivt .box .ivtbox table td {
+    //border:1px solid red;
+    font-size: 1.8rem;
+    background-color: #fff;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    color: #000;
+
+    &::before {
+        content: '';
+        width: 0;
+    }
 }
 
 /*---------------------------------------------------
 // page : service-view
 --------------------------------------------------- */
-
 .service-section-view {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
-
-    .btn {
-        margin-top: 5rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
 }
+
+.service-section-view .btn {
+    margin-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+
 
 .service-section-point {
     vertical-align: top;
     padding-top: 2rem;
     padding-bottom: 6rem;
     background: #dbf1fb;
+}
 
-    h2 {
-        font-size: 3.5rem;
-        font-weight: bold;
-    }
+.service-section-point h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 
-    .item {
-        width: 100%;
-        display: inline-block;
-        padding: 3rem;
-        @media screen and (min-width: #{$tab_size}) {
-            width: 33%;
-        }          
-    }
+.service-section-point .item {
+    width: 100%;
+    display: inline-block;
+    padding: 3rem;
 
-    p {
-        border-bottom: 1px solid #fff;
-        padding-bottom: 2.6rem;
-        margin-bottom: 3rem;
-        font-size: 1.8rem;
-        text-align: center;
+    @media screen and (min-width: #{$tab_size}) {
+        width: 33%;
     }
+}
 
-    i {
-        display: inline-block;
-        margin: 0 auto;
-        font-style: normal;
-        font-size: 1.5rem;
-        color: #0168b7;
-        background: #fff;
-        padding: .8rem 2rem;
-        border-radius: 2rem;
-        margin-bottom: 2rem;
-    }
+.service-section-point p {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.6rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
 
-    strong {
-        display: block;
-        color: #0066b4;
-        font-size: 2.5rem;
-    }
+.service-section-point i {
+    display: inline-block;
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #0168b7;
+    background: #fff;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
 
-    .note {
-        list-style: circle;
-        list-style-position: inside;
-        padding-bottom: 1rem;
-    }
+.service-section-point strong {
+    display: block;
+    color: #0066b4;
+    font-size: 2.5rem;
+}
+
+.service-section-point .note {
+    list-style: circle;
+    list-style-position: inside;
+    padding-bottom: 1rem;
 }
 
 .service-section-ivt-view {
@@ -652,77 +675,75 @@
     padding-top: 2rem;
     padding-bottom: 6rem;
     padding-top: 10rem;
+}
 
-    h2 {
-        position: relative;
-        top: .4rem;
-        text-align: left;
-        font-weight: bold;
-        font-size: 2.5rem;
-        display: inline-block;
-        margin-right: 3rem;
-    }
+.service-section-ivt-view h2 {
+    position: relative;
+    top: .4rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-right: 3rem;
+}
 
-    table {
-        font-size: 1.8rem;
+.service-section-ivt-view table {
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+}
 
-        strong {
-            font-size: 2.5rem;
-            color: #0168b7;
-            display: block;
-        }
+.service-section-ivt-view table strong {
+    font-size: 2.5rem;
+    color: #0168b7;
+    display: block;
+}
 
-        th {
-            position: relative;
-            background: #e5e8ef;
-            font-weight: normal;
-            text-align: center;
-            font-size: 1.8rem;
-            @media screen and (min-width: #{$tab_size}) {
-                padding: 20px 40px;
-            }  
-        }
+.service-section-ivt-view table th {
+    position: relative;
+    background: #e5e8ef;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.8rem;
 
-        td {
-            text-align: center;
-            padding-bottom: 10px;
-            font-size: 1.8rem;
-        }
-
-        margin-bottom: 10rem;
-    }
-
-    .ivt-info {
-        th {
-            text-align: left;
-
-            .btn {
-                position: absolute;
-                top: 3rem;
-                right: 4rem;
-            }
-        }
+    @media screen and (min-width: #{$tab_size}) {
+        padding: 20px 40px;
     }
 }
 
-.service-section-ivt-note {
-    .content-zone {
-        padding-top: 5rem;
-        border-top: 1px solid #cfcfcf;
-    }
+.service-section-ivt-view table td {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+}
 
-    strong {
-        display: inline-block;
-        margin-bottom: 1.2rem;
-    }
 
-    p {
-        font-size: 1.5rem;
-        line-height: 1.3;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
 
+.service-section-ivt-view .ivt-info th {
+    text-align: left;
+}
+
+.service-section-ivt-view .ivt-info th .btn {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+}
+
+
+.service-section-ivt-note .content-zone {
+    padding-top: 5rem;
+    border-top: 1px solid #cfcfcf;
+}
+
+.service-section-ivt-note strong {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+.service-section-ivt-note p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /*---------------------------------------------------
@@ -734,167 +755,168 @@
     color: #fff;
     padding: 5rem 4.5rem;
     //margin-bottom: 4rem;
+}
+
+// 왼쪽
+.ivtbox .ivt-view {
+    width: 60%;
+    padding-right: 2rem;
+}
+
+.ivtbox .ivt-view .ivt-title {
+    font-size: 2.5rem;
+}
+
+.ivtbox .ivt-view .ivt-title strong {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+}
 
 
-    // 왼쪽
-    .ivt-view {
-        width: 60%;
-        padding-right: 2rem;
 
-        .ivt-title {
-            font-size: 2.5rem;
+.ivtbox .ivt-info {
+    position: relative;
+    margin-top: 1.2rem;
+    padding-bottom: 3.2rem;
+}
 
-            strong {
-                display: block;
-                font-size: 4rem;
-                font-weight: bold;
-            }
-        }
+.ivtbox .ivt-info p {
+    display: inline-block;
+    padding-top: 1.2rem;
+    padding-left: 7rem;
+    font-size: 1.5rem;
+}
 
-    }
+.ivtbox .ivt-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    background: url('/contents/images/service/ico-t1.png') center center no-repeat;
+}
 
-    .ivt-info {
-        position: relative;
-        margin-top: 1.2rem;
-        padding-bottom: 3.2rem;
 
-        p {
-            display: inline-block;
-            padding-top: 1.2rem;
-            padding-left: 7rem;
-            font-size: 1.5rem;
-        }
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: 7rem;
-            height: 7rem;
-            background: url('/contents/images/service/ico-t1.png') center center no-repeat;
-        }
-    }
+.ivtbox .ivt-table {
+    background: #086faf;
+    width: 100%;
+    min-width: auto;
+    border: 0;
+    text-align: center;
+}
 
-    .ivt-table {
-        background: #086faf;
-        width: 100%;
-        min-width: auto;
-        border: 0;
+.ivtbox .ivt-table thead {
+
+    th {
+        background: none;
         text-align: center;
-
-        thead {
-
-            th {
-                background: none;
-                text-align: center;
-                font-weight: normal;
-                padding-top: 2rem;
-                margin: 0;
-                line-height: 1;
-                height: auto;
-                font-size: 2.5rem;
-            }
-        }
-
-        tbody {
-            border: 0;
-
-        }
-
-        td {
-            position: Relative;
-            height: auto;
-            //padding-top: 0 !important;
-            padding-top: 0;
-            padding-bottom: 2rem;
-            font-size: 2.5rem;
-
-            &::before {
-                content: '';
-                @extend %sp-bar;
-                position: absolute;
-                top: -1.5rem;
-                left: 0px;
-                background-color: #267db3;
-                height: 30px;
-
-            }
-
-            &:first-child::before {
-                content: '';
-                width: 0;
-            }
-        }
-    }
-
-    // 오른쪽
-    .ivt-ratio {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-55%);
-        right: 0;
-        width: 40%;
-        text-align: center;
-
-    }
-
-    .round-box {
-        position: relative;
-        background: #fff;
-        top: 3rem;
-        width: 23.2rem;
-        height: 23.2rem;
-        margin: 0 auto;
-        border-radius: 50%;
-    }
-
-    .c100 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        font-size: 19.2rem;
-        background-color: #e3e3e3;
-
-
-        &>span {
-            line-height: 4.5em;
-            color: #0066b4;
-            top: -0.8rem;
-            font-weight: bold;
-
-            em {
-                position: absolute;
-                top: 4rem;
-                left: 0;
-                font-size: 2.2rem;
-                color: #4b4b4b;
-                font-style: normal;
-                display: block;
-                width: 100%;
-                font-weight: normal;
-
-                //text-align: right;
-            }
-        }
-
-
-        &:after {
-            top: 0.05em;
-            left: 0.05em;
-            width: 0.9em;
-            height: 0.9em;
-            background-color: #fff;
-        }
-    }
-
-    .date {
-        padding-top: 5rem;
-        font-size: 1.5rem;
+        font-weight: normal;
+        padding-top: 2rem;
+        margin: 0;
+        line-height: 1;
+        height: auto;
+        font-size: 2.5rem;
     }
 }
+
+.ivtbox .ivt-table tbody {
+    border: 0;
+
+}
+
+.ivtbox .ivt-table td {
+    position: Relative;
+    height: auto;
+    //padding-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.ivtbox .ivt-table td::before {
+    content: '';
+    @extend %sp-bar;
+    position: absolute;
+    top: -1.5rem;
+    left: 0px;
+    background-color: #267db3;
+    height: 30px;
+
+}
+
+.ivtbox .ivt-table td:first-child::before {
+    content: '';
+    width: 0;
+}
+
+
+
+// 오른쪽
+.ivtbox .ivt-ratio {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    right: 0;
+    width: 40%;
+    text-align: center;
+}
+
+.ivtbox .round-box {
+    position: relative;
+    background: #fff;
+    top: 3rem;
+    width: 23.2rem;
+    height: 23.2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.ivtbox .c100 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 19.2rem;
+    background-color: #e3e3e3;
+}
+
+.ivtbox .c100>span {
+    line-height: 4.5em;
+    color: #0066b4;
+    top: -0.8rem;
+    font-weight: bold;
+}
+
+.ivtbox .c100>span em {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    font-size: 2.2rem;
+    color: #4b4b4b;
+    font-style: normal;
+    display: block;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+.ivtbox .c100:after {
+    top: 0.05em;
+    left: 0.05em;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: #fff;
+}
+
+.ivtbox .date {
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+
 
 /*---------------------------------------------------
 // ivtbox 타입별 색상 변화(icon & color)
@@ -905,210 +927,160 @@
 --------------------------------------------------- */
 .ivtbox.type-PF {
     background: rgba(1, 151, 232, 1);
-    background: -moz-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 151, 232, 1)), color-stop(100%, rgba(1, 104, 183, 1)));
-    background: -webkit-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
-    background: -o-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
     background: linear-gradient(to right, rgba(1, 151, 232, 1) 0%, rgba(1, 104, 183, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0197e8', endColorstr='#0168b7', GradientType=1);
-
-    .ivt-table {
-        background: rgba(8, 115, 179, 1);
-        background: -moz-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8, 115, 179, 1)), color-stop(100%, rgba(8, 100, 163, 1)));
-        background: -webkit-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
-        background: -o-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
-        background: linear-gradient(to right, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0873b3', endColorstr='#0864a3', GradientType=1);
-    }
-
 }
+
+.ivtbox.type-PF .ivt-table {
+    background: rgba(8, 115, 179, 1);
+    background: linear-gradient(to right, rgba(8, 115, 179, 1) 0%, rgba(8, 100, 163, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0873b3', endColorstr='#0864a3', GradientType=1);
+}
+
 
 .ivtbox.type-CGL {
     background: rgba(1, 167, 209, 1);
-    background: -moz-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1, 167, 209, 1)), color-stop(100%, rgba(1, 183, 70, 1)));
-    background: -webkit-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
-    background: -o-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
     background: linear-gradient(to right, rgba(1, 167, 209, 1) 0%, rgba(1, 183, 70, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01a7d1', endColorstr='#01b746', GradientType=1);
-
-    .ivt-info {
-
-        &::before {
-            background: url('/contents/images/service/ico-t2.png') center center no-repeat;
-        }
-    }
-
-    .ivt-table {
-        background: rgba(8, 124, 165, 1);
-        background: -moz-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8, 124, 165, 1)), color-stop(100%, rgba(8, 129, 121, 1)));
-        background: -webkit-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
-        background: -o-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
-        background: linear-gradient(to right, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#087ca5', endColorstr='#088179', GradientType=1);
-
-        td {
-
-            &::before {
-                background-color: #2689a1;
-            }
-        }
-    }
-
-    .c100 {
-
-        &>span {
-            color: #01b746;
-        }
-
-        .bar {
-            border-color: #01b746;
-        }
-    }
-
 }
+
+.ivtbox.type-CGL .ivt-info {
+    &::before {
+        background: url('/contents/images/service/ico-t2.png') center center no-repeat;
+    }
+}
+
+.ivtbox.type-CGL .ivt-table {
+    background: rgba(8, 124, 165, 1);
+    background: linear-gradient(to right, rgba(8, 124, 165, 1) 0%, rgba(8, 129, 121, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#087ca5', endColorstr='#088179', GradientType=1);
+}
+
+.ivtbox.type-CGL .ivt-table td {
+    &::before {
+        background-color: #2689a1;
+    }
+}
+
+.ivtbox.type-CGL .c100>span {
+    color: #01b746;
+}
+
+.ivtbox.type-CGL .c100 .bar {
+    border-color: #01b746;
+}
+
+
 
 .ivtbox.type-NPL {
     background: rgba(17, 99, 231, 1);
-    background: -moz-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(17, 99, 231, 1)), color-stop(100%, rgba(80, 26, 178, 1)));
-    background: -webkit-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
-    background: -o-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
     background: linear-gradient(to right, rgba(17, 99, 231, 1) 0%, rgba(80, 26, 178, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1163e7', endColorstr='#501ab2', GradientType=1);
+}
 
-    .ivt-info {
+.ivtbox.type-NPL .ivt-info {
+    &::before {
+        background: url('/contents/images/service/ico-t3.png') center center no-repeat;
+    }
+}
+
+.ivtbox.type-NPL .ivt-table {
+    background: rgba(39, 54, 208, 1);
+    background: linear-gradient(to right, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2736d0', endColorstr='#3b1ebf', GradientType=1);
+
+    .ivtbox.type-NPL .ivt-table td {
         &::before {
-            background: url('/contents/images/service/ico-t3.png') center center no-repeat;
-        }
-    }
-
-    .ivt-table {
-        background: rgba(39, 54, 208, 1);
-        background: -moz-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(39, 54, 208, 1)), color-stop(100%, rgba(59, 30, 191, 1)));
-        background: -webkit-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
-        background: -o-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
-        background: linear-gradient(to right, rgba(39, 54, 208, 1) 0%, rgba(59, 30, 191, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2736d0', endColorstr='#3b1ebf', GradientType=1);
-
-        td {
-
-            &::before {
-                background-color: #3436cb;
-            }
-        }
-    }
-
-    .c100 {
-
-        &>span {
-            color: #4101b7;
-        }
-
-        .bar {
-            border-color: #4101b7;
+            background-color: #3436cb;
         }
     }
 }
+
+.ivtbox.type-NPL .c100>span {
+    color: #4101b7;
+}
+
+.ivtbox.type-NPL .c100 .bar {
+    border-color: #4101b7;
+}
+
 
 .ivtbox.type-ABL {
     background: rgba(231, 129, 1, 1);
-    background: -moz-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(231, 129, 1, 1)), color-stop(100%, rgba(183, 78, 1, 1)));
-    background: -webkit-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
-    background: -o-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
     background: linear-gradient(to right, rgba(231, 129, 1, 1) 0%, rgba(183, 78, 1, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e78101', endColorstr='#b74e01', GradientType=1);
+}
 
-    .ivt-info {
-        &::before {
-            background: url('/contents/images/service/ico-t4.png') center center no-repeat;
-        }
+.ivtbox.type-ABL .ivt-info {
+    &::before {
+        background: url('/contents/images/service/ico-t4.png') center center no-repeat;
     }
+}
 
-    .ivt-table {
-        background: rgba(195, 97, 0, 1);
-        background: -moz-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(195, 97, 0, 1)), color-stop(100%, rgba(179, 81, 0, 1)));
-        background: -webkit-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
-        background: -o-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
-        background: linear-gradient(to right, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c36100', endColorstr='#b35100', GradientType=1);
+.ivtbox.type-ABL .ivt-table {
+    background: rgba(195, 97, 0, 1);
+    background: linear-gradient(to right, rgba(195, 97, 0, 1) 0%, rgba(179, 81, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c36100', endColorstr='#b35100', GradientType=1);
+}
 
-        td {
-
-            &::before {
-                background-color: #b74e01;
-            }
-        }
+.ivtbox.type-ABL .ivt-table td {
+    &::before {
+        background-color: #b74e01;
     }
+}
 
-    .c100 {
+.ivtbox.type-ABL .c100>span {
+    color: #b74e01;
+}
 
-        &>span {
-            color: #b74e01;
-        }
-
-        .bar {
-            border-color: #b74e01;
-        }
-    }
+.ivtbox.type-ABL .c100 .bar {
+    border-color: #b74e01;
 }
 
 
 
-
-// 회사 서비스
+// // 회사 서비스
 // .co-service {
 //     background: url('/contents/images/company/company-bg1.jpg') center center no-repeat;
 //     background-size: cover;
 //     color: #fff;
-//     .item {
-//         position: relative;
-//         padding-top: 30px;
-//         padding-bottom: 10px;
-//         padding-left: 290px;
-//         border-top: 1px solid #335b7d;
-//     }
-//     strong {
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-//         left: 0;
-//         width: 280px;
-//         text-align: center;
-//     }
-//     ul {
-//         width: 220px;
-//         padding-right: 30px;
-//     }
 // }
 
-// .co-contanct {
-//     strong {
-//         &::before {
-//             content: '';
-//             @extend %sp-bar;
-//             margin: 0 40px;
-//             background-color: #e5e5e5;
-//             height: 15px;
-//             top: 2px;
-//         }
-//         &:first-child::before {
-//             content: '';
-//             width: 0;
-//             margin: 0;
-//         }
+// .co-service .item {
+//     position: relative;
+//     padding-top: 30px;
+//     padding-bottom: 10px;
+//     padding-left: 290px;
+//     border-top: 1px solid #335b7d;
+// }
+
+// .co-service strong {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     left: 0;
+//     width: 280px;
+//     text-align: center;
+// }
+
+// .co-service ul {
+//     width: 220px;
+//     padding-right: 30px;
+// }
+
+// .co-contanct strong {
+//     &::before {
+//         content: '';
+//         @extend %sp-bar;
+//         margin: 0 40px;
+//         background-color: #e5e5e5;
+//         height: 15px;
+//         top: 2px;
+//     }
+
+//     &:first-child::before {
+//         content: '';
+//         width: 0;
+//         margin: 0;
 //     }
 // }
