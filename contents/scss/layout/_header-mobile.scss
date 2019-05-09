@@ -231,17 +231,17 @@
 .m-menu-depth2-item {
   font-size: 15px;
 
-  a {
-    padding: 8px 0;
-    color: #000;
-    display: block;
-  }
-
   &:after {
     content: '';
     display: block;
     clear: both;
   }
+}
+
+.m-menu-depth2-item a {
+  padding: 8px 0;
+  color: #000;
+  display: block;
 }
 
 .m-menu-depth2-item.active {

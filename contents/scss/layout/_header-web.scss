@@ -70,8 +70,10 @@
 }
 
 /* 첫번째 아이템에는 세로선을 없앰 */
-.login-box-con-item:first-child::before {
-  width: 0;
+.login-box-con-item:first-child {
+  &::before {
+    width: 0;
+  }
 }
 
 .login-box-con-item-a {

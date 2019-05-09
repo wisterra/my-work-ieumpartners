@@ -1,55 +1,54 @@
 ﻿/* form */
-
 form strong {
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #2b2b2b;
-    font-family: 'ng';
-    font-size: 14px;
-    font-weight: 500;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #2b2b2b;
+  font-family: 'ng';
+  font-size: 14px;
+  font-weight: 500;
 
-    span {
-        color: #0066b4;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}
 
-    @media screen and (min-width: #{$tab_size}) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 18px;
-    }
+form strong span {
+  color: #0066b4;
 }
 
 form em {
-    display: block;
-    color: #999999;
-    font-style: normal;
+  display: block;
+  color: #999999;
+  font-style: normal;
 
-    @media screen and (min-width: #{$tab_size}) {
-        display: inline-block;
-        margin-left: 30px;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    display: inline-block;
+    margin-left: 30px;
+  }
 }
 
 select {
-    height: 38px !important;
-    margin: 0 !important;
-    //padding: 3px 3px 3px 12px !important;
-    padding: 3px 12px;
-    border: 1px solid #dcdcdc !important;
-    border-radius: 0 !important;
-    font-size: 16px !important;
-    line-height: 32px !important;
-    box-shadow: 0 0 0 !important;
+  height: 38px !important;
+  margin: 0 !important;
+  //padding: 3px 3px 3px 12px !important;
+  padding: 3px 12px;
+  border: 1px solid #dcdcdc !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  line-height: 32px !important;
+  box-shadow: 0 0 0 !important;
 }
 
 textarea {
-    width: 100% !important;
-    padding: 3px 12px;
-    border: 1px solid #dcdcdc !important;
-    border-radius: 0 !important;
-    font-size: 16px !important;
-    box-shadow: 0 0 0 !important;
+  width: 100% !important;
+  padding: 3px 12px;
+  border: 1px solid #dcdcdc !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  box-shadow: 0 0 0 !important;
 }
 
 // ios 기본 스타일 초기화
@@ -67,55 +66,55 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input[type=password] {
-    width: 100%;
-    height: 38px !important;
-    padding: 3px 12px;
-    border: 1px solid #dcdcdc !important;
-    border-radius: 0 !important;
-    font-size: 16px !important;
-    line-height: 32px !important;
-    box-shadow: 0 0 0 !important;
+  width: 100%;
+  height: 38px !important;
+  padding: 3px 12px;
+  border: 1px solid #dcdcdc !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  line-height: 32px !important;
+  box-shadow: 0 0 0 !important;
 
-    @media screen and (min-width: #{$tab_size}) {
-        width: auto;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    width: auto;
+  }
 }
 
 .form-group span {
-    display: inline-block;
-    width: auto;
-    height: 38px;
-    padding: 3px;
-    //border: 1px solid #fff;
-    font-size: 16px;
-    line-height: 32px;
-    vertical-align: middle;
+  display: inline-block;
+  width: auto;
+  height: 38px;
+  padding: 3px;
+  //border: 1px solid #fff;
+  font-size: 16px;
+  line-height: 32px;
+  vertical-align: middle;
 }
 
 form .checkbox-inline,
 form .radio-inline {
-    font-family: bold;
+  font-family: bold;
 }
 
 .form-inline .form-group {
-    display: block;
-    position: relative;
-    margin-bottom: 0;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
 
-    @media screen and (min-width: #{$tab_size}) {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .form-inline .form-control {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
 
-    @media screen and (min-width: #{$tab_size}) {
-        width: auto;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    width: auto;
+  }
 }
 
 //---------------------------------------------------
@@ -123,74 +122,74 @@ form .radio-inline {
 //---------------------------------------------------
 // for label img check
 img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .checkbox,
 .checkbox-inline {
-    height: 24px;
-    padding-left: 30px;
+  height: 24px;
+  padding-left: 30px;
 }
 
 .radio,
 .radio-inline {
-    height: 24px;
-    padding-left: 30px;
+  height: 24px;
+  padding-left: 30px;
 }
 
 .icon-checkbox {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    background-size: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  background-size: 100%;
 }
 
 .icon-radio {
-    position: absolute;
-    top: -2px;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #fff;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 input[type=checkbox] {
-    position: relative;
-    line-height: 100%;
-    vertical-align: top;
-    transform: scale(1.3);
-    opacity: 0.0001;
+  position: relative;
+  line-height: 100%;
+  vertical-align: top;
+  transform: scale(1.3);
+  opacity: 0.0001;
 
-    &+.icon-checkbox {
-        border: 1px solid #cdcdcd;
-    }
+  & + .icon-checkbox {
+    border: 1px solid #cdcdcd;
+  }
 
-    &:checked+.icon-checkbox {
-        border: 1px solid #cdcdcd;
-        background: #fff url("../images/form/icon-check.png") no-repeat center center;
-        background-size: 100%;
-    }
+  &:checked + .icon-checkbox {
+    border: 1px solid #cdcdcd;
+    background: #fff url("../images/form/icon-check.png") no-repeat center center;
+    background-size: 100%;
+  }
 }
 
 input[type=radio] {
-    line-height: 100%;
-    vertical-align: top;
-    transform: scale(1.3);
-    opacity: 0.0001;
+  line-height: 100%;
+  vertical-align: top;
+  transform: scale(1.3);
+  opacity: 0.0001;
 
-    &+.icon-radio {
-        border: 1px solid #cdcdcd;
-    }
+  & + .icon-radio {
+    border: 1px solid #cdcdcd;
+  }
 
-    &:checked+.icon-radio {
-        border: 1px solid #cdcdcd;
-        background: #fff url("../images/form/icon-radio.png") no-repeat center center;
-        background-size: 100%;
-    }
+  &:checked + .icon-radio {
+    border: 1px solid #cdcdcd;
+    background: #fff url("../images/form/icon-radio.png") no-repeat center center;
+    background-size: 100%;
+  }
 }
 
 //---------------------------------------------------
@@ -213,59 +212,56 @@ input[type=radio] {
 
 // policy box
 .policy-doc {
-    overflow: auto;
-    height: 120px;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #dcdcdc;
-    font-size: 16px;
-    line-height: 32px;
+  overflow: auto;
+  height: 120px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 // email @
 .form-email {
-    position: relative;
+  position: relative;
 
-    .form-control {
-        width: 90%;
-        margin-bottom: 10px;
-    }
+  &:after {
+    position: absolute;
+    content: '@';
+    top: 50%;
+    right: 0;
+    color: #000;
+    font-style: normal;
+    font-size: 15px;
+    transform: translateY(-50%);
+  }
+}
 
-    &:after {
-        position: absolute;
-        content: '@';
-        top: 50%;
-        right: 0;
-        color: #000;
-        font-style: normal;
-        font-size: 15px;
-        transform: translateY(-50%);
-    }
+.form-email .form-control {
+  width: 90%;
+  margin-bottom: 10px;
 
-    @media screen and (min-width: #{$tab_size}) {
-        .form-control {
-            margin-bottom: 0;
-        }
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    margin-bottom: 0;
+  }
 }
 
 // 전화번호
 .form-inline .form-input-tel {
-    width: 29%;
+  width: 29%;
 
-    @media screen and (min-width: #{$tab_size}) {
-        width: 100px;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    width: 100px;
+  }
 }
 
 // 주소
 .form-address {
-    //width: 600px;
-    display: block !important;
+  display: block !important;
+}
 
-    input {
-        width: 100% !important;
-    }
+.form-address input {
+  width: 100% !important;
 }
 
 //---------------------------------------------------
@@ -274,23 +270,23 @@ input[type=radio] {
 
 // Chrome/Opera/Safari
 ::-webkit-input-placeholder {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 // Firefox 19+
 ::-moz-placeholder {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 // IE 10+
 :-ms-input-placeholder {
-    color: #000 !important;
-    line-height: 1 !important;
+  color: #000 !important;
+  line-height: 1 !important;
 }
 
 // Firefox 18-
 :-moz-placeholder {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 //---------------------------------------------------
@@ -306,23 +302,23 @@ input[type=radio] {
 // search-box
 //---------------------------------------------------
 .search-box {
-    padding-bottom: 20px;
-    text-align: right;
+  padding-bottom: 20px;
+  text-align: right;
+}
 
-    input,
-    select {
-        height: 34px !important;
-        line-height: 34px !important;
-    }
+.search-box input,
+.search-box select {
+  height: 34px !important;
+  line-height: 34px !important;
+}
 
-    input {
-        width: 120px !important;
-    }
+.search-box input,
+.search-box select,
+.search-box button,
+.search-box a {
+  margin-right: 3px !important;
+}
 
-    input,
-    select,
-    button,
-    a {
-        margin-right: 3px !important;
-    }
+.search-box input {
+  width: 120px !important;
 }

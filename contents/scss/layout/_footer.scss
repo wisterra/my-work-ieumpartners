@@ -24,6 +24,9 @@
 
 .footer-link-group {
   display: block;
+  @media screen and (max-width: #{$mob_size}) {
+    padding-left: 0
+  }
 }
 
 .footer-link-item {
@@ -49,35 +52,36 @@
 }
 
 // 세로선
-.footer-link-item:before {
-  content: '';
-  @extend %sp-bar;
-  margin-right: 20px
+.footer-link-item {
+
+  @media screen and (max-width: #{$mob_size}) {
+    padding: 0 5px
+  }
+  
+  &:before {
+    content: '';
+    @extend %sp-bar;
+    margin-right: 20px;
+
+    @media screen and (max-width: #{$mob_size}) {
+      margin-right: 10px
+    }
+  }
 }
 
 // 세로선 중 웹에서 선 없애는 용도
-.footer-link-item.web-no-line::before {
-  width: 0
-}
-
-// 세로선 중 모바일에서 선 없애는 용도
-.footer-link-item.mobile-no-line::before {
-  @media (max-width: 992px) {
+.footer-link-item.web-no-line {
+  &::before {
     width: 0
   }
 }
 
-@media screen and (max-width: #{$mob_size}) {
-  .footer-link-group {
-    padding-left: 0
-  }
-
-  .footer-link-item {
-    padding: 0 5px
-  }
-
-  .footer-link-item:before {
-    margin-right: 10px
+// 세로선 중 모바일에서 선 없애는 용도
+.footer-link-item.mobile-no-line {
+  &::before {
+    @media (max-width: 992px) {
+      width: 0
+    }
   }
 }
 
