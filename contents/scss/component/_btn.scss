@@ -2,76 +2,78 @@
 // btn
 //---------------------------------------------------
 .btn {
-    border-radius: 0;
+  border-radius: 0;
 }
 
+//---------------------------------------------------
 // size
 .btn-wide {
-    width: 100%;
+  width: 100%;
 }
 
+//---------------------------------------------------
 // color
 .btn-default {
-    background: #b0b2b5 !important;
-    border: 1px solid #b0b2b5 !important;
-    color: #fff !important;
+  background: #b0b2b5 !important;
+  border: 1px solid #b0b2b5 !important;
+  color: #fff !important;
 }
 
 .btn-primary {
-    background: #0065b3 !important;
-    border: 1px solid #0065b3 !important;
+  background: #0065b3 !important;
+  border: 1px solid #0065b3 !important;
 }
 
 .btn-success {
-    background: inherit;
+  background: inherit;
 }
 
 .btn-info {
-    background: #79838c !important;
-    border: 1px solid #79838c !important;
+  background: #79838c !important;
+  border: 1px solid #79838c !important;
 }
 
 .btn-warning {
-    background: inherit;
+  background: inherit;
 }
 
 .btn-danger {
-    background: inherit;
+  background: inherit;
 }
 
 .btn-white {
-    background: #fff !important;
-    border: 1px solid #cccccc !important;
-    color: #575757 !important;
+  background: #fff !important;
+  border: 1px solid #cccccc !important;
+  color: #575757 !important;
 
-    &.active {
-        background: #0065b3 !important;
-        border: 1px solid #0065b3 !important;
-        color: #fff !important;
-    }
+  &.active {
+    background: #0065b3 !important;
+    border: 1px solid #0065b3 !important;
+    color: #fff !important;
+  }
 }
 
 .btn-black {
-    background: #4c4c4c !important;
-    border: 1px solid #4c4c4c !important;
-    color: #fff !important;
+  background: #4c4c4c !important;
+  border: 1px solid #4c4c4c !important;
+  color: #fff !important;
 }
 
 .btn-none-blue {
-    background: none !important;
-    border: 1px solid #0168b7 !important;
-    color: #0168b7 !important;
+  background: none !important;
+  border: 1px solid #0168b7 !important;
+  color: #0168b7 !important;
 }
 
 //---------------------------------------------------
 // group
 //---------------------------------------------------
 .btns-group {
-    text-align: right !important;
+  text-align: right !important;
 }
 
 .btns-group button,
 .btns-group a {
-    margin: 0 2px;
-    padding: 10px 40px;
+  margin: 0 2px;
+  padding: 10px 40px;
 }

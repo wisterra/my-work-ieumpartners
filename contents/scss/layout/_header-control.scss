@@ -1,28 +1,29 @@
 // 모바일 내비가 켜질때 body에 추가
 .html-fix {
-    overflow: hidden;
-    height: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
-// 모바일 헤더랑 웹 헤더랑 변환
-@media screen and (max-width: #{$tab_size}) {
-    .header-web {
-        display: none;
-   }
+// 모바일 헤더와 웹헤더 변환
+.header-web {
+  @media screen and (max-width: #{$tab_size}) {
+    display: none;
+  }
+}
 
-    .header-mobile {
-        display: block;
-    }
+.header-mobile {
+  @media screen and (max-width: #{$tab_size}) {
+    display: block;
+  }
 }
 
 // 햄버거를 누르면 active
 .header-mobile.active {
-  overflow-y:scroll;
-  height:100%;
-  
-    .header-mobile-roll {
-        height:auto;
-        transition: 0.3s ease-out;
-    }
+  overflow-y: scroll;
+  height: 100%;
 
+  .header-mobile-roll {
+    height: auto;
+    transition: 0.3s ease-out;
+  }
 }

@@ -4,47 +4,48 @@
 
 // 공통적으로 적용될 내용
 .company-section {
-    vertical-align: top;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-    @media screen and (min-width: #{$tab_size}) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    p {
-        font-size: 15px;
-        line-height: 1.5;
-
-        @media screen and (min-width: #{$tab_size}) {
-            font-size: 18px;
-        }
-    }
-
-    h2 {
-        padding-bottom: 15px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-
-        @media screen and (min-width: #{$tab_size}) {
-            padding-bottom: 30px;
-            font-size: 25px;
-        }
-    }
-
-    ul,
-    dl {
-        display: inline-block;
-        font-size: 13px;
-        vertical-align: top;
-
-        @media screen and (min-width: #{$tab_size}) {
-            font-size: 15px;
-        }
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
+
+.company-section p {
+  font-size: 15px;
+  line-height: 1.5;
+
+  @media screen and (min-width: #{$tab_size}) {
+    font-size: 18px;
+  }
+}
+
+.company-section h2 {
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  @media screen and (min-width: #{$tab_size}) {
+    padding-bottom: 30px;
+    font-size: 25px;
+  }
+}
+
+.company-section ul,
+.company-section dl {
+  display: inline-block;
+  font-size: 13px;
+  vertical-align: top;
+
+  @media screen and (min-width: #{$tab_size}) {
+    font-size: 15px;
+  }
+}
+
 
 /*---------------------------------------------------
 // company
@@ -52,447 +53,424 @@
 
 // 회사 소개
 .company-section-info-img {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 
-    @media screen and (min-width: #{$tab_size}) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .company-section-info-img-m {
-    width: 100%;
-    max-width: fit-content;
+  width: 100%;
+  max-width: fit-content;
+
+  @media screen and (min-width: #{$web_size}) {
+    display: none;
+  }
 }
 
 .company-section-info-img-w {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: #{$web_size}) {
+    display: block;
+  }
 }
-
-@media screen and (min-width: #{$web_size}) {
-    .company-section-info-img-m {
-        display: none;
-    }
-
-    .company-section-info-img-w {
-        display: block;
-    }
-}
-
 
 // 회사 서비스
 .company-section-service {
-    background: #00305c url('/contents/images/company/company-bg1-m.jpg') center center no-repeat;
-    background-size: cover;
-    color: #fff;
+  background: #00305c url('/contents/images/company/company-bg1-m.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
 
-    //text-align:center;
-    @media screen and (min-width: #{$tab_size}) {
-        background-image: url('/contents/images/company/company-bg1.jpg');
-    }
+  //text-align:center;
+  @media screen and (min-width: #{$tab_size}) {
+    background-image: url('/contents/images/company/company-bg1.jpg');
+  }
 }
 
 .company-section-service-item {
-    position: relative;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-top: 1px solid #335b7d;
+  width: 100%;
+
+  @media screen and (min-width: #{$tab_size}) {
     padding-top: 30px;
     padding-bottom: 10px;
-    border-top: 1px solid #335b7d;
-    width: 100%;
-
-    @media screen and (min-width: #{$tab_size}) {
-        padding-top: 30px;
-        padding-bottom: 10px;
-        padding-left: 290px;
-    }
-
+    padding-left: 290px;
+  }
 }
 
 .company-section-service-item-title {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 15px;
+
+  @media screen and (min-width: #{$tab_size}) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 280px;
+    padding-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+.company-section-service-item-title br {
+  display: none;
+
+  @media screen and (min-width: #{$tab_size}) {
     display: block;
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 15px;
-
-    br {
-        display: none;
-    }
-
-    @media screen and (min-width: #{$tab_size}) {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        width: 280px;
-        padding-bottom: 0;
-        font-size: 18px;
-
-        br {
-            display: block;
-        }
-    }
+  }
 }
 
+//---------------------------------------------------
 .company-section-service-item-con {
-    //width: 49%;
-    //    width: 100%;
-    //padding-left: 20px;
+  //width: 49%;
+  //    width: 100%;
+  //padding-left: 20px;
+}
 
-    li {
-        vertical-align: top;
-        display: inline-block;
-        width: 49%;
-        padding-bottom: 15px;
-        line-height: 1.5;
-        letter-spacing: -1px;
-        //  list-style-type: disc; //list-style-position: inside;
-        text-align: left;
-        padding-left: 13px;
-        text-indent: -13px;
+.company-section-service-item-con li {
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  //  list-style-type: disc; //list-style-position: inside;
+  text-align: left;
+  padding-left: 13px;
+  text-indent: -13px;
 
-        @media screen and (min-width: #{$web_size}) {
-            width: 32.9%;
-        }
-    }
-
-    // @media screen and (max-width: #{$mob_size}) {
-    //     width: 100%;
-    // }
-
-    @media screen and (min-width: #{$tab_size}) {
-        // width: 240px;
-        // padding-right: 10px;
-    }
-
-    @media screen and (min-width: #{$web_size}) {
-        // width: 220px;
-        // padding-right: 30px;
-
-    }
+  @media screen and (min-width: #{$web_size}) {
+    width: 32.9%;
+  }
 }
 
 
+//---------------------------------------------------
 // 회사 시스템
 .co-system {
-    background: url('/contents/images/company/system-cycle-img.png') center 90px no-repeat;
-    background-size: 272px;
+  background: url('/contents/images/company/system-cycle-img.png') center 90px no-repeat;
+  background-size: 272px;
 
-    h2 {
-        margin-bottom: 320px;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    background-position-y: 120px;
+  }
 
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    @media screen and (min-width: #{$tab_size}) {
-        background-position-y: 120px;
-    }
-
-    @media screen and (min-width: #{$web_size}) {
-        height: 840px;
-        background-image: url('/contents/images/company/system-cycle-bg.png');
-        background-position-y: 130px;
-        background-size: 993px 561px;
-
-        h2 {
-            margin-bottom: 0;
-        }
-
-        .content-zone {
-            height: 100%;
-            background: url('/contents/images/company/system-cycle-img.png') center 145px no-repeat;
-            background-size: 374px;
-        }
-    }
-
-
-
-    dl {
-        position: relative;
-        margin: 0;
-        padding-left: 80px;
-        padding-bottom: 20px;
-        width: 100%;
-        float: left;
-
-        img {
-            position: absolute;
-            top: 0; //display:none;
-
-
-            @media screen and (max-width: #{$web_size}) {
-                left: 0;
-            }
-        }
-
-
-    }
-
-    dt {
-        padding-bottom: 10px;
-    }
-
-    dd {
-        //display: list-item;
-        //margin-left: 20px;
-        text-indent: -12px;
-        line-height: 1.8;
-        letter-spacing: -1px;
-        //list-style-type: disc; //list-style-position: inside;        
-    }
-
-    strong {
-        display: block;
-        color: #0066b4;
-    }
-
-    @media screen and (min-width: #{$web_size}) {
-        dl {
-            width: 50%;
-            height: 280px;
-            padding-top: 60px;
-            padding-left: 200px;
-
-        }
-
-        dl:nth-child(2n) {
-            padding-left: 0px;
-        }
-    }
+  @media screen and (min-width: #{$web_size}) {
+    height: 840px;
+    background-image: url('/contents/images/company/system-cycle-bg.png');
+    background-position-y: 130px;
+    background-size: 993px 561px;
+  }
 }
 
+.co-system .content-zone {
+  @media screen and (min-width: #{$web_size}) {
+    height: 100%;
+    background: url('/contents/images/company/system-cycle-img.png') center 145px no-repeat;
+    background-size: 374px;
+  }
+}
+
+.co-system h2 {
+  margin-bottom: 320px;
+
+  @media screen and (min-width: #{$web_size}) {
+    margin-bottom: 0;
+  }
+}
+
+.co-system:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.co-system dl {
+  position: relative;
+  margin: 0;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  width: 100%;
+  float: left;
+
+  img {
+    position: absolute;
+    top: 0; //display:none;
+
+    @media screen and (max-width: #{$web_size}) {
+      left: 0;
+    }
+  }
+
+  @media screen and (min-width: #{$web_size}) {
+    width: 50%;
+    height: 280px;
+    padding-top: 60px;
+    padding-left: 200px;
+
+  }
+}
+
+.co-system dl:nth-child(2n) {
+  @media screen and (min-width: #{$web_size}) {
+    padding-left: 0px;
+  }
+}
+
+.co-system dt {
+  padding-bottom: 10px;
+}
+
+.co-system dd {
+  //display: list-item;
+  //margin-left: 20px;
+  text-indent: -12px;
+  line-height: 1.8;
+  letter-spacing: -1px;
+  //list-style-type: disc; //list-style-position: inside;
+}
+
+.co-system strong {
+  display: block;
+  color: #0066b4;
+}
+
+//---------------------------------------------------
 .co-portfolio {
-    background: url('/contents/images/company/company-bg2-m.jpg') repeat-y;
-    background-size: cover;
-    color: #fff;
+  background: url('/contents/images/company/company-bg2-m.jpg') repeat-y;
+  background-size: cover;
+  color: #fff;
 
-    @media screen and (min-width: #{$tab_size}) {
-        background-image: url('/contents/images/company/company-bg2.jpg');
-        background-repeat: no-repeat;
-    }
-
-    h2 {
-        color: #2b2b2b;
-    }
-
-    .dl-group {
-        vertical-align: top;
-        display: inline-block;
-    }
-
-    dl {
-        display: block;
-    }
-
-    dt {
-        color: #0066b4;
-    }
-
-    dd {
-        //display: list-item;
-        margin-left: 10px;
-        text-indent: -13px;
-        line-height: 1.8;
-        letter-spacing: -1px;
-        //list-style-type: disc; //list-style-position: inside;        
-    }
-
-    @media screen and (min-width: #{$tab_size}) {
-        .dl-group {
-            width: 49%;
-            padding-left: 54px;
-        }
-
-        .dl-group:nth-child(2) {
-            padding-left: 0;
-            padding-right: 60px;
-        }
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    background-image: url('/contents/images/company/company-bg2.jpg');
+    background-repeat: no-repeat;
+  }
 }
 
-.co-exc {
-    .item {
-        position: relative;
-        vertical-align: top;
-        border-bottom: 1px solid #dcdcdc;
+.co-portfolio h2 {
+  color: #2b2b2b;
+}
 
+.co-portfolio .dl-group {
+  vertical-align: top;
+  display: inline-block;
+  @media screen and (min-width: #{$tab_size}) {
+    width: 49%;
+    padding-left: 54px;
+  }
+}
 
+.co-portfolio .dl-group:nth-child(2) {
+  @media screen and (min-width: #{$tab_size}) {
+    padding-left: 0;
+    padding-right: 60px;
+  }
+}
 
-        @media screen and (min-width: #{$tab_size}) {
-            display: inline-block;
-            border: 1px solid #dcdcdc;
-            width: 470px;
-            height: 250px;
-            margin: 10px;
-            padding: 30px;
-        }
-    }
+.co-portfolio dl {
+  display: block;
+}
 
-    .profile-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 96px;
-        height: 96px;
-        background: url('/contents/images/company/profile-img.jpg') center center no-repeat;
+.co-portfolio dt {
+  color: #0066b4;
+}
 
-        @media screen and (min-width: #{$tab_size}) {
-            top: 32px;
-            left: 34px;
-        }
-    }
+.co-portfolio dd {
+  //display: list-item;
+  margin-left: 10px;
+  text-indent: -13px;
+  line-height: 1.8;
+  letter-spacing: -1px;
+  //list-style-type: disc; //list-style-position: inside;
+}
 
-    .desc {
-        padding-left: 106px;
+//---------------------------------------------------
+.co-exc .item {
+  position: relative;
+  vertical-align: top;
+  border-bottom: 1px solid #dcdcdc;
 
-        span {
-            &::before {
-                content: '';
-                @extend %sp-bar;
-                margin: 0 10px;
-                top: 2px;
-                background-color: #e5e5e5;
-                height: 15px;
-            }
-        }
+  @media screen and (min-width: #{$tab_size}) {
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    width: 470px;
+    height: 250px;
+    margin: 10px;
+    padding: 30px;
+  }
+}
 
-        @media screen and (min-width: #{$tab_size}) {
-            padding-left: 126px;
-        }
-    }
+.co-exc .profile-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  background: url('/contents/images/company/profile-img.jpg') center center no-repeat;
 
+  @media screen and (min-width: #{$tab_size}) {
+    top: 32px;
+    left: 34px;
+  }
+}
 
-    ul {
-        display: block;
-        padding-top: 15px;
-        padding-bottom: 15px;
+.co-exc .desc {
+  padding-left: 106px;
 
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    padding-left: 126px;
+  }
+}
 
-    li {
-        list-style: none;
-    }
+.co-exc .desc span {
+  &::before {
+    content: '';
+    @extend %sp-bar;
+    margin: 0 10px;
+    top: 2px;
+    background-color: #e5e5e5;
+    height: 15px;
+  }
+}
 
-    p {
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 1;
-        display: inline;
-
-        @media screen and (min-width: #{$tab_size}) {
-            display: block;
-        }
-    }
+.co-exc ul {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
 }
 
+.co-exc li {
+  list-style: none;
+}
+
+.co-exc p {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline;
+
+  @media screen and (min-width: #{$tab_size}) {
+    display: block;
+  }
+}
+
+//---------------------------------------------------
 .co-partners {
-    //height:686px;
-    background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
-    background-size: cover;
-    color: #fff;
-
-    strong {
-        display: block;
-        border-bottom: 1px solid #5f6c80;
-        padding-bottom: 15px;
-        font-size: 18px;
-    }
-
-    ul {
-        display: block;
-        width: 100%;
-
-        // @media screen and (min-width: #{$tab_size}) {
-        //     width:32.333%;
-        // }
-        @media screen and (min-width: #{$web_size}) {
-            display: inline-block;
-            width: 225px;
-            height: 200px;
-            padding-bottom: 0px;
-        }
-
-    }
-
-    li {
-        display: inline-block;
-        width: 49%;
-        line-height: 1.8;
-        list-style: none;
-        letter-spacing: -1px;
-
-        @media screen and (min-width: #{$tab_size}) {
-            display: block;
-            width: 100%;
-        }
-    }
-
-    .group {
-        vertical-align: top;
-
-        @media screen and (min-width: #{$tab_size}) {
-            display: inline-block;
-            width: 32.333%;
-        }
-
-        @media screen and (min-width: #{$web_size}) {
-            width: auto;
-            padding-right: 40px;
-            padding-bottom: 30px;
-        }
-    }
-
-    .group-big {
-        padding-right: 0;
-        display: inline-block;
-
-        @media screen and (min-width: #{$tab_size}) {
-            ul {
-                width: 50%;
-                height: auto;
-            }
-        }
-
-        @media screen and (min-width: 1040px) {
-            ul {
-                width: 225px;
-            }
-        }
-    }
+  //height:686px;
+  background: url('/contents/images/company/company-bg3.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
+.co-partners strong {
+  display: block;
+  border-bottom: 1px solid #5f6c80;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.co-partners ul {
+  display: block;
+  width: 100%;
+
+  // @media screen and (min-width: #{$tab_size}) {
+  //     width:32.333%;
+  // }
+  @media screen and (min-width: #{$web_size}) {
+    display: inline-block;
+    width: 225px;
+    height: 200px;
+    padding-bottom: 0px;
+  }
+
+}
+
+.co-partners li {
+  display: inline-block;
+  width: 49%;
+  line-height: 1.8;
+  list-style: none;
+  letter-spacing: -1px;
+
+  @media screen and (min-width: #{$tab_size}) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.co-partners .group {
+  vertical-align: top;
+
+  @media screen and (min-width: #{$tab_size}) {
+    display: inline-block;
+    width: 32.333%;
+  }
+
+  @media screen and (min-width: #{$web_size}) {
+    width: auto;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.co-partners .group-big {
+  padding-right: 0;
+  display: inline-block;
+}
+
+.co-partners .group-big ul {
+  @media screen and (min-width: #{$tab_size}) {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.co-partners .group-big ul {
+  @media screen and (min-width: 1040px) {
+    width: 225px;
+  }
+}
+
+//---------------------------------------------------
 .co-contanct {
-    .inner {
-        border: 1px solid #e5e5e5;
-        text-align: center;
-    }
+  &::before {
+    content: '';
+    @extend %sp-bar;
+    margin: 0 40px;
+    background-color: #e5e5e5;
+    height: 15px;
+    top: 2px;
+  }
 
-    strong {
-        display: inline-block;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        font-size: 18px;
+  &:first-child::before {
+    content: '';
+    width: 0;
+    margin: 0;
+  }
+}
 
-        &::before {
-            content: '';
-            @extend %sp-bar;
-            margin: 0 40px;
-            background-color: #e5e5e5;
-            height: 15px;
-            top: 2px;
-        }
+.co-contanct .inner {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
 
-        &:first-child::before {
-            content: '';
-            width: 0;
-            margin: 0;
-        }
-    }
+.co-contanct strong {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
 }
 
 /*---------------------------------------------------
@@ -500,37 +478,35 @@
 --------------------------------------------------- */
 // 대표 인사말
 .co-greeting-img {
-     width: 100%;
-     max-width: 997px;
-     text-align: center;
-     img {
-        width: 100%;
-     }
+  width: 100%;
+  max-width: 997px;
+  text-align: center;
 
-    @media screen and (min-width: #{$tab_size}) {
-        // padding-bottom: 50px;
-        // margin-left: -50px;
-    }        
+  @media screen and (min-width: #{$tab_size}) {
+    // padding-bottom: 50px;
+    // margin-left: -50px;
+  }
 }
+
+.co-greeting-img img {
+  width: 100%;
+}
+
 .co-greeting {
-    width: 100%;
+  width: 100%;
+  max-width: 997px;
+  margin: 0 auto;
 
-    max-width: 997px;
-    margin: 0 auto;
+  @media screen and (min-width: #{$tab_size}) {
+    //padding: 0 50px;
+  }
+}
 
-    @media screen and (min-width: #{$tab_size}) {
-        //padding: 0 50px;
-    }    
+.co-greeting strong {
+  color: #0066b4;
+  //letter-spacing: 1px;
+}
 
-
-
-    strong {
-        color: #0066b4;
-        //letter-spacing: 1px;
-    }
-
-    p {
-        padding-bottom: 16px;
-    }
-
+.co-greeting p {
+  padding-bottom: 16px;
 }

@@ -2,108 +2,108 @@
 // login
 --------------------------------------------------- */
 .login-con {
-    max-width: 500px;
-    margin: 0 auto;
-    font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 16px;
 
-    .form-group {
-        margin-bottom: 10px;
-    }
+  .form-group {
+    margin-bottom: 10px;
+  }
 
-    input[type=text],
-    input[type=password] {
-        height: 50px !important;
-        border: 0 !important;
-        line-height: 50px !important;
-    }
+  input[type=text],
+  input[type=password] {
+    height: 50px !important;
+    border: 0 !important;
+    line-height: 50px !important;
+  }
 
 }
 
 .login-con-title {
-    font-family: bold;
-    text-align: center;
+  font-family: bold;
+  text-align: center;
 }
 
 .login-con-text {
-    margin-top: 20px;
-    margin-bottom: 26px;
-    text-align: center;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  text-align: center;
 }
 
 .login-con-label {
-    display: none;
+  display: none;
 }
 
 .login-con-checkbox {
-    display: inline-block;
+  display: inline-block;
 }
 
 .login-ave-id {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .login-con-btn {
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 40px !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 40px !important;
 }
 
 .login-btns-member {
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 150px;
-    padding-left: 30px;
-    text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  padding-left: 30px;
+  text-align: center;
 
-    a,
-    button {
-        color: #4b4b4b;
-        font-size: 16px;
-    }
+  a:first-child::after {
+    content: '';
+    @extend %sp-bar;
+    margin: 0 30px;
+  }
+}
 
-    a:first-child::after {
-        content: '';
-        @extend %sp-bar;
-        margin: 0 30px;
-    }
+.login-btns-member a,
+.login-btns-member button {
+  color: #4b4b4b;
+  font-size: 16px;
 }
 
 /*---------------------------------------------------
 // join
 --------------------------------------------------- */
 .form-agree-left {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 .form-agree-right {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
 }
 
 .form-agree-right.agree-all {
-    position: relative;
-    top: -30px;
-    margin-bottom: -20px;
-    padding-top: 0;
-    padding-bottom: 0;
+  position: relative;
+  top: -30px;
+  margin-bottom: -20px;
+  padding-top: 0;
+  padding-bottom: 0;
 
-    @media screen and (min-width: #{$tab_size}) {
-        top: -20px;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    top: -20px;
+  }
 }
 
 // 버튼 : 중복확인
 .join-btn-overlapcheck {
-    margin-top: 10px;
-    margin-left: 2px;
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-    font-size: 16px;
+  margin-top: 10px;
+  margin-left: 2px;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  font-size: 16px;
 
-    @media screen and (min-width: #{$tab_size}) {
-        margin-top: 0;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    margin-top: 0;
+  }
 }

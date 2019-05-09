@@ -3,70 +3,68 @@
 /*---------------------------------------------------
 // category header, page header
 --------------------------------------------------- */
-.ctg-header {
-    h1 {
-      text-align: center;
-      font-family: bold;
-      font-size: 36px;
-      line-height: 1.5;
-      margin: 0;
-      padding-top: 60px;
-      padding-bottom: 30px;
-    }
-  }
-  
-  .page-header {
-    text-align: left;
-    border-bottom: 2px solid #0066b4;
-    margin-top:25px;
-    @media screen and (min-width: #{$tab_size}) {
-      margin-top:70px;
-    }    
-  
-    h1 {
-      display: inline-block;
-      font-family: bold;
-      font-size: 25px;
-      vertical-align: bottom;
+.ctg-header h1 {
+  text-align: center;
+  font-family: bold;
+  font-size: 36px;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
 
-      @media screen and (min-width: #{$tab_size}) {
-        font-size: 36px;
-      } 
-    }
-  
-    p {
-      display: inline-block;
-      vertical-align: bottom;
-      font-size: 16px;
-      color: #999999;
-      margin-left: 10px;
-    }
+.page-header {
+  text-align: left;
+  border-bottom: 2px solid #0066b4;
+  margin-top: 25px;
 
-    &.border-none{
-      border-bottom:0;
-    }
+  @media screen and (min-width: #{$tab_size}) {
+    margin-top: 70px;
   }
+}
+
+.page-header h1 {
+  display: inline-block;
+  font-family: bold;
+  font-size: 25px;
+  vertical-align: bottom;
+
+  @media screen and (min-width: #{$tab_size}) {
+    font-size: 36px;
+  }
+}
+
+.page-header p {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 16px;
+  color: #999999;
+  margin-left: 10px;
+}
+
+.page-header.border-none {
+  border-bottom: 0;
+}
 
 /*---------------------------------------------------
 // 유의사항
 --------------------------------------------------- */
-.att-note{
-  dl{
-    font-size:1.5rem;
-    dt{
-      font-weight: bold;
-    }
-  }
+.att-note dl {
+  font-size: 1.5rem;
+}
+
+.att-note dl dt {
+  font-weight: bold;
 }
 
 /*---------------------------------------------------
 // text color
 --------------------------------------------------- */
-  .textblue{
-    color:#0066b4;
-  }
-  .textgrayblack{
-    font-style: normal;
-    color:#4b4b4b;
-  }
-  
+.textblue {
+  color: #0066b4;
+}
+
+.textgrayblack {
+  font-style: normal;
+  color: #4b4b4b;
+}

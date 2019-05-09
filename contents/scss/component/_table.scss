@@ -40,24 +40,24 @@ table td {
 //---------------------------------------------------
 .table-list {
   margin-bottom: 30px;
+}
 
-  th {
-    width: auto;
-    background-color: #e5e8ef;
-    font-family: 'bold';
-    text-align: center;
-  }
+.table-list th {
+  width: auto;
+  background-color: #e5e8ef;
+  font-family: 'bold';
+  text-align: center;
+}
 
-  td {
-    padding-top: 0 !important;
-    border-bottom: 1px solid #e5e8ef;
-    text-align: center;
-    vertical-align: middle;
-  }
+.table-list td {
+  padding-top: 0 !important;
+  border-bottom: 1px solid #e5e8ef;
+  text-align: center;
+  vertical-align: middle;
+}
 
-  a {
-    color: inherit;
-  }
+.table-list a {
+  color: inherit;
 }
 
 .table-list.type2 {
